@@ -42,14 +42,14 @@ const ProductModal = ({ product, onClose }: ProductModalProps) => {
   return (
     <div className="modal-overlay" onClick={onClose} role="dialog" aria-modal="true" aria-label={product.nome}>
       <div
-        className="animate-scale-in bg-card rounded-xl max-w-lg w-full mx-4 max-h-[90vh] overflow-y-auto"
+        className="animate-scale-in bg-card border border-border rounded-xl max-w-lg w-full mx-4 max-h-[90vh] overflow-y-auto"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close */}
         <div className="flex justify-end p-3">
           <button
             onClick={onClose}
-            className="p-2 rounded-full hover:bg-secondary transition-colors"
+            className="p-2 rounded-full hover:bg-secondary text-muted-foreground hover:text-foreground transition-colors"
             aria-label="Fechar"
           >
             <X className="w-5 h-5" />
@@ -57,7 +57,7 @@ const ProductModal = ({ product, onClose }: ProductModalProps) => {
         </div>
 
         {/* Gallery */}
-        <div className="relative aspect-[3/4] bg-foreground/5">
+        <div className="relative aspect-[3/4] bg-background/50">
           <img
             src={product.fotos[currentPhoto]}
             alt={`${product.nome} - foto ${currentPhoto + 1}`}
@@ -67,7 +67,7 @@ const ProductModal = ({ product, onClose }: ProductModalProps) => {
           {currentPhoto > 0 && (
             <button
               onClick={() => goTo(-1)}
-              className="absolute left-2 top-1/2 -translate-y-1/2 p-2 rounded-full bg-card/80 backdrop-blur-sm shadow hover:bg-card transition-colors"
+              className="absolute left-2 top-1/2 -translate-y-1/2 p-2 rounded-full bg-card/80 backdrop-blur-sm shadow-lg hover:bg-card border border-border transition-colors"
               aria-label="Foto anterior"
             >
               <ChevronLeft className="w-5 h-5" />
@@ -76,14 +76,14 @@ const ProductModal = ({ product, onClose }: ProductModalProps) => {
           {currentPhoto < total - 1 && (
             <button
               onClick={() => goTo(1)}
-              className="absolute right-2 top-1/2 -translate-y-1/2 p-2 rounded-full bg-card/80 backdrop-blur-sm shadow hover:bg-card transition-colors"
+              className="absolute right-2 top-1/2 -translate-y-1/2 p-2 rounded-full bg-card/80 backdrop-blur-sm shadow-lg hover:bg-card border border-border transition-colors"
               aria-label="Próxima foto"
             >
               <ChevronRight className="w-5 h-5" />
             </button>
           )}
 
-          <span className="absolute bottom-3 left-1/2 -translate-x-1/2 text-xs bg-foreground/60 text-primary-foreground px-3 py-1 rounded-full backdrop-blur-sm">
+          <span className="absolute bottom-3 left-1/2 -translate-x-1/2 text-xs bg-card/80 text-foreground px-3 py-1 rounded-full backdrop-blur-sm border border-border">
             {currentPhoto + 1} / {total}
           </span>
         </div>
@@ -97,7 +97,7 @@ const ProductModal = ({ product, onClose }: ProductModalProps) => {
               className={`shrink-0 w-16 h-16 rounded-md overflow-hidden border-2 transition-all ${
                 i === currentPhoto
                   ? "thumbnail-active"
-                  : "border-transparent opacity-60 hover:opacity-100"
+                  : "border-transparent opacity-50 hover:opacity-100"
               }`}
               aria-label={`Ver foto ${i + 1}`}
             >
@@ -108,19 +108,20 @@ const ProductModal = ({ product, onClose }: ProductModalProps) => {
 
         {/* Info */}
         <div className="px-5 pb-6 pt-2 space-y-4">
+          <div className="gold-divider" />
           <div>
-            <span className="text-xs text-muted-foreground font-body">
+            <span className="text-[10px] uppercase tracking-[0.2em] text-primary font-body font-medium">
               {product.categoria} · {product.estado}
             </span>
-            <h2 className="font-display text-2xl font-bold mt-1">{product.nome}</h2>
-            <p className="text-muted-foreground text-sm mt-2 font-body">
+            <h2 className="font-display text-2xl font-bold mt-1 text-foreground">{product.nome}</h2>
+            <p className="text-muted-foreground text-sm mt-2 font-body leading-relaxed">
               {product.descricao}
             </p>
           </div>
 
           <div>
-            <span className="text-xs text-muted-foreground font-body">Preço</span>
-            <p className="font-display text-3xl font-bold">{formatPrice(product.preco)}</p>
+            <span className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground font-body">Preço</span>
+            <p className="font-display text-3xl font-bold gold-text">{formatPrice(product.preco)}</p>
           </div>
 
           <a

@@ -13,14 +13,8 @@ export default {
   		}
   	},
   	fontFamily: {
-  		display: [
-  			'Cormorant Garamond"',
-  			'serif'
-  		],
-  		body: [
-  			'Inter"',
-  			'sans-serif'
-  		]
+  		display: ['Playfair Display', 'serif'],
+  		body: ['Outfit', 'sans-serif']
   	},
   	extend: {
   		colors: {
@@ -57,6 +51,11 @@ export default {
   				DEFAULT: 'hsl(var(--card))',
   				foreground: 'hsl(var(--card-foreground))'
   			},
+  			gold: {
+  				DEFAULT: 'hsl(var(--primary))',
+  				glow: 'hsl(var(--gold-glow))',
+  				muted: 'hsl(var(--gold-muted))'
+  			},
   			sidebar: {
   				DEFAULT: 'hsl(var(--sidebar-background))',
   				foreground: 'hsl(var(--sidebar-foreground))',
@@ -75,20 +74,12 @@ export default {
   		},
   		keyframes: {
   			'accordion-down': {
-  				from: {
-  					height: '0'
-  				},
-  				to: {
-  					height: 'var(--radix-accordion-content-height)'
-  				}
+  				from: { height: '0' },
+  				to: { height: 'var(--radix-accordion-content-height)' }
   			},
   			'accordion-up': {
-  				from: {
-  					height: 'var(--radix-accordion-content-height)'
-  				},
-  				to: {
-  					height: '0'
-  				}
+  				from: { height: 'var(--radix-accordion-content-height)' },
+  				to: { height: '0' }
   			}
   		},
   		animation: {
@@ -96,39 +87,8 @@ export default {
   			'accordion-up': 'accordion-up 0.2s ease-out'
   		},
   		fontFamily: {
-  			sans: [
-  				'Inter',
-  				'ui-sans-serif',
-  				'system-ui',
-  				'-apple-system',
-  				'BlinkMacSystemFont',
-  				'Segoe UI',
-  				'Roboto',
-  				'Helvetica Neue',
-  				'Arial',
-  				'Noto Sans',
-  				'sans-serif'
-  			],
-  			serif: [
-  				'Lora',
-  				'ui-serif',
-  				'Georgia',
-  				'Cambria',
-  				'Times New Roman',
-  				'Times',
-  				'serif'
-  			],
-  			mono: [
-  				'Space Mono',
-  				'ui-monospace',
-  				'SFMono-Regular',
-  				'Menlo',
-  				'Monaco',
-  				'Consolas',
-  				'Liberation Mono',
-  				'Courier New',
-  				'monospace'
-  			]
+  			sans: ['Outfit', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+  			serif: ['Playfair Display', 'ui-serif', 'Georgia', 'serif']
   		},
   		boxShadow: {
   			'2xs': 'var(--shadow-2xs)',
