@@ -87,7 +87,7 @@ export const produtos: Product[] = [
     ],
     linkEnjoei: "https://www.enjoei.com.br/",
     descricao: "Camisa polo rosa, tecido leve e confortável. Estado de nova, perfeita para looks elegantes.",
-    estado: "Novo",
+    estado: "Seminovo",
   },
   {
     id: 6,
@@ -103,7 +103,7 @@ export const produtos: Product[] = [
     ],
     linkEnjoei: "https://www.enjoei.com.br/",
     descricao: "Camisa oversized branca em algodão, modelagem moderna e descolada. Nova com etiqueta.",
-    estado: "Novo com etiqueta",
+    estado: "Seminovo",
   },
   {
     id: 7,
