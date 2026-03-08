@@ -1,0 +1,144 @@
+import { useEffect, useState, useCallback } from "react";
+import { X, ChevronLeft, ChevronRight, ExternalLink } from "lucide-react";
+import { Product } from "@/data/products";
+
+interface ProductModalProps {
+  product: Product;
+  onClose: () => void;
+}
+
+const ProductModal = ({ product, onClose }: ProductModalProps) => {
+  const [currentPhoto, setCurrentPhoto] = useState(0);
+  const total = product.fotos.length;
+
+  const goTo = useCallback(
+    (dir: number) => {
+      setCurrentPhoto((prev) => {
+        const next = prev + dir;
+        if (next < 0 || next >= total) return prev;
+        return next;
+      });
+    },
+    [total]
+  );
+
+  useEffect(() => {
+    const handler = (e: KeyboardEvent) => {
+      if (e.key === "Escape") onClose();
+      if (e.key === "ArrowLeft") goTo(-1);
+      if (e.key === "ArrowRight") goTo(1);
+    };
+    document.addEventListener("keydown", handler);
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.removeEventListener("keydown", handler);
+      document.body.style.overflow = "";
+    };
+  }, [onClose, goTo]);
+
+  const formatPrice = (price: number) =>
+    price.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
+
+  return (
+    <div className="modal-overlay" onClick={onClose} role="dialog" aria-modal="true" aria-label={product.nome}>
+      <div
+        className="animate-scale-in bg-card rounded-xl max-w-lg w-full mx-4 max-h-[90vh] overflow-y-auto"
+        onClick={(e) => e.stopPropagation()}
+      >
+        {/* Close */}
+        <div className="flex justify-end p-3">
+          <button
+            onClick={onClose}
+            className="p-2 rounded-full hover:bg-secondary transition-colors"
+            aria-label="Fechar"
+          >
+            <X className="w-5 h-5" />
+          </button>
+        </div>
+
+        {/* Gallery */}
+        <div className="relative aspect-[3/4] bg-foreground/5">
+          <img
+            src={product.fotos[currentPhoto]}
+            alt={`${product.nome} - foto ${currentPhoto + 1}`}
+            className="w-full h-full object-contain"
+          />
+
+          {currentPhoto > 0 && (
+            <button
+              onClick={() => goTo(-1)}
+              className="absolute left-2 top-1/2 -translate-y-1/2 p-2 rounded-full bg-card/80 backdrop-blur-sm shadow hover:bg-card transition-colors"
+              aria-label="Foto anterior"
+            >
+              <ChevronLeft className="w-5 h-5" />
+            </button>
+          )}
+          {currentPhoto < total - 1 && (
+            <button
+              onClick={() => goTo(1)}
+              className="absolute right-2 top-1/2 -translate-y-1/2 p-2 rounded-full bg-card/80 backdrop-blur-sm shadow hover:bg-card transition-colors"
+              aria-label="Próxima foto"
+            >
+              <ChevronRight className="w-5 h-5" />
+            </button>
+          )}
+
+          <span className="absolute bottom-3 left-1/2 -translate-x-1/2 text-xs bg-foreground/60 text-primary-foreground px-3 py-1 rounded-full backdrop-blur-sm">
+            {currentPhoto + 1} / {total}
+          </span>
+        </div>
+
+        {/* Thumbnails */}
+        <div className="flex gap-2 px-4 py-3 overflow-x-auto">
+          {product.fotos.map((foto, i) => (
+            <button
+              key={i}
+              onClick={() => setCurrentPhoto(i)}
+              className={`shrink-0 w-16 h-16 rounded-md overflow-hidden border-2 transition-all ${
+                i === currentPhoto
+                  ? "thumbnail-active"
+                  : "border-transparent opacity-60 hover:opacity-100"
+              }`}
+              aria-label={`Ver foto ${i + 1}`}
+            >
+              <img src={foto} alt="" className="w-full h-full object-cover" />
+            </button>
+          ))}
+        </div>
+
+        {/* Info */}
+        <div className="px-5 pb-6 pt-2 space-y-4">
+          <div>
+            <span className="text-xs text-muted-foreground font-body">
+              {product.categoria} · {product.estado}
+            </span>
+            <h2 className="font-display text-2xl font-bold mt-1">{product.nome}</h2>
+            <p className="text-muted-foreground text-sm mt-2 font-body">
+              {product.descricao}
+            </p>
+          </div>
+
+          <div>
+            <span className="text-xs text-muted-foreground font-body">Preço</span>
+            <p className="font-display text-3xl font-bold">{formatPrice(product.preco)}</p>
+          </div>
+
+          <a
+            href={product.linkEnjoei}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="buy-button"
+          >
+            Comprar no Enjoei
+            <ExternalLink className="w-4 h-4" />
+          </a>
+          <p className="text-center text-xs text-muted-foreground font-body">
+            Você será redirecionado para o Enjoei para finalizar a compra com segurança
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ProductModal;
