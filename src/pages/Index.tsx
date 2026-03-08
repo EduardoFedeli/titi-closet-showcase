@@ -36,7 +36,7 @@ const Index = () => {
                 Desapegos do Titi
               </h1>
               <p className="text-sm text-muted-foreground font-body mt-1">
-                Peças únicas com estilo · Entrega em São Paulo - SP
+                Entrega em São Paulo - SP
               </p>
             </div>
             <div className="hidden sm:flex items-center gap-2 text-sm text-muted-foreground font-body shrink-0 mt-2 bg-secondary/50 px-3 py-1.5 rounded-full border border-border">
