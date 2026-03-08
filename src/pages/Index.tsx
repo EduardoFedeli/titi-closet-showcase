@@ -1,5 +1,5 @@
 import { useState, useMemo } from "react";
-import { Search, ShoppingBag } from "lucide-react";
+import { Search, ShoppingBag, Sparkles } from "lucide-react";
 import { produtos, categorias, Product } from "@/data/products";
 import ProductCard from "@/components/ProductCard";
 import ProductModal from "@/components/ProductModal";
@@ -22,19 +22,25 @@ const Index = () => {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Header */}
-      <header className="sticky top-0 z-40 bg-background/95 backdrop-blur-sm border-b border-border">
-        <div className="max-w-6xl mx-auto px-4 py-5">
-          <div className="flex items-start justify-between mb-4">
+      <header className="sticky top-0 z-40 bg-background/95 backdrop-blur-md border-b border-border">
+        <div className="max-w-6xl mx-auto px-4 py-6">
+          <div className="flex items-start justify-between mb-5">
             <div>
-              <h1 className="font-display text-3xl sm:text-4xl font-bold tracking-tight italic">
+              <div className="flex items-center gap-2 mb-1">
+                <Sparkles className="w-4 h-4 text-primary" />
+                <span className="text-[10px] uppercase tracking-[0.3em] text-primary font-body font-medium">
+                  Curadoria pessoal
+                </span>
+              </div>
+              <h1 className="font-display text-3xl sm:text-4xl font-bold tracking-tight italic gold-text">
                 Desapegos do Titi
               </h1>
               <p className="text-sm text-muted-foreground font-body mt-1">
                 Peças únicas com estilo · Entrega em São Paulo - SP
               </p>
             </div>
-            <div className="hidden sm:flex items-center gap-2 text-sm text-muted-foreground font-body shrink-0 mt-2">
-              <ShoppingBag className="w-4 h-4" />
+            <div className="hidden sm:flex items-center gap-2 text-sm text-muted-foreground font-body shrink-0 mt-2 bg-secondary/50 px-3 py-1.5 rounded-full border border-border">
+              <ShoppingBag className="w-4 h-4 text-primary" />
               {filtered.length} {filtered.length === 1 ? "item disponível" : "itens disponíveis"}
             </div>
           </div>
@@ -47,7 +53,7 @@ const Index = () => {
               placeholder="Buscar por nome ou descrição..."
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              className="w-full max-w-md pl-10 pr-4 py-2.5 rounded-lg border border-input bg-card text-foreground placeholder:text-muted-foreground text-sm font-body focus:outline-none focus:ring-2 focus:ring-ring transition-shadow"
+              className="w-full max-w-md pl-10 pr-4 py-2.5 rounded-lg border border-border bg-secondary/50 text-foreground placeholder:text-muted-foreground text-sm font-body focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary/50 transition-all"
             />
           </div>
 
@@ -95,6 +101,7 @@ const Index = () => {
 
       {/* Footer */}
       <footer className="border-t border-border py-8 text-center">
+        <div className="gold-divider max-w-xs mx-auto mb-4" />
         <p className="text-sm text-muted-foreground font-body">
           Vendas pelo Enjoei · Entrega em São Paulo - SP
         </p>
