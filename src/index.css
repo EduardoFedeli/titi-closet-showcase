@@ -94,7 +94,7 @@
 
 @layer components {
   .product-card {
-    @apply bg-card rounded-lg overflow-hidden cursor-pointer transition-all duration-400 ease-out border border-border;
+    @apply bg-card rounded-lg overflow-hidden cursor-pointer transition-all duration-300 ease-out border border-border;
     box-shadow: 0 2px 8px hsl(var(--overlay) / 0.3);
   }
 
