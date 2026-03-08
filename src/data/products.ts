@@ -103,7 +103,7 @@ export const produtos: Product[] = [
     ],
     linkEnjoei: "https://www.enjoei.com.br/",
     descricao: "Camisa oversized branca em algodão, modelagem moderna e descolada. Nova com etiqueta.",
-    estado: "Novo com etiqueta",
+    estado: "Seminovo",
   },
   {
     id: 7,
