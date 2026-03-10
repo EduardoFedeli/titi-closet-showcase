@@ -270,7 +270,7 @@ export const produtos: Product[] = [
   },
   {
     id: 19,
-    nome: "Regata Estonada Skull Grafite",
+    nome: "Camiseta Vermelha Básica",
     preco: 49.0,
     categoria: "Camisas",
     fotos: [
@@ -279,7 +279,7 @@ export const produtos: Product[] = [
       "https://i.imgur.com/f1cn9eU.jpeg",
     ],
     linkEnjoei: "https://www.enjoei.com.br/",
-    descricao: "Regata grafite com lavagem estonada e estampa de caveira (Lone Island). Pegada urbana, alternativa e cheia de personalidade.",
+    descricao: "Camiseta Vermelha Básica para dia a dia",
     estado: "Seminovo",
   },
   {
