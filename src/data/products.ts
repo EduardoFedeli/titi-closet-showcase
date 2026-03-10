@@ -139,7 +139,7 @@ export const produtos: Product[] = [
     fotos: [
       "https://i.imgur.com/kFIy5EO.jpeg",
       "https://i.imgur.com/SOOhrbp.jpeg",
-      "https://i.imgur.com/Ro8kH0v.jpeg",
+      "https://i.imgur.com/Ro8kH0y.jpeg",
     ],
     linkEnjoei: "https://www.enjoei.com.br/",
     descricao: "Camisa casual e confortável, ideal para looks descontraídos.",
