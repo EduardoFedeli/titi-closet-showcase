@@ -18,7 +18,7 @@ export const produtos: Product[] = [
     fotos: [
       "https://i.imgur.com/DVom5pV.jpeg",
       "https://i.imgur.com/d5SS4Gu.jpeg",
-      "https://i.imgur.com/uW0gWI8.jpeg",
+      "https://i.imgur.com/uW0gWl8.jpeg",
       "https://i.imgur.com/QJdKFrg.jpeg",
       "https://i.imgur.com/nni0OYO.png",
     ],
