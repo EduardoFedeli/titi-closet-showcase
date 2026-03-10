@@ -54,7 +54,7 @@ export const produtos: Product[] = [
   },
   {
     id: 4,
-    nome: "Camiseta Marrom Casual",
+    nome: "Camiseta Cinza Básica",
     preco: 50.0,
     categoria: "Camisas",
     fotos: [
@@ -63,7 +63,7 @@ export const produtos: Product[] = [
       "https://i.imgur.com/XQAwK0K.jpeg",
     ],
     linkEnjoei: "https://www.enjoei.com.br/",
-    descricao: "Camiseta em tom terroso marrom, super em alta. Uma peça curinga e versátil para criar sobreposições e looks casuais com facilidade.",
+    descricao: "Camiseta em tom cinza. Uma peça curinga e versátil para criar sobreposições e looks casuais com facilidade.",
     estado: "Seminovo",
   },
   {
@@ -155,7 +155,7 @@ export const produtos: Product[] = [
   },
   {
     id: 11,
-    nome: "Camiseta Branca Oversized",
+    nome: "Camiseta Roxa Streetwear Chaos",
     preco: 58.0,
     categoria: "Camisas",
     fotos: [
@@ -166,7 +166,7 @@ export const produtos: Product[] = [
       "https://i.imgur.com/ARVn2lh.jpeg",
     ],
     linkEnjoei: "https://www.enjoei.com.br/",
-    descricao: "Camiseta branca com modelagem oversized. Traz um caimento amplo e ar moderno ao visual, garantindo máximo conforto e muito estilo.",
+    descricao: "Camiseta roxa com modelagem streetwear. Traz um caimento amplo e ar moderno ao visual, garantindo máximo conforto e muito estilo.",
     estado: "Seminovo",
   },
   {
@@ -199,7 +199,7 @@ export const produtos: Product[] = [
   },
   {
     id: 14,
-    nome: "Regata Cinza Mescla",
+    nome: "Regata Branca Estampada",
     preco: 38.0,
     categoria: "Camisas",
     fotos: [
@@ -208,7 +208,7 @@ export const produtos: Product[] = [
       "https://i.imgur.com/el6Rs4W.jpeg",
     ],
     linkEnjoei: "https://www.enjoei.com.br/",
-    descricao: "Regata cinza mescla super confortável. Básica e essencial para curtir os dias quentes de verão com muita liberdade.",
+    descricao: "Regata Branca super confortável. Básica e essencial para curtir os dias quentes de verão com muita liberdade.",
     estado: "Seminovo",
   },
   {
@@ -299,7 +299,7 @@ export const produtos: Product[] = [
   },
   {
     id: 21,
-    nome: "Camiseta Branca Minimalista",
+    nome: "Regata Estonada Skull Grafite",
     preco: 41.0,
     categoria: "Camisas",
     fotos: [
@@ -308,7 +308,7 @@ export const produtos: Product[] = [
       "https://i.imgur.com/08M6wUj.jpeg",
     ],
     linkEnjoei: "https://www.enjoei.com.br/",
-    descricao: "Camiseta branca com design totalmente clean. A base perfeita para qualquer look minimalista ou para usar sob jaquetas e camisas.",
+    descricao: "Regata grafite com lavagem estonada e estampa de caveira (Lone Island). Pegada urbana, alternativa e cheia de personalidade.",
     estado: "Seminovo",
   },
   {
@@ -371,7 +371,7 @@ export const produtos: Product[] = [
   },
   {
     id: 26,
-    nome: "Camisa Preta O'neill",
+    nome: "Camiseta Preta O'neill",
     preco: 40.0,
     categoria: "Camisas",
     fotos: [
@@ -387,7 +387,7 @@ export const produtos: Product[] = [
   },
   {
     id: 27,
-    nome: "Manga Longa Navy Comfort Fit",
+    nome: "Manga Longa Azul Marinho Comfort",
     preco: 45.0,
     categoria: "Camisas",
     fotos: [
@@ -396,7 +396,7 @@ export const produtos: Product[] = [
       "https://i.imgur.com/kdh3hJ4.jpeg",
     ],
     linkEnjoei: "https://www.enjoei.com.br/",
-    descricao: "Camisa de manga longa na cor navy. A modelagem Comfort Fit assegura liberdade de movimento para um visual alinhado sem esforço.",
+    descricao: "Camisa de manga longa na cor navy. A modelagem Comfort assegura liberdade de movimento para um visual alinhado sem esforço.",
     estado: "Seminovo",
   },
   {
@@ -415,7 +415,7 @@ export const produtos: Product[] = [
   },
   {
     id: 29,
-    nome: "Camiseta Rosa Claro",
+    nome: "Camiseta Palmeiras Azul com Escudo",
     preco: 48.0,
     categoria: "Camisas",
     fotos: [
@@ -424,7 +424,7 @@ export const produtos: Product[] = [
       "https://i.imgur.com/Ro8kH0y.jpeg",
     ],
     linkEnjoei: "https://www.enjoei.com.br/",
-    descricao: "Camiseta em tom rosa claro suave. Cor moderna e delicada que adiciona um toque leve e de muita personalidade ao seu guarda-roupa.",
+    descricao: "Camiseta do Palmeiras na cor azul com destaque para o escudo. Peça diferenciada, perfeita para os palmeirenses que buscam conforto e estilo na hora de torcer.",
     estado: "Seminovo",
   },
   {
