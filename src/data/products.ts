@@ -92,7 +92,7 @@ export const produtos: Product[] = [
     preco: 60.0,
     categoria: "Camisas",
     fotos: [
-      "https://i.imgur.com/bNQMmIR.jpeg",
+      "https://i.imgur.com/bNQMmlR.jpeg",
       "https://i.imgur.com/r10Z7XO.jpeg",
       "https://i.imgur.com/kdh3hJ4.jpeg",
     ],
