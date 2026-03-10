@@ -12,7 +12,7 @@ export interface Product {
 export const produtos: Product[] = [
   {
     id: 1,
-    nome: "Camiseta Branca Estampada",
+    nome: "Camiseta Umbro Athletic Azul",
     preco: 55.0,
     categoria: "Camisas",
     fotos: [
@@ -21,12 +21,12 @@ export const produtos: Product[] = [
       "https://i.imgur.com/tYoJMik.jpeg",
     ],
     linkEnjoei: "https://www.enjoei.com.br/",
-    descricao: "Camiseta branca com estampa moderna. Tecido confortável e design único.",
+    descricao: "Camiseta esportiva da Umbro na cor azul. Tecido leve e respirável, perfeita para treinos ou para um visual casual e despojado.",
     estado: "Seminovo",
   },
   {
     id: 2,
-    nome: "Camiseta Preta Básica Premium",
+    nome: "Camiseta Laranja Panda Street",
     preco: 48.0,
     categoria: "Camisas",
     fotos: [
@@ -35,12 +35,12 @@ export const produtos: Product[] = [
       "https://i.imgur.com/Aen2vGq.jpeg",
     ],
     linkEnjoei: "https://www.enjoei.com.br/",
-    descricao: "Camiseta preta premium, corte moderno. Essencial no guarda-roupa.",
+    descricao: "Camiseta na cor laranja com pegada streetwear autêntica. Modelagem confortável, ideal para dar um ponto de cor no look urbano.",
     estado: "Seminovo",
   },
   {
     id: 3,
-    nome: "Regata Esportiva Azul",
+    nome: "Camiseta Palmeiras Verdão",
     preco: 42.0,
     categoria: "Camisas",
     fotos: [
@@ -49,7 +49,7 @@ export const produtos: Product[] = [
       "https://i.imgur.com/bsMttf6.jpeg",
     ],
     linkEnjoei: "https://www.enjoei.com.br/",
-    descricao: "Regata esportiva azul, tecido respirável. Ideal para atividades físicas.",
+    descricao: "Camiseta oficial para os torcedores do Verdão. Tecido de excelente caimento para acompanhar os jogos ou usar no dia a dia com conforto.",
     estado: "Seminovo",
   },
   {
@@ -63,12 +63,12 @@ export const produtos: Product[] = [
       "https://i.imgur.com/XQAwK0K.jpeg",
     ],
     linkEnjoei: "https://www.enjoei.com.br/",
-    descricao: "Camiseta marrom casual, estilo relaxado. Versátil para diversas ocasiões.",
+    descricao: "Camiseta em tom terroso marrom, super em alta. Uma peça curinga e versátil para criar sobreposições e looks casuais com facilidade.",
     estado: "Seminovo",
   },
   {
     id: 5,
-    nome: "Camiseta Verde Militar",
+    nome: "Camiseta Preta Básica",
     preco: 52.0,
     categoria: "Camisas",
     fotos: [
@@ -77,12 +77,12 @@ export const produtos: Product[] = [
       "https://i.imgur.com/QROEXhi.jpeg",
     ],
     linkEnjoei: "https://www.enjoei.com.br/",
-    descricao: "Camiseta verde militar, estilo urbano. Tecido de qualidade.",
+    descricao: "O item mais essencial do guarda-roupa: camiseta preta lisa. Design clean e versátil que combina com absolutamente tudo.",
     estado: "Seminovo",
   },
   {
     id: 6,
-    nome: "Polo Listrada Azul Marinho",
+    nome: "Classic Camiseta Amarela Hering Sunshine Cotton",
     preco: 68.0,
     categoria: "Camisas",
     fotos: [
@@ -93,12 +93,12 @@ export const produtos: Product[] = [
       "https://i.imgur.com/nni0OYO.png",
     ],
     linkEnjoei: "https://www.enjoei.com.br/",
-    descricao: "Polo listrada azul marinho, elegante e confortável. Perfeita para looks casuais sofisticados.",
+    descricao: "Camiseta clássica Hering amarela em algodão de alta qualidade. Traz um toque de cor vibrante e muito frescor para os dias quentes.",
     estado: "Seminovo",
   },
   {
     id: 7,
-    nome: "Camiseta Bege Minimalista",
+    nome: "Camiseta Preta Básica",
     preco: 45.0,
     categoria: "Camisas",
     fotos: [
@@ -107,12 +107,12 @@ export const produtos: Product[] = [
       "https://i.imgur.com/Cf4tytt.jpeg",
     ],
     linkEnjoei: "https://www.enjoei.com.br/",
-    descricao: "Camiseta bege minimalista, design clean. Combina com tudo.",
+    descricao: "Um verdadeiro clássico indispensável. Modelagem confortável e excelente durabilidade para o uso diário. Nunca sai de moda.",
     estado: "Seminovo",
   },
   {
     id: 8,
-    nome: "Camisa Social Cinza",
+    nome: "Oficial Camisa Brasil CBF Collection",
     preco: 75.0,
     categoria: "Camisas",
     fotos: [
@@ -122,12 +122,12 @@ export const produtos: Product[] = [
       "https://i.imgur.com/iQwUR1o.jpeg",
     ],
     linkEnjoei: "https://www.enjoei.com.br/",
-    descricao: "Camisa social cinza, corte slim. Ideal para eventos formais.",
+    descricao: "Camisa oficial da Seleção Brasileira (CBF). Perfeita para torcer com estilo ou para quem curte aderir à tendência blokecore.",
     estado: "Seminovo",
   },
   {
     id: 9,
-    nome: "Camiseta Listrada Horizontal",
+    nome: "Camiseta Azul Muscles Sports",
     preco: 47.0,
     categoria: "Camisas",
     fotos: [
@@ -136,12 +136,12 @@ export const produtos: Product[] = [
       "https://i.imgur.com/6vauEvh.jpeg",
     ],
     linkEnjoei: "https://www.enjoei.com.br/",
-    descricao: "Camiseta com listras horizontais, estilo náutico. Perfeita para o verão.",
+    descricao: "Camiseta esportiva da linha Muscles Sports. Modelagem focada em performance e liberdade de movimento para academia e esportes.",
     estado: "Seminovo",
   },
   {
     id: 10,
-    nome: "Regata Preta Performance",
+    nome: "Regata Branca Básica Algodão",
     preco: 40.0,
     categoria: "Camisas",
     fotos: [
@@ -150,7 +150,7 @@ export const produtos: Product[] = [
       "https://i.imgur.com/nUBpIGx.jpeg",
     ],
     linkEnjoei: "https://www.enjoei.com.br/",
-    descricao: "Regata preta performance, tecido tecnológico. Ideal para treinos.",
+    descricao: "Regata branca tradicional. Leve, fresca e minimalista, sendo a escolha certeira para enfrentar o calor com praticidade.",
     estado: "Seminovo",
   },
   {
@@ -166,12 +166,12 @@ export const produtos: Product[] = [
       "https://i.imgur.com/ARVn2lh.jpeg",
     ],
     linkEnjoei: "https://www.enjoei.com.br/",
-    descricao: "Camiseta branca oversized, modelagem ampla. Estilo streetwear moderno.",
+    descricao: "Camiseta branca com modelagem oversized. Traz um caimento amplo e ar moderno ao visual, garantindo máximo conforto e muito estilo.",
     estado: "Seminovo",
   },
   {
     id: 12,
-    nome: "Polo Vermelha Clássica",
+    nome: "Camiseta Cinza Wave Dry Fit",
     preco: 62.0,
     categoria: "Camisas",
     fotos: [
@@ -180,12 +180,12 @@ export const produtos: Product[] = [
       "https://i.imgur.com/syXhuw2.jpeg",
     ],
     linkEnjoei: "https://www.enjoei.com.br/",
-    descricao: "Polo vermelha clássica, nunca sai de moda. Qualidade premium.",
+    descricao: "Camiseta cinza em tecido tecnológico Dry Fit. Alta absorção de suor, tornando-se a parceira ideal para corridas e treinos intensos.",
     estado: "Seminovo",
   },
   {
     id: 13,
-    nome: "Camiseta Azul Turquesa",
+    nome: "Camiseta Mizuno Azul Marinho Dry Fit",
     preco: 44.0,
     categoria: "Camisas",
     fotos: [
@@ -194,7 +194,7 @@ export const produtos: Product[] = [
       "https://i.imgur.com/lWVF7Ff.jpeg",
     ],
     linkEnjoei: "https://www.enjoei.com.br/",
-    descricao: "Camiseta azul turquesa vibrante. Cor diferenciada e marcante.",
+    descricao: "Camiseta esportiva Mizuno. Tecido Dry Fit de excelente qualidade que une o visual sóbrio do marinho com alta funcionalidade.",
     estado: "Seminovo",
   },
   {
@@ -208,12 +208,12 @@ export const produtos: Product[] = [
       "https://i.imgur.com/el6Rs4W.jpeg",
     ],
     linkEnjoei: "https://www.enjoei.com.br/",
-    descricao: "Regata cinza mescla, básica e essencial. Conforto garantido.",
+    descricao: "Regata cinza mescla super confortável. Básica e essencial para curtir os dias quentes de verão com muita liberdade.",
     estado: "Seminovo",
   },
   {
     id: 15,
-    nome: "Camiseta Preta Estampada",
+    nome: "Polo Mostarda Golden Texture",
     preco: 53.0,
     categoria: "Camisas",
     fotos: [
@@ -222,12 +222,12 @@ export const produtos: Product[] = [
       "https://i.imgur.com/mcpCti8.jpeg",
     ],
     linkEnjoei: "https://www.enjoei.com.br/",
-    descricao: "Camiseta preta com estampa exclusiva. Design diferenciado.",
+    descricao: "Camisa Polo na elegante cor mostarda com textura diferenciada. Adiciona sofisticação instantânea a qualquer composição casual chic.",
     estado: "Seminovo",
   },
   {
     id: 16,
-    nome: "Polo Azul Celeste",
+    nome: "Camiseta Amarela Diamond",
     preco: 65.0,
     categoria: "Camisas",
     fotos: [
@@ -237,12 +237,12 @@ export const produtos: Product[] = [
       "https://i.imgur.com/4jEpHZs.jpeg",
     ],
     linkEnjoei: "https://www.enjoei.com.br/",
-    descricao: "Polo azul celeste, cor suave e elegante. Perfeita para o dia a dia.",
+    descricao: "Camiseta amarela vibrante com estampa Diamond. Peça com atitude, perfeita para quem gosta de visuais enérgicos e descontraídos.",
     estado: "Seminovo",
   },
   {
     id: 17,
-    nome: "Camiseta Cinza Carvão",
+    nome: "Regata Preta Classic",
     preco: 46.0,
     categoria: "Camisas",
     fotos: [
@@ -251,12 +251,12 @@ export const produtos: Product[] = [
       "https://i.imgur.com/pScdM5s.jpeg",
     ],
     linkEnjoei: "https://www.enjoei.com.br/",
-    descricao: "Camiseta cinza carvão, tom neutro versátil. Combina com tudo.",
+    descricao: "Regata preta lisa e atemporal. Uma peça coringa que transita muito bem entre o uso esportivo e os passeios descontraídos de fim de semana.",
     estado: "Seminovo",
   },
   {
     id: 18,
-    nome: "Regata Branca Fitness",
+    nome: "Regata Cinza Simples Algodão",
     preco: 43.0,
     categoria: "Camisas",
     fotos: [
@@ -265,12 +265,12 @@ export const produtos: Product[] = [
       "https://i.imgur.com/bjfl3s7.jpeg",
     ],
     linkEnjoei: "https://www.enjoei.com.br/",
-    descricao: "Regata branca fitness, tecido dry-fit. Perfeita para academia.",
+    descricao: "Regata cinza básica confeccionada em algodão. O conforto que você procura para relaxar em casa ou curtir atividades ao ar livre.",
     estado: "Seminovo",
   },
   {
     id: 19,
-    nome: "Camiseta Verde Oliva",
+    nome: "Regata Estonada Skull Grafite",
     preco: 49.0,
     categoria: "Camisas",
     fotos: [
@@ -279,12 +279,12 @@ export const produtos: Product[] = [
       "https://i.imgur.com/f1cn9eU.jpeg",
     ],
     linkEnjoei: "https://www.enjoei.com.br/",
-    descricao: "Camiseta verde oliva, tom militar moderno. Estilo urbano.",
+    descricao: "Regata grafite com lavagem estonada e estampa de caveira (Lone Island). Pegada urbana, alternativa e cheia de personalidade.",
     estado: "Seminovo",
   },
   {
     id: 20,
-    nome: "Polo Preta Premium",
+    nome: "Blusa Casual Degradê Marinho",
     preco: 70.0,
     categoria: "Camisas",
     fotos: [
@@ -294,7 +294,7 @@ export const produtos: Product[] = [
       "https://i.imgur.com/Tnn8D4Q.jpeg",
     ],
     linkEnjoei: "https://www.enjoei.com.br/",
-    descricao: "Polo preta premium, qualidade superior. Sofisticação e conforto.",
+    descricao: "Camiseta de manga longa com um elegante padrão de listras em degradê marinho, cinza e bege. Sofisticação e conforto para dias frescos.",
     estado: "Seminovo",
   },
   {
@@ -308,12 +308,12 @@ export const produtos: Product[] = [
       "https://i.imgur.com/08M6wUj.jpeg",
     ],
     linkEnjoei: "https://www.enjoei.com.br/",
-    descricao: "Camiseta branca minimalista, design clean. Essencial no guarda-roupa.",
+    descricao: "Camiseta branca com design totalmente clean. A base perfeita para qualquer look minimalista ou para usar sob jaquetas e camisas.",
     estado: "Seminovo",
   },
   {
     id: 22,
-    nome: "Regata Azul Marinho",
+    nome: "Camiseta Branca Dry Fit",
     preco: 39.0,
     categoria: "Camisas",
     fotos: [
@@ -322,12 +322,12 @@ export const produtos: Product[] = [
       "https://i.imgur.com/1cHXXEG.jpeg",
     ],
     linkEnjoei: "https://www.enjoei.com.br/",
-    descricao: "Regata azul marinho, cor clássica. Versátil e confortável.",
+    descricao: "Camiseta esportiva branca em tecido Dry Fit. Garante frescor, leveza e evaporação rápida do suor durante seus exercícios.",
     estado: "Seminovo",
   },
   {
     id: 23,
-    nome: "Camiseta Cinza Claro",
+    nome: "Camiseta Cinza Performance Dry",
     preco: 44.0,
     categoria: "Camisas",
     fotos: [
@@ -336,12 +336,12 @@ export const produtos: Product[] = [
       "https://i.imgur.com/x9pK7nS.jpeg",
     ],
     linkEnjoei: "https://www.enjoei.com.br/",
-    descricao: "Camiseta cinza claro, tom neutro suave. Combina com qualquer look.",
+    descricao: "Camiseta cinza desenvolvida para alta performance. O tecido dry respirável a torna ideal para treinos de força e cardio.",
     estado: "Seminovo",
   },
   {
     id: 24,
-    nome: "Polo Vinho Elegante",
+    nome: "Elegante Polo Preta Equestrian Zip",
     preco: 72.0,
     categoria: "Camisas",
     fotos: [
@@ -352,12 +352,12 @@ export const produtos: Product[] = [
       "https://i.imgur.com/COn17wl.jpeg",
     ],
     linkEnjoei: "https://www.enjoei.com.br/",
-    descricao: "Polo vinho elegante, cor sofisticada. Perfeita para eventos especiais.",
+    descricao: "Camisa Polo preta premium com fechamento de zíper frontal no lugar dos botões clássicos. Detalhe moderno que eleva qualquer visual.",
     estado: "Seminovo",
   },
   {
     id: 25,
-    nome: "Camiseta Azul Royal",
+    nome: "Camiseta Oversized Marrom Básica",
     preco: 47.0,
     categoria: "Camisas",
     fotos: [
@@ -366,12 +366,12 @@ export const produtos: Product[] = [
       "https://i.imgur.com/POaIPi5.jpeg",
     ],
     linkEnjoei: "https://www.enjoei.com.br/",
-    descricao: "Camiseta azul royal vibrante. Cor marcante e moderna.",
+    descricao: "Camiseta marrom lisa com modelagem oversized. Conforto extremo aliado à estética streetwear contemporânea em um tom terroso lindíssimo.",
     estado: "Seminovo",
   },
   {
     id: 26,
-    nome: "Regata Laranja Esportiva",
+    nome: "Camisa Preta O'neill",
     preco: 40.0,
     categoria: "Camisas",
     fotos: [
@@ -382,12 +382,12 @@ export const produtos: Product[] = [
       "https://i.imgur.com/YMsb1W0.jpeg",
     ],
     linkEnjoei: "https://www.enjoei.com.br/",
-    descricao: "Regata laranja esportiva, cor energizante. Ideal para atividades físicas.",
+    descricao: "Camiseta da clássica marca de surf O'neill. Traz o lifestyle praiano para o dia a dia, mantendo a praticidade da cor preta.",
     estado: "Seminovo",
   },
   {
     id: 27,
-    nome: "Camiseta Verde Água",
+    nome: "Manga Longa Navy Comfort Fit",
     preco: 45.0,
     categoria: "Camisas",
     fotos: [
@@ -396,12 +396,12 @@ export const produtos: Product[] = [
       "https://i.imgur.com/kdh3hJ4.jpeg",
     ],
     linkEnjoei: "https://www.enjoei.com.br/",
-    descricao: "Camiseta verde água refrescante. Cor suave e agradável.",
+    descricao: "Camisa de manga longa na cor navy. A modelagem Comfort Fit assegura liberdade de movimento para um visual alinhado sem esforço.",
     estado: "Seminovo",
   },
   {
     id: 28,
-    nome: "Polo Cinza Médio",
+    nome: "Camiseta Azul Marinho Básica",
     preco: 63.0,
     categoria: "Camisas",
     fotos: [
@@ -410,7 +410,7 @@ export const produtos: Product[] = [
       "https://i.imgur.com/k1eKRx0.jpeg",
     ],
     linkEnjoei: "https://www.enjoei.com.br/",
-    descricao: "Polo cinza médio, cor neutra versátil. Elegância discreta.",
+    descricao: "Camiseta lisa azul marinho. Excelente alternativa ao preto, oferecendo a mesma versatilidade para suas composições casuais.",
     estado: "Seminovo",
   },
   {
@@ -424,12 +424,12 @@ export const produtos: Product[] = [
       "https://i.imgur.com/Ro8kH0y.jpeg",
     ],
     linkEnjoei: "https://www.enjoei.com.br/",
-    descricao: "Camiseta rosa claro suave. Cor delicada e moderna.",
+    descricao: "Camiseta em tom rosa claro suave. Cor moderna e delicada que adiciona um toque leve e de muita personalidade ao seu guarda-roupa.",
     estado: "Seminovo",
   },
   {
     id: 30,
-    nome: "Regata Verde Neon",
+    nome: "Camiseta Polo Rosa Oficial",
     preco: 42.0,
     categoria: "Camisas",
     fotos: [
@@ -440,12 +440,12 @@ export const produtos: Product[] = [
       "https://i.imgur.com/gTZ3bSk.jpeg",
     ],
     linkEnjoei: "https://www.enjoei.com.br/",
-    descricao: "Regata verde neon vibrante, destaque garantido. Perfeita para treinos.",
+    descricao: "Polo clássica na cor rosa. A união perfeita entre a estrutura tradicional da gola polo e uma tonalidade vibrante cheia de atitude.",
     estado: "Seminovo",
   },
   {
     id: 31,
-    nome: "Camiseta Mostarda Urbana",
+    nome: "Regata Azul Marinho Básica",
     preco: 51.0,
     categoria: "Camisas",
     fotos: [
@@ -454,12 +454,12 @@ export const produtos: Product[] = [
       "https://i.imgur.com/yCswWvo.jpeg",
     ],
     linkEnjoei: "https://www.enjoei.com.br/",
-    descricao: "Camiseta mostarda urbana, cor tendência. Estilo moderno.",
+    descricao: "Regata lisa em tom azul marinho. Muito confortável, prática e ideal para quem quer uma opção fresca sem perder a sobriedade.",
     estado: "Seminovo",
   },
   {
     id: 32,
-    nome: "Polo Azul Petróleo",
+    nome: "Camiseta Oversized Off-White Statement THPE",
     preco: 68.0,
     categoria: "Camisas",
     fotos: [
@@ -470,12 +470,12 @@ export const produtos: Product[] = [
       "https://i.imgur.com/tRuV8Z8.jpeg",
     ],
     linkEnjoei: "https://www.enjoei.com.br/",
-    descricao: "Polo azul petróleo sofisticada. Cor diferenciada e elegante.",
+    descricao: "Camiseta off-white oversized com estampa Statement THPE. Caimento pesado e despojado para quem curte um streetwear de respeito.",
     estado: "Seminovo",
   },
   {
     id: 33,
-    nome: "Camiseta Bordô Premium",
+    nome: "Camiseta Manchester City FC",
     preco: 54.0,
     categoria: "Camisas",
     fotos: [
@@ -484,12 +484,12 @@ export const produtos: Product[] = [
       "https://i.imgur.com/qfmizuE.jpeg",
     ],
     linkEnjoei: "https://www.enjoei.com.br/",
-    descricao: "Camiseta bordô premium, cor nobre. Qualidade superior.",
+    descricao: "Camiseta especial para os fãs do Manchester City. Mostre seu apoio aos Citizens vestindo uma peça com muito conforto e estilo.",
     estado: "Seminovo",
   },
   {
     id: 34,
-    nome: "Regata Preta Básica",
+    nome: "Camiseta Real Madrid 24/25",
     preco: 37.0,
     categoria: "Camisas",
     fotos: [
@@ -500,12 +500,12 @@ export const produtos: Product[] = [
       "https://i.imgur.com/rGw6Kke.jpeg",
     ],
     linkEnjoei: "https://www.enjoei.com.br/",
-    descricao: "Regata preta básica essencial. Nunca sai do estilo.",
+    descricao: "Camiseta do Real Madrid (Referência Temporada 24/25). Vista as cores do clube merengue com muito orgulho para os dias de jogo.",
     estado: "Seminovo",
   },
   {
     id: 35,
-    nome: "Camiseta Azul Índigo",
+    nome: "Regata Warriors #30 NBA Edition",
     preco: 46.0,
     categoria: "Camisas",
     fotos: [
@@ -515,12 +515,12 @@ export const produtos: Product[] = [
       "https://i.imgur.com/XurSwqb.jpeg",
     ],
     linkEnjoei: "https://www.enjoei.com.br/",
-    descricao: "Camiseta azul índigo profundo. Cor clássica e atemporal.",
+    descricao: "Regata edição NBA do Golden State Warriors, número 30 (Curry). Item incrível para compor o estilo dos fãs de basquete.",
     estado: "Seminovo",
   },
   {
     id: 36,
-    nome: "Polo Branca Listrada",
+    nome: "Colete Moderno Cinza Urban Tech",
     preco: 64.0,
     categoria: "Camisas",
     fotos: [
@@ -530,12 +530,12 @@ export const produtos: Product[] = [
       "https://i.imgur.com/bC1nkGn.jpeg",
     ],
     linkEnjoei: "https://www.enjoei.com.br/",
-    descricao: "Polo branca com listras delicadas. Elegância e versatilidade.",
+    descricao: "Colete cinza com pegada Urban Tech. Uma terceira peça sensacional que adiciona utilitarismo e uma estética super moderna ao look.",
     estado: "Seminovo",
   },
   {
     id: 37,
-    nome: "Camiseta Cinza Escuro",
+    nome: "Regata Branca Algodão Simples",
     preco: 43.0,
     categoria: "Camisas",
     fotos: [
@@ -544,7 +544,7 @@ export const produtos: Product[] = [
       "https://i.imgur.com/kc4cJrY.jpeg",
     ],
     linkEnjoei: "https://www.enjoei.com.br/",
-    descricao: "Camiseta cinza escuro neutra. Básica e versátil.",
+    descricao: "Regata branca simples confeccionada em algodão. Aquela peça base, leve e super confiável para encarar os dias de sol intenso.",
     estado: "Seminovo",
   },
 ];
