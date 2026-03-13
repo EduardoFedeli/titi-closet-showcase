@@ -4,60 +4,60 @@
 
 @layer base {
   :root {
-    /* PALETA MUTED/SOFT TEAL */
-    --background: 221 216 196;        /* #DDD8C4 Bone */
-    --foreground: 27 38 59;           /* Texto escuro */
+    /* PALETA T-HEX (Convertida para HSL) */
+    --background: 48 22% 82%;      /* Bone #DDD8C4 */
+    --foreground: 219 37% 17%;     /* Texto Escuro #1B263B */
     
-    --card: 255 255 255;              /* Branco puro */
-    --card-foreground: 27 38 59;
+    --card: 0 0% 100%;             /* Branco Puro */
+    --card-foreground: 219 37% 17%;
     
-    --popover: 255 255 255;
-    --popover-foreground: 27 38 59;
+    --popover: 0 0% 100%;
+    --popover-foreground: 219 37% 17%;
     
-    --primary: 80 128 142;            /* #50808E Air Force Blue */
-    --primary-foreground: 255 255 255;
+    --primary: 194 28% 44%;        /* Air Force Blue #50808E */
+    --primary-foreground: 0 0% 100%;
     
-    --secondary: 163 201 168;         /* #A3C9A8 Celadon */
-    --secondary-foreground: 27 38 59;
+    --secondary: 128 28% 71%;      /* Celadon #A3C9A8 */
+    --secondary-foreground: 219 37% 17%;
     
-    --accent: 132 181 159;            /* #84B59F Muted Teal */
-    --accent-foreground: 255 255 255;
+    --accent: 153 25% 61%;         /* Muted Teal #84B59F */
+    --accent-foreground: 0 0% 100%;
     
-    --muted: 241 245 249;
-    --muted-foreground: 100 116 139;
+    --muted: 48 20% 75%;           /* Bone mais escuro para fundos secundários */
+    --muted-foreground: 219 30% 40%;
     
-    --destructive: 220 38 38;
-    --destructive-foreground: 255 255 255;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
     
-    --border: 226 232 240;
-    --input: 226 232 240;
-    --ring: 80 128 142;
+    --border: 48 20% 65%;          /* Bordas combinando com a paleta */
+    --input: 48 20% 65%;
+    --ring: 194 28% 44%;
     
     --radius: 0.75rem;
   }
 
   .dark {
-    --background: 27 38 59;
-    --foreground: 248 250 252;
-    --card: 30 41 59;
-    --card-foreground: 248 250 252;
-    --primary: 163 201 168;
-    --primary-foreground: 27 38 59;
-    --secondary: 80 128 142;
-    --secondary-foreground: 255 255 255;
-    --accent: 132 181 159;
-    --accent-foreground: 255 255 255;
-    --muted: 51 65 85;
-    --muted-foreground: 148 163 184;
-    --border: 51 65 85;
-    --input: 51 65 85;
-    --ring: 163 201 168;
+    --background: 219 37% 17%;
+    --foreground: 48 22% 82%;
+    --card: 220 40% 13%;
+    --card-foreground: 48 22% 82%;
+    --primary: 153 25% 61%;
+    --primary-foreground: 219 37% 17%;
+    --secondary: 194 28% 44%;
+    --secondary-foreground: 0 0% 100%;
+    --accent: 128 28% 71%;
+    --accent-foreground: 219 37% 17%;
+    --muted: 219 30% 25%;
+    --muted-foreground: 48 20% 70%;
+    --border: 219 30% 25%;
+    --input: 219 30% 25%;
+    --ring: 153 25% 61%;
   }
 }
 
 @layer base {
   * { @apply border-border; }
-  body { @apply bg-background text-foreground; }
+  body { @apply bg-background text-foreground; overflow-x: hidden; }
 }
 
 @keyframes fade-in-up {
@@ -70,27 +70,26 @@
   opacity: 0;
 }
 
-/* Custom scrollbar para Firefox */
+/* Custom scrollbar Corrigido para HSL */
 * {
   scrollbar-width: thin;
-  scrollbar-color: rgb(var(--primary)) rgb(var(--muted));
+  scrollbar-color: hsl(var(--primary)) hsl(var(--muted));
 }
 
-/* Custom scrollbar para Chrome/Safari */
 ::-webkit-scrollbar {
   width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: rgb(var(--muted));
+  background: hsl(var(--muted));
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgb(var(--primary));
+  background: hsl(var(--primary));
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(var(--accent));
+  background: hsl(var(--accent));
 }
