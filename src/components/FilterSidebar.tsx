@@ -42,7 +42,7 @@ export default function FilterSidebar({ products, filters, onChange }: FilterSid
     (filters.priceRange[0] !== 0 || filters.priceRange[1] !== 1000 ? 1 : 0);
 
   return (
-    <aside className="w-72 bg-card rounded-xl border p-6 sticky top-24 h-fit">
+     <aside className="w-72 bg-card rounded-xl border p-6 sticky top-24 max-h-[calc(100vh-7rem)] overflow-y-auto">
       <div className="flex items-center justify-between mb-6">
         <h3 className="font-bold text-lg">Filtros</h3>
         {activeCount > 0 && (
