@@ -99,7 +99,7 @@ export const products: Product[] = [
   },
   {
     id: "CAL006",
-    nome: "Calça Jogger Cinza Escuro",
+    nome: "Calça Moletom Cinza Escuro",
     categoria: "Calças",
     marca: "Centauro",
     tamanho: "G (44/46)",
@@ -109,7 +109,7 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/TUMWZj8.png","https://i.imgur.com/mQ9tjtx.jpeg","https://i.imgur.com/1FGkLny.jpeg","https://i.imgur.com/hwU20G2.jpeg"],
-    descricao: "Calça jogger cinza escuro, marca Centauro. Design esportivo com elástico na barra, perfeita para treinos ou look casual. Material leve e respirável. Estado usado, boa conservação. Tamanho G (44/46).",
+    descricao: "Calça Moletom cinza escuro, Sem marca. Design esportivo com elástico na barra, perfeita para look casual. Material leve e respirável. Estado usado, boa conservação. Tamanho G (44/46).",
     linkEnjoei: "#"
   },
   {
