@@ -3,7 +3,7 @@ import { Product } from "@/data/products";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Heart, Eye, ExternalLink } from "lucide-react";
-import { isProductNew, getWhatsAppLink } from "@/lib/utils";
+import { getWhatsAppLink } from "@/lib/utils";
 
 interface ProductCardProps {
   product: Product;
@@ -15,7 +15,6 @@ export default function ProductCard({ product, onClick, index }: ProductCardProp
   const [isFavorite, setIsFavorite] = useState(false);
   const mainImage = product?.fotosImgur?.[0] || "/placeholder.svg";
   const displayPrice = product.precoEnjoei ?? product.preco ?? 0;
-  const isNew = isProductNew(product.dataCadastro);
 
   return (
     <article
@@ -46,16 +45,30 @@ export default function ProductCard({ product, onClick, index }: ProductCardProp
               </div>
             )}
           </div>
-          <Button size="sm" variant="secondary" className="absolute top-3 right-14" onClick={(e) => { e.stopPropagation(); onClick(); }}>
+          
+          {/* FIX: Remover e.stopPropagation para permitir abrir modal */}
+          <Button 
+            size="sm" 
+            variant="secondary" 
+            className="absolute top-3 right-14"
+          >
             <Eye className="w-4 h-4 mr-1" />
             <span className="hidden sm:inline">Ver detalhes</span>
           </Button>
         </div>
 
+        {/* BADGES - SEM "NOVO!" */}
         <div className="absolute top-3 left-3 flex flex-col gap-2">
-          {isNew && <Badge className="bg-green-500 text-white shadow-lg">✨ Novo!</Badge>}
-          {product.isKit && product.desconto && <Badge className="bg-red-500 text-white font-bold shadow-lg">{product.desconto}% OFF</Badge>}
-          {product.precoEnjoei && <Badge variant="secondary" className="shadow-lg">No Enjoei</Badge>}
+          {product.isKit && product.desconto && (
+            <Badge className="bg-red-500/90 text-white font-bold shadow-lg">
+              {product.desconto}% OFF
+            </Badge>
+          )}
+          {product.precoEnjoei && (
+            <Badge className="bg-primary/90 text-white shadow-lg">
+              No Enjoei
+            </Badge>
+          )}
         </div>
 
         <button
