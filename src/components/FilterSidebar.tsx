@@ -35,8 +35,8 @@ export default function FilterSidebar({ products, filters, onChange }: FilterSid
   };
 
   const clearFilters = () => {
-    onChange({ priceRange: [0, 1000], categories: [], estados: [] });
-  };
+  onChange({ priceRange: [0, 1500], categories: [], estados: [] });
+};
 
   const activeCount = filters.categories.length + filters.estados.length + 
     (filters.priceRange[0] !== 0 || filters.priceRange[1] !== 1000 ? 1 : 0);
@@ -58,7 +58,7 @@ export default function FilterSidebar({ products, filters, onChange }: FilterSid
           value={filters.priceRange}
           onValueChange={(val) => onChange({ ...filters, priceRange: [val[0], val[1]] })}
           min={0}
-          max={1000}
+          max={1500} // <-- Mude aqui para 1500
           step={10}
           className="mb-3"
         />
