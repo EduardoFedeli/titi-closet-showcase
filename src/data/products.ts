@@ -607,7 +607,8 @@ export const products: Product[] = [
     precoEnjoei: 50.90,
     status: "Ativo",
     dataCadastro: "11/03",
-    fotosImgur: ["https://i.imgur.com/CSQNqMg.jpeg https://i.imgur.com/9MBJoO1.png https://i.imgur.com/2QP3Je5.jpeg https://i.imgur.com/N3teSy9.jpeg https://i.imgur.com/rGw6Kke.jpeg"],
+    fotosImgur: ["https://i.imgur.com/CSQNqMg.jpeg","https://i.imgur.com/9MBJoO1.png","https://i.imgur.com/2QP3Je5.jpeg","https://i.imgur.com/N3teSy9.jpeg","https://i.imgur.com/rGw6Kke.jpeg"
+],
     descricao: "Camisa oficial Real Madrid branca 2024/2025, marca Adidas. Temporada atual lançamento recente, qualidade oficial. Tecido tecnológico de performance. Estado seminovo, excelente. Tamanho G. Para verdadeiros torcedores."
   },
   {
@@ -691,7 +692,7 @@ export const products: Product[] = [
     precoEnjoei: 149.90,
     status: "Ativo",
     dataCadastro: "11/03",
-    fotosImgur: ["Inclui: CAM004 + CAM005 + CAM006 + CAM007 + CAM008 + CAM010 + CAM011 + CAM012 + CAM013"],
+    fotosImgur: ["https://i.imgur.com/sPDdvxf.jpeg"],
     descricao: "Kit completo com 9 camisetas básicas essenciais marca SSB Brand. Cores versáteis: preta (2x), branca fit, cinza claro, azul marinho, vermelha, regatas preta/branca/mescla/mescla cinza. Todas tamanho M, estado usado/seminovo bem conservado. Renovação completa do guarda-roupa! Economia de 21% comprando o kit. Perfeito para quem busca praticidade e variedade."
 ,
     isKit: true
@@ -709,7 +710,7 @@ export const products: Product[] = [
     precoEnjoei: 65.90,
     status: "Ativo",
     dataCadastro: "11/03",
-    fotosImgur: ["Inclui: CAM036 + CAM037"],
+    fotosImgur: ["https://i.imgur.com/sPDdvxf.jpeg"],
     descricao: "Kit torcedor Palmeiras com 2 camisetas temáticas. Azul raglan com escudo bordado + verde oficial Crefisa. Ambas tamanho M, estado seminovo. Combine e varie nos jogos! Economia de 16% no kit. Ideal para palmeirenses de coração."
 ,
     isKit: true
@@ -727,7 +728,7 @@ export const products: Product[] = [
     precoEnjoei: 275.90,
     status: "Ativo",
     dataCadastro: "11/03",
-    fotosImgur: ["Inclui: JAQ002 + JAQ004"],
+    fotosImgur: ["https://i.imgur.com/sPDdvxf.jpeg"],
     descricao: "Kit inverno premium com 2 jaquetas flanela xadrez Federal Art. Modelo azul/preto com forro + modelo cinza/preto. Ambas tamanho GG, qualidade superior, estado seminovo impecável. Aquecem com estilo! Economia de 15% no combo. Perfeitas para dias frios."
 ,
     isKit: true
