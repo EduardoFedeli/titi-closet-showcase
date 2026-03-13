@@ -4,6 +4,18 @@ import { produtos, categorias, Product } from "@/data/products";
 import ProductCard from "@/components/ProductCard";
 import ProductModal from "@/components/ProductModal";
 
+const categories = [
+  { id: "Todos", label: "Todos" },
+  { id: "Camisas", label: "Camisas" },
+  { id: "Calças", label: "Calças" },
+  { id: "Jaquetas", label: "Jaquetas" },
+  { id: "Shorts", label: "Shorts" },
+  { id: "Tênis", label: "Tênis" },
+  { id: "Kits", label: "Kits 🎁" },
+  { id: "Diversos", label: "Diversos" },
+  { id: "Eletrônicos", label: "Eletrônicos" },
+];
+
 const Index = () => {
   const [search, setSearch] = useState("");
   const [activeCategory, setActiveCategory] = useState("Todos");
@@ -15,7 +27,8 @@ const Index = () => {
       const matchCategory = activeCategory === "Todos" || p.categoria === activeCategory;
       const matchSearch =
         !q || p.nome.toLowerCase().includes(q) || p.descricao.toLowerCase().includes(q);
-      return matchCategory && matchSearch;
+      const isActive = p.status === "Ativo";
+      return matchCategory && matchSearch && isActive;
     });
   }, [search, activeCategory]);
 
@@ -59,17 +72,22 @@ const Index = () => {
 
           {/* Filters */}
           <div className="flex gap-2 flex-wrap">
-            {categorias.map((cat) => (
-              <button
-                key={cat}
-                onClick={() => setActiveCategory(cat)}
-                className={`filter-pill ${
-                  activeCategory === cat ? "filter-pill-active" : "filter-pill-inactive"
-                }`}
-              >
-                {cat}
-              </button>
-            ))}
+            {categories.map((cat) => {
+              const count = produtos.filter(
+                (p) => (cat.id === "Todos" || p.categoria === cat.id) && p.status === "Ativo"
+              ).length;
+              return (
+                <button
+                  key={cat.id}
+                  onClick={() => setActiveCategory(cat.id)}
+                  className={`filter-pill ${
+                    activeCategory === cat.id ? "filter-pill-active" : "filter-pill-inactive"
+                  }`}
+                >
+                  {cat.label} ({count})
+                </button>
+              );
+            })}
           </div>
         </div>
       </header>

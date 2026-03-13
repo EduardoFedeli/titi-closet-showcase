@@ -1,4 +1,5 @@
 import { Product } from "@/data/products";
+import { Badge } from "@/components/ui/badge";
 
 interface ProductCardProps {
   product: Product;
@@ -7,8 +8,7 @@ interface ProductCardProps {
 }
 
 const ProductCard = ({ product, onClick, index }: ProductCardProps) => {
-  const formatPrice = (price: number) =>
-    price.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
+  const displayPrice = product.precoEnjoei || product.preco;
 
   return (
     <article
@@ -22,12 +22,17 @@ const ProductCard = ({ product, onClick, index }: ProductCardProps) => {
     >
       <div className="aspect-[3/4] overflow-hidden relative">
         <img
-          src={product.fotos[0]}
+          src={product.fotosImgur[0]}
           alt={product.nome}
           className="product-card-image"
           loading="lazy"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-card/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+        {product.isKit && product.desconto && (
+          <Badge className="absolute top-2 left-2 bg-destructive text-destructive-foreground font-bold px-3 py-1 shadow-lg text-xs">
+            {product.desconto}% OFF
+          </Badge>
+        )}
       </div>
       <div className="p-4 space-y-2">
         <div className="flex items-start justify-between gap-2">
@@ -43,9 +48,16 @@ const ProductCard = ({ product, onClick, index }: ProductCardProps) => {
         </p>
         <div className="gold-divider my-2" />
         <div className="flex items-center justify-between">
-          <span className="font-display text-xl font-bold gold-text">
-            {formatPrice(product.preco)}
-          </span>
+          <div className="flex items-center gap-2">
+            <span className="font-display text-xl font-bold gold-text">
+              R$ {displayPrice.toFixed(2)}
+            </span>
+            {product.precoEnjoei && product.precoEnjoei !== product.preco && (
+              <span className="text-sm text-muted-foreground line-through font-body">
+                R$ {product.preco.toFixed(2)}
+              </span>
+            )}
+          </div>
           <span className="text-[10px] text-muted-foreground uppercase tracking-[0.2em] font-body">
             {product.categoria}
           </span>

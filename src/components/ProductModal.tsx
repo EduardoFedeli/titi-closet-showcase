@@ -1,6 +1,7 @@
 import { useEffect, useState, useCallback } from "react";
 import { X, ChevronLeft, ChevronRight, ExternalLink } from "lucide-react";
 import { Product } from "@/data/products";
+import { Badge } from "@/components/ui/badge";
 
 interface ProductModalProps {
   product: Product;
@@ -9,7 +10,7 @@ interface ProductModalProps {
 
 const ProductModal = ({ product, onClose }: ProductModalProps) => {
   const [currentPhoto, setCurrentPhoto] = useState(0);
-  const total = product.fotos.length;
+  const total = product.fotosImgur.length;
 
   const goTo = useCallback(
     (dir: number) => {
@@ -36,8 +37,7 @@ const ProductModal = ({ product, onClose }: ProductModalProps) => {
     };
   }, [onClose, goTo]);
 
-  const formatPrice = (price: number) =>
-    price.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
+  const displayPrice = product.precoEnjoei || product.preco;
 
   return (
     <div className="modal-overlay" onClick={onClose} role="dialog" aria-modal="true" aria-label={product.nome}>
@@ -59,10 +59,16 @@ const ProductModal = ({ product, onClose }: ProductModalProps) => {
         {/* Gallery */}
         <div className="relative aspect-[3/4] bg-background/50">
           <img
-            src={product.fotos[currentPhoto]}
+            src={product.fotosImgur[currentPhoto]}
             alt={`${product.nome} - foto ${currentPhoto + 1}`}
             className="w-full h-full object-contain"
           />
+
+          {product.isKit && product.desconto && (
+            <Badge className="absolute top-3 left-3 bg-destructive text-destructive-foreground font-bold px-4 py-1.5 shadow-lg text-sm">
+              {product.desconto}% OFF
+            </Badge>
+          )}
 
           {currentPhoto > 0 && (
             <button
@@ -90,7 +96,7 @@ const ProductModal = ({ product, onClose }: ProductModalProps) => {
 
         {/* Thumbnails */}
         <div className="flex gap-2 px-4 py-3 overflow-x-auto">
-          {product.fotos.map((foto, i) => (
+          {product.fotosImgur.map((foto, i) => (
             <button
               key={i}
               onClick={() => setCurrentPhoto(i)}
@@ -112,27 +118,49 @@ const ProductModal = ({ product, onClose }: ProductModalProps) => {
           <div>
             <span className="text-[10px] uppercase tracking-[0.2em] text-primary font-body font-medium">
               {product.categoria} · {product.estado}
+              {product.marca && product.marca !== "Genérica" ? ` · ${product.marca}` : ""}
             </span>
             <h2 className="font-display text-2xl font-bold mt-1 text-foreground">{product.nome}</h2>
             <p className="text-muted-foreground text-sm mt-2 font-body leading-relaxed">
               {product.descricao}
             </p>
+            {product.produtosInclusos && product.produtosInclusos.length > 0 && (
+              <div className="mt-3 p-3 rounded-lg bg-secondary/50 border border-border">
+                <span className="text-[10px] uppercase tracking-[0.2em] text-primary font-body font-medium">
+                  Incluso no kit:
+                </span>
+                <ul className="mt-1.5 space-y-1">
+                  {product.produtosInclusos.map((item, i) => (
+                    <li key={i} className="text-sm text-muted-foreground font-body">• {item}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </div>
 
           <div>
             <span className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground font-body">Preço</span>
-            <p className="font-display text-3xl font-bold gold-text">{formatPrice(product.preco)}</p>
+            <div className="flex items-center gap-3">
+              <p className="font-display text-3xl font-bold gold-text">R$ {displayPrice.toFixed(2)}</p>
+              {product.precoEnjoei && product.precoEnjoei !== product.preco && (
+                <span className="text-lg text-muted-foreground line-through font-body">
+                  R$ {product.preco.toFixed(2)}
+                </span>
+              )}
+            </div>
           </div>
 
-          <a
-            href={product.linkEnjoei}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="buy-button"
-          >
-            Comprar no Enjoei
-            <ExternalLink className="w-4 h-4" />
-          </a>
+          {product.linkEnjoei && (
+            <a
+              href={product.linkEnjoei}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="buy-button"
+            >
+              Comprar no Enjoei
+              <ExternalLink className="w-4 h-4" />
+            </a>
+          )}
           <p className="text-center text-xs text-muted-foreground font-body">
             Você será redirecionado para o Enjoei para finalizar a compra com segurança
           </p>
