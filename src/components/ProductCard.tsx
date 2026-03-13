@@ -36,7 +36,14 @@ export default function ProductCard({ product, onClick, index }: ProductCardProp
           <div className="absolute bottom-3 left-3 flex gap-2">
             {product.fotosImgur.slice(0, 3).map((foto, i) => (
               <div key={i} className="w-14 h-14 rounded border-2 border-white/80 overflow-hidden">
-                <img src={foto} alt="" className="object-cover w-full h-full" />
+                <img
+          src={mainImage}
+          alt={product.nome}
+          // Trocamos object-cover por object-contain e adicionamos bg-white para preencher o fundo
+          className="object-contain w-full h-full transition-transform duration-500 group-hover:scale-110 bg-white/50"
+          loading="lazy"
+          onError={(e) => { (e.currentTarget as HTMLImageElement).src = "/placeholder.svg"; }}
+        />
               </div>
             ))}
             {product.fotosImgur.length > 3 && (
