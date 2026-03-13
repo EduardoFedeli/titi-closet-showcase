@@ -24,8 +24,6 @@ const ProductCard = ({ product, onClick, index }: ProductCardProps) => {
           alt={product.nome}
           className="product-card-image"
           loading="lazy"
-          src={product.fotosImgur?.[0] || "/placeholder.png"}
-          alt={product.nome}
         />
 
         <div className="absolute inset-0 bg-gradient-to-t from-card/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
