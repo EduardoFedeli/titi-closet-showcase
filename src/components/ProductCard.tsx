@@ -8,10 +8,18 @@ interface ProductCardProps {
 }
 
 const ProductCard = ({ product, onClick, index }: ProductCardProps) => {
+  // Segurança contra erros de imagem
+  const image =
+    product?.fotosImgur && product.fotosImgur.length > 0
+      ? product.fotosImgur[0]
+      : "/placeholder.svg";
+
+  const price = product.precoEnjoei ?? product.preco ?? 0;
+
   return (
     <article
-      className="product-card animate-fade-in-up group"
-      style={{ animationDelay: `${index * 0.08}s` }}
+      className="product-card animate-fade-in-up group cursor-pointer"
+      style={{ animationDelay: `${index * 0.06}s` }}
       onClick={onClick}
       role="button"
       tabIndex={0}
@@ -20,15 +28,17 @@ const ProductCard = ({ product, onClick, index }: ProductCardProps) => {
     >
       <div className="aspect-[3/4] overflow-hidden relative">
         <img
-          src={product.fotosImgur[0]}
+          src={image}
           alt={product.nome}
-          className="product-card-image"
+          className="product-card-image object-cover w-full h-full"
           loading="lazy"
+          onError={(e) => {
+            (e.currentTarget as HTMLImageElement).src = "/placeholder.svg";
+          }}
         />
 
         <div className="absolute inset-0 bg-gradient-to-t from-card/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
-        {/* Badge de desconto para kits */}
         {product.isKit && product.desconto && (
           <Badge className="absolute top-2 left-2 bg-red-500 text-white font-bold px-3 py-1">
             {product.desconto}% OFF
@@ -53,10 +63,9 @@ const ProductCard = ({ product, onClick, index }: ProductCardProps) => {
 
         <div className="gold-divider my-2" />
 
-        {/* Preço */}
         <div className="flex items-center justify-between">
           <span className="text-2xl font-bold text-primary">
-            R$ {(product.precoEnjoei || product.preco).toFixed(2)}
+            R$ {price.toFixed(2)}
           </span>
 
           {product.precoEnjoei && (
