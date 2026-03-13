@@ -12,7 +12,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 export default function Index() {
   const [searchTerm, setSearchTerm] = useState("");
   const [produtoSelecionado, setProdutoSelecionado] = useState(null);
-  const [filters, setFilters] = useState<Filters>({ priceRange: [0, 1000], categories: [], estados: [] });
+  const [filters, setFilters] = useState<Filters>({ priceRange: [0, 1500], categories: [], estados: [] });
   const [currentPage, setCurrentPage] = useState<'home' | 'about'>('home');
 
   const produtosFiltrados = useMemo(() => {
@@ -23,7 +23,10 @@ export default function Index() {
         product.marca.toLowerCase().includes(searchLower) ||
         product.descricao.toLowerCase().includes(searchLower);
 
-      const price = product.precoEnjoei ?? product.preco;
+      // ANTES ESTAVA ASSIM: const price = product.precoEnjoei ?? product.preco;
+      // DEIXE ASSIM:
+      
+      const price = product.preco; 
       const matchesPrice = price >= filters.priceRange[0] && price <= filters.priceRange[1];
       const matchesCategory = filters.categories.length === 0 || filters.categories.includes(product.categoria);
       const matchesEstado = filters.estados.length === 0 || filters.estados.includes(product.estado);
