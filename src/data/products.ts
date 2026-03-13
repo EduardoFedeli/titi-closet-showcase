@@ -969,9 +969,9 @@ export const products: Product[] = [
       "https://i.imgur.com/pSh7qSF.jpeg",
       "https://i.imgur.com/XTZ9UBw.jpeg",
       "https://i.imgur.com/k1eKRx0.jpeg",
-      "https://i.imgur.com/DuOVV7A.jpeg",
-      "https://i.imgur.com/3BOTKFW.jpeg",
-      "https://i.imgur.com/1cHXXEG.jpeg"
+      "https://i.imgur.com/sOV2wKP.jpeg",
+      "https://i.imgur.com/SpRDd1d.jpeg",
+      "https://i.imgur.com/f1cn9eU.jpeg"
     ],
     descricao: "Kit completo com 9 camisetas básicas essenciais marca SSB Brand. Cores versáteis: preta (2x), branca fit, cinza claro, azul marinho, vermelha, regatas preta/branca/mescla/mescla cinza. Todas tamanho M, estado usado/seminovo bem conservado. Renovação completa do guarda-roupa! Economia de 21% comprando o kit. Perfeito para quem busca praticidade e variedade.",
     isKit: true,
