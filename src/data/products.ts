@@ -965,5 +965,5 @@ export const products: Product[] = [
     ],
     descricao: "Tênis Nike Air Max DN azul e branco modelo mais recente. Tecnologia Air Max de última geração, conforto e estilo premium. Design futurista sofisticado. Estado seminovo, excelente conservação. Numeração 40-41. Sneaker de alto valor colecionável.",
     linkEnjoei: "#"
-  }
+  },
 ];
