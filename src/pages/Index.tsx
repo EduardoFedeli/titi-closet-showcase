@@ -4,6 +4,7 @@ import ProductCard from "@/components/ProductCard";
 import ProductModal from "@/components/ProductModal";
 import Header from "@/components/Header";
 import FilterSidebar, { Filters } from "@/components/FilterSidebar";
+import About from "./About";
 import { Filter } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
@@ -12,6 +13,7 @@ export default function Index() {
   const [searchTerm, setSearchTerm] = useState("");
   const [produtoSelecionado, setProdutoSelecionado] = useState(null);
   const [filters, setFilters] = useState<Filters>({ priceRange: [0, 1000], categories: [], estados: [] });
+  const [currentPage, setCurrentPage] = useState<'home' | 'about'>('home');
 
   const produtosFiltrados = useMemo(() => {
     return products.filter((product) => {
@@ -32,9 +34,28 @@ export default function Index() {
 
   const SidebarContent = <FilterSidebar products={products} filters={filters} onChange={setFilters} />;
 
+  if (currentPage === 'about') {
+    return (
+      <div className="min-h-screen bg-background">
+        <Header 
+          searchTerm={searchTerm} 
+          onSearchChange={setSearchTerm}
+          currentPage={currentPage}
+          onNavigate={setCurrentPage}
+        />
+        <About />
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen bg-background">
-      <Header searchTerm={searchTerm} onSearchChange={setSearchTerm} />
+      <Header 
+        searchTerm={searchTerm} 
+        onSearchChange={setSearchTerm}
+        currentPage={currentPage}
+        onNavigate={setCurrentPage}
+      />
       
       <div className="max-w-7xl mx-auto px-4 lg:px-6 py-4">
         <nav className="text-sm text-muted-foreground">
