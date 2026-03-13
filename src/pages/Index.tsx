@@ -1,25 +1,23 @@
-
 import { useState } from "react"
 import { products } from "@/data/products"
 import ProductCard from "@/components/ProductCard"
 import ProductModal from "@/components/ProductModal"
 
-const categorias = [
-  "todos",
-  "camisetas",
-  "calcas",
-  "tenis",
-  "kits"
-]
-
 export default function Index() {
+
   const [categoriaSelecionada, setCategoriaSelecionada] = useState("todos")
   const [produtoSelecionado, setProdutoSelecionado] = useState(null)
 
-  const produtosFiltrados = (products || []).filter((product) => {
-    if (categoriaSelecionada === "todos") return true
-    return product.categoria === categoriaSelecionada
-  })
+  // gerar categorias automaticamente
+  const categorias = [
+    "todos",
+    ...Array.from(new Set(products.map((p) => p.categoria)))
+  ]
+
+  const produtosFiltrados =
+    categoriaSelecionada === "todos"
+      ? products
+      : products.filter((p) => p.categoria === categoriaSelecionada)
 
   return (
     <main className="min-h-screen bg-background text-foreground">
@@ -32,13 +30,13 @@ export default function Index() {
         </p>
       </section>
 
-      {/* FILTRO */}
+      {/* CATEGORIAS */}
       <section className="flex justify-center gap-3 py-6 flex-wrap">
         {categorias.map((cat) => (
           <button
             key={cat}
             onClick={() => setCategoriaSelecionada(cat)}
-            className={`px-4 py-2 rounded-lg border transition
+            className={`px-4 py-2 rounded-lg border transition capitalize
             ${
               categoriaSelecionada === cat
                 ? "bg-primary text-white"
@@ -63,7 +61,7 @@ export default function Index() {
 
           {produtosFiltrados.map((product, index) => (
             <ProductCard
-              key={product.id || index}
+              key={product.id}
               product={product}
               index={index}
               onClick={() => setProdutoSelecionado(product)}
@@ -71,6 +69,7 @@ export default function Index() {
           ))}
 
         </div>
+
       </section>
 
       {/* MODAL */}
@@ -81,8 +80,7 @@ export default function Index() {
           onClose={() => setProdutoSelecionado(null)}
         />
       )}
-      
+
     </main>
   )
 }
-
