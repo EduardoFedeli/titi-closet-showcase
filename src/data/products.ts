@@ -900,7 +900,16 @@ export const products: Product[] = [
     precoEnjoei: 1139.90,
     status: "Ativo",
     dataCadastro: "11/03",
-    fotosImgur: ["https://i.imgur.com/p9S9kZ5.jpeg","https://i.imgur.com/sGAyFc8.jpeg","https://i.imgur.com/hY0bY89.jpeg","https://i.imgur.com/EnuhP7M.jpeg","https://i.imgur.com/s4fB5AV.jpeg","https://i.imgur.com/w1zxcA8.jpeg","https://i.imgur.com/SILCyAj.jpeg"],
-    descricao: "Tênis Nike Air Max DN azul e branco modelo mais recente. Tecnologia Air Max de última geração, conforto e estilo premium. Design futurista sofisticado. Estado seminovo, excelente conservação. Numeração 40-41. Sneaker de alto valor colecionável."
-  }
+    fotosImgur: [
+      "https://i.imgur.com/p9S9kZ5.jpeg",
+      "https://i.imgur.com/sGAyFc8.jpeg",
+      "https://i.imgur.com/hY0bY89.jpeg",
+      "https://i.imgur.com/EnuhP7M.jpeg",
+      "https://i.imgur.com/s4fB5AV.jpeg",
+      "https://i.imgur.com/w1zxcA8.jpeg",
+      "https://i.imgur.com/SILCyAj.jpeg"
+    ],
+    descricao: "Tênis Nike Air Max DN azul e branco modelo mais recente. Tecnologia Air Max de última geração, conforto e estilo premium. Design futurista sofisticado. Estado seminovo, excelente conservação. Numeração 40-41. Sneaker de alto valor colecionável.",
+    linkEnjoei: "#" // <-- Link de teste adicionado aqui!
+  },
 ];
