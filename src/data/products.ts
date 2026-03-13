@@ -446,7 +446,7 @@ export const products: Product[] = [
     id: "CAM022",
     nome: "Polo Laranja Texturizada",
     categoria: "Camisas",
-    marca: "5",
+    marca: "Five Brand",
     tamanho: "M",
     estado: "Seminovo",
     preco: 38.90,
