@@ -71,6 +71,7 @@ export default function About() {
                 Dúvidas? Sugestões? Quer saber se aquela peça ainda está disponível?
               </p>
               
+              <a 
                 href="https://wa.me/5511999999999"
                 target="_blank"
                 rel="noopener noreferrer"
