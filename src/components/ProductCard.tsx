@@ -46,16 +46,19 @@ export default function ProductCard({ product, onClick, index }: ProductCardProp
             )}
           </div>
           
-          {/* FIX: Remover e.stopPropagation para permitir abrir modal */}
+          {/* FIX: Botão agora chama a função onClick e fica sobre o overlay */}
           <Button 
             size="sm" 
             variant="secondary" 
-            className="absolute top-3 right-14"
+            className="absolute top-3 right-14 z-10"
+            onClick={(e) => { 
+              e.stopPropagation(); 
+              onClick(); 
+            }}
           >
             <Eye className="w-4 h-4 mr-1" />
             <span className="hidden sm:inline">Ver detalhes</span>
           </Button>
-        </div>
 
         {/* BADGES - SEM "NOVO!" */}
         <div className="absolute top-3 left-3 flex flex-col gap-2">
