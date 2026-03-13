@@ -2,7 +2,7 @@ import { useEffect, useState, useCallback } from "react";
 import { X, ChevronLeft, ChevronRight, ExternalLink } from "lucide-react";
 import { Product } from "@/data/products";
 import { Badge } from "@/components/ui/badge";
-import { getWhatsAppLink } from "@/lib/utils"; // <-- Importamos a função do WhatsApp aqui!
+import { getWhatsAppLink } from "@/lib/utils";
 
 interface ProductModalProps {
   product: Product;
@@ -120,10 +120,29 @@ const ProductModal = ({ product, onClose }: ProductModalProps) => {
             </p>
           </div>
 
-          {/* SESSÃO DE OPÇÕES DE COMPRA (WPP vs ENJOEI) */}
+          {/* SESSÃO DE OPÇÕES DE COMPRA (INVERTIDA) */}
           <div className="pt-4 border-t border-border space-y-4">
             
-            {/* Opção 1: WhatsApp (Mais Barato) */}
+            {/* Opção 1: Enjoei (Mais Caro - CORES ENJOEI) */}
+            {product.linkEnjoei && product.precoEnjoei && (
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 p-4 rounded-xl border border-border bg-muted/20 shadow-sm">
+                <div>
+                  <span className="text-[10px] uppercase tracking-wider text-muted-foreground font-bold">Comprar pelo Enjoei (com taxas)</span>
+                  <p className="text-xl font-bold text-muted-foreground">R$ {product.precoEnjoei.toFixed(2).replace('.', ',')}</p>
+                </div>
+                <a
+                  href={product.linkEnjoei}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  // Usei cores específicas do Enjoei: Fundo escuro (#60005C) e texto claro (#C5B0FE)
+                  className="flex items-center justify-center gap-2 bg-[#60005C] text-[#C5B0FE] border border-[#C5B0FE]/30 px-5 py-3 rounded-lg font-semibold hover:bg-[#60005C]/80 transition-all w-full sm:w-auto text-sm shadow-md"
+                >
+                  Ir para o Enjoei <ExternalLink className="w-4 h-4" />
+                </a>
+              </div>
+            )}
+
+            {/* Opção 2: WhatsApp (Mais Barato - VERDE) */}
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 bg-secondary/10 p-4 rounded-xl border border-secondary/30">
               <div>
                 <span className="text-[10px] uppercase tracking-wider text-muted-foreground font-bold">Comprar direto comigo</span>
@@ -138,24 +157,6 @@ const ProductModal = ({ product, onClose }: ProductModalProps) => {
                 💬 Comprar no WhatsApp
               </a>
             </div>
-
-            {/* Opção 2: Enjoei (Com Taxas) - Só aparece se houver link do enjoei */}
-            {product.linkEnjoei && product.precoEnjoei && (
-              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 p-4 rounded-xl border border-border bg-muted/20">
-                <div>
-                  <span className="text-[10px] uppercase tracking-wider text-muted-foreground font-bold">Comprar pelo Enjoei (com taxas)</span>
-                  <p className="text-xl font-bold text-muted-foreground">R$ {product.precoEnjoei.toFixed(2).replace('.', ',')}</p>
-                </div>
-                <a
-                  href={product.linkEnjoei}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 bg-background text-foreground border border-border px-5 py-3 rounded-lg font-semibold hover:bg-muted transition-all w-full sm:w-auto text-sm"
-                >
-                  Ir para o Enjoei <ExternalLink className="w-4 h-4" />
-                </a>
-              </div>
-            )}
             
           </div>
         </div>
