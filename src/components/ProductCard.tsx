@@ -19,7 +19,7 @@ export default function ProductCard({ product, onClick, index }: ProductCardProp
   return (
     <article
       className="group bg-card rounded-xl overflow-hidden shadow-sm hover:shadow-xl 
-                 transition-all duration-300 cursor-pointer border hover:border-primary animate-fade-in-up"
+                 transition-all duration-300 cursor-pointer border hover:border-primary animate-fade-in-up flex flex-col h-full"
       style={{ animationDelay: `${index * 0.06}s` }}
       onClick={onClick}
     >
@@ -46,7 +46,6 @@ export default function ProductCard({ product, onClick, index }: ProductCardProp
             )}
           </div>
           
-          {/* FIX: Botão agora chama a função onClick e fica sobre o overlay */}
           <Button 
             size="sm" 
             variant="secondary" 
@@ -59,30 +58,26 @@ export default function ProductCard({ product, onClick, index }: ProductCardProp
             <Eye className="w-4 h-4 mr-1" />
             <span className="hidden sm:inline">Ver detalhes</span>
           </Button>
+        </div>
 
-        {/* BADGES - SEM "NOVO!" */}
+        {/* BADGES - Mantive apenas o de desconto, removi o "No Enjoei" */}
         <div className="absolute top-3 left-3 flex flex-col gap-2">
           {product.isKit && product.desconto && (
             <Badge className="bg-red-500/90 text-white font-bold shadow-lg">
               {product.desconto}% OFF
             </Badge>
           )}
-          {product.precoEnjoei && (
-            <Badge className="bg-primary/90 text-white shadow-lg">
-              No Enjoei
-            </Badge>
-          )}
         </div>
 
         <button
           onClick={(e) => { e.stopPropagation(); setIsFavorite(!isFavorite); }}
-          className="absolute top-3 right-3 p-2 rounded-full bg-white/90 hover:bg-white transition-all opacity-0 group-hover:opacity-100 shadow-lg"
+          className="absolute top-3 right-3 p-2 rounded-full bg-white/90 hover:bg-white transition-all opacity-0 group-hover:opacity-100 shadow-lg z-10"
         >
           <Heart className={`w-5 h-5 ${isFavorite ? 'fill-red-500 text-red-500' : 'text-gray-600'}`} />
         </button>
       </div>
 
-      <div className="p-4 space-y-3">
+      <div className="p-4 space-y-3 flex-1 flex flex-col">
         <div className="flex items-start justify-between gap-2">
           <div className="flex-1 min-w-0">
             <h3 className="font-semibold text-base leading-tight line-clamp-2">{product.nome}</h3>
@@ -90,7 +85,7 @@ export default function ProductCard({ product, onClick, index }: ProductCardProp
           </div>
           <Badge variant="outline" className="shrink-0 text-[10px] uppercase">{product.estado}</Badge>
         </div>
-        <p className="text-sm text-muted-foreground line-clamp-2">{product.descricao}</p>
+        <p className="text-sm text-muted-foreground line-clamp-2 flex-1">{product.descricao}</p>
         <div className="h-px bg-border" />
         <div className="flex items-baseline gap-2">
           <span className="text-2xl font-bold text-primary">R$ {displayPrice.toFixed(2).replace('.', ',')}</span>
