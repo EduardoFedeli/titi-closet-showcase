@@ -34,7 +34,8 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/hiWeJIz.png","https://i.imgur.com/ZGu1pfG.jpeg","https://i.imgur.com/yraRvJM.jpeg","https://i.imgur.com/kqIcdiv.jpeg","https://i.imgur.com/3PHvxV5.jpeg"],
-    descricao: "Calça jogger marrom com ajuste elástico na cintura, marca JDY. Modelo confortável e versátil, ideal para uso casual ou esportivo. Tecido resistente com caimento moderno. Estado seminovo, conservada, sem defeitos. Tamanho G (44/46)."
+    descricao: "Calça jogger marrom com ajuste elástico na cintura, marca JDY. Modelo confortável e versátil, ideal para uso casual ou esportivo. Tecido resistente com caimento moderno. Estado seminovo, conservada, sem defeitos. Tamanho G (44/46).",
+    linkEnjoei: "#"
   },
   {
     id: "CAL002",
@@ -48,7 +49,8 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/Fp0XCl6.png","https://i.imgur.com/oTk0MWE.jpeg","https://i.imgur.com/6T50fqu.jpeg","https://i.imgur.com/qwlSXsT.jpeg"],
-    descricao: "Calça jogger bege com cintura elástica ajustável, marca JDY. Design casual e prático, perfeita para o dia a dia. Tecido confortável e durável. Estado seminovo, bem conservada. Tamanho G (44/46)."
+    descricao: "Calça jogger bege com cintura elástica ajustável, marca JDY. Design casual e prático, perfeita para o dia a dia. Tecido confortável e durável. Estado seminovo, bem conservada. Tamanho G (44/46).",
+    linkEnjoei: "#"
   },
   {
     id: "CAL003",
@@ -62,7 +64,8 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/hj0EEdM.png","https://i.imgur.com/oZEUXc0.jpeg","https://i.imgur.com/FWmOl9f.jpeg","https://i.imgur.com/4WxveDG.jpeg","https://i.imgur.com/AimovT4.jpeg"],
-    descricao: "Calça cargo cinza com múltiplos bolsos utilitários, marca Nicoboco. Estilo urbano funcional, ideal para atividades ao ar livre ou look streetwear. Tecido resistente. Estado usado, bom estado geral. Tamanho 40."
+    descricao: "Calça cargo cinza com múltiplos bolsos utilitários, marca Nicoboco. Estilo urbano funcional, ideal para atividades ao ar livre ou look streetwear. Tecido resistente. Estado usado, bom estado geral. Tamanho 40.",
+    linkEnjoei: "#"
   },
   {
     id: "CAL004",
@@ -76,7 +79,8 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/ezbiiTW.png","https://i.imgur.com/2w6uqIq.jpeg","https://i.imgur.com/6dvw2Fi.jpeg","https://i.imgur.com/xjw8uVb.jpeg"],
-    descricao: "Calça jeans azul clássica, marca Ecko Unltd Oficial. Modelagem tradicional atemporal, versátil para diversas ocasiões. Denim de qualidade com acabamento premium. Estado seminovo, excelente conservação. Tamanho 44."
+    descricao: "Calça jeans azul clássica, marca Ecko Unltd Oficial. Modelagem tradicional atemporal, versátil para diversas ocasiões. Denim de qualidade com acabamento premium. Estado seminovo, excelente conservação. Tamanho 44.",
+    linkEnjoei: "#"
   },
   {
     id: "CAL005",
@@ -90,7 +94,8 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/sAPhul3.png","https://i.imgur.com/GPzewRp.jpeg","https://i.imgur.com/iRieaqD.jpeg"],
-    descricao: "Calça cargo bege com ajuste por cordão na cintura, marca JDY. Modelo utilitário com bolsos funcionais, estilo casual moderno. Tecido resistente e confortável. Estado usado, bem cuidada. Tamanho G (44/46)."
+    descricao: "Calça cargo bege com ajuste por cordão na cintura, marca JDY. Modelo utilitário com bolsos funcionais, estilo casual moderno. Tecido resistente e confortável. Estado usado, bem cuidada. Tamanho G (44/46).",
+    linkEnjoei: "#"
   },
   {
     id: "CAL006",
@@ -104,7 +109,8 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/TUMWZj8.png","https://i.imgur.com/mQ9tjtx.jpeg","https://i.imgur.com/1FGkLny.jpeg","https://i.imgur.com/hwU20G2.jpeg"],
-    descricao: "Calça jogger cinza escuro, marca Centauro. Design esportivo com elástico na barra, perfeita para treinos ou look casual. Material leve e respirável. Estado usado, boa conservação. Tamanho G (44/46)."
+    descricao: "Calça jogger cinza escuro, marca Centauro. Design esportivo com elástico na barra, perfeita para treinos ou look casual. Material leve e respirável. Estado usado, boa conservação. Tamanho G (44/46).",
+    linkEnjoei: "#"
   },
   {
     id: "CAL007",
@@ -118,7 +124,8 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/c1iRJIh.png","https://i.imgur.com/2ePoi1s.jpeg","https://i.imgur.com/3tdToJ4.jpeg","https://i.imgur.com/z6uZaCd.jpeg"],
-    descricao: "Calça cargo preta estilo skate streetwear retro com elástico, marca Shein. Visual urbano moderno com múltiplos bolsos. Acabamento jogger nas barras. Estado usado, bem mantida. Tamanho M (40/42)."
+    descricao: "Calça cargo preta estilo skate streetwear retro com elástico, marca Shein. Visual urbano moderno com múltiplos bolsos. Acabamento jogger nas barras. Estado usado, bem mantida. Tamanho M (40/42).",
+    linkEnjoei: "#"
   },
   {
     id: "CAL008",
@@ -132,7 +139,8 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/uCe0gfq.png","https://i.imgur.com/TkjyI9d.jpeg","https://i.imgur.com/YlSADNQ.jpeg"],
-    descricao: "Calça jeans azul escuro, marca Nicoboco. Lavagem clássica com caimento confortável, ideal para uso diário. Denim de boa qualidade e durabilidade. Estado seminovo, impecável. Tamanho 46."
+    descricao: "Calça jeans azul escuro, marca Nicoboco. Lavagem clássica com caimento confortável, ideal para uso diário. Denim de boa qualidade e durabilidade. Estado seminovo, impecável. Tamanho 46.",
+    linkEnjoei: "#"
   },
   {
     id: "CAL009",
@@ -146,7 +154,8 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/T9KwPBV.jpeg","https://i.imgur.com/QjontZO.jpeg","https://i.imgur.com/cP0bQNp.jpeg"],
-    descricao: "Calça chino verde militar, marca Náutica. Estilo elegante casual, perfeita para looks mais arrumados. Tecido premium com excelente caimento. Estado novo, nunca usada. Tamanho 38."
+    descricao: "Calça chino verde militar, marca Náutica. Estilo elegante casual, perfeita para looks mais arrumados. Tecido premium com excelente caimento. Estado novo, nunca usada. Tamanho 38.",
+    linkEnjoei: "#"
   },
   {
     id: "CAM001",
@@ -160,7 +169,8 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/DVom5pV.jpeg","https://i.imgur.com/d5SS4Gu.jpeg","https://i.imgur.com/uW0gWl8.jpeg","https://i.imgur.com/QJdKFrg.jpeg","https://i.imgur.com/nni0OYO.png"],
-    descricao: "Camiseta amarela básica 100% algodão, marca Hering. Modelagem clássica confortável, perfeita para o dia a dia. Tecido macio de alta qualidade. Estado novo, etiqueta preservada. Tamanho M. Cor vibrante e versátil."
+    descricao: "Camiseta amarela básica 100% algodão, marca Hering. Modelagem clássica confortável, perfeita para o dia a dia. Tecido macio de alta qualidade. Estado novo, etiqueta preservada. Tamanho M. Cor vibrante e versátil.",
+    linkEnjoei: "#"
   },
   {
     id: "CAM002",
@@ -174,7 +184,8 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/RUQPEnc.png","https://i.imgur.com/R6Tjipo.png","https://i.imgur.com/bpkBmaf.jpeg","https://i.imgur.com/DehCLPD.jpeg","https://i.imgur.com/ARVn2lh.jpeg"],
-    descricao: "Camiseta unissex roxa 100% algodão estilo streetwear, marca Shein. Design moderno e confortável, ideal para looks casuais. Tecido respirável de qualidade. Estado novo. Tamanho G. Tom roxo diferenciado."
+    descricao: "Camiseta unissex roxa 100% algodão estilo streetwear, marca Shein. Design moderno e confortável, ideal para looks casuais. Tecido respirável de qualidade. Estado novo. Tamanho G. Tom roxo diferenciado.",
+    linkEnjoei: "#"
   },
   {
     id: "CAM003",
@@ -188,7 +199,8 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/irj5gP2.jpeg","https://i.imgur.com/1pfmd9h.jpeg","https://i.imgur.com/QROEXhi.jpeg"],
-    descricao: "Camiseta preta básica essencial, marca Nexstar. Peça coringa do guarda-roupa, combina com tudo. Modelagem confortável tradicional. Estado usado, bem conservada. Tamanho M. Clássico atemporal."
+    descricao: "Camiseta preta básica essencial, marca Nexstar. Peça coringa do guarda-roupa, combina com tudo. Modelagem confortável tradicional. Estado usado, bem conservada. Tamanho M. Clássico atemporal.",
+    linkEnjoei: "#"
   },
   {
     id: "CAM004",
@@ -202,7 +214,8 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/sPDdvxf.jpeg","https://i.imgur.com/Eha1dHU.jpeg","https://i.imgur.com/Cf4tytt.jpeg"],
-    descricao: "Camiseta preta lisa básica, marca SSB Brand. Essencial versátil para qualquer ocasião. Tecido de algodão confortável. Estado usado, ótima conservação. Tamanho M. Perfeita para compor looks."
+    descricao: "Camiseta preta lisa básica, marca SSB Brand. Essencial versátil para qualquer ocasião. Tecido de algodão confortável. Estado usado, ótima conservação. Tamanho M. Perfeita para compor looks.",
+    linkEnjoei: "#"
   },
   {
     id: "CAM005",
@@ -216,7 +229,8 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/DuOVV7A.jpeg","https://i.imgur.com/3BOTKFW.jpeg","https://i.imgur.com/1cHXXEG.jpeg"],
-    descricao: "Camiseta branca masculina fit slim, marca Shein. Modelagem ajustada moderna e confortável. Tecido de qualidade que valoriza o shape. Estado seminovo, impecável. Tamanho M. Corte contemporâneo elegante."
+    descricao: "Camiseta branca masculina fit slim, marca Shein. Modelagem ajustada moderna e confortável. Tecido de qualidade que valoriza o shape. Estado seminovo, impecável. Tamanho M. Corte contemporâneo elegante.",
+    linkEnjoei: "#"
   },
   {
     id: "CAM006",
@@ -230,7 +244,8 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/KYhUC3x.jpeg","https://i.imgur.com/gddRJos.jpeg","https://i.imgur.com/XQAwK0K.jpeg"],
-    descricao: "Camiseta cinza claro básica lisa, marca SSB Brand. Tom neutro versátil, combina facilmente. Tecido confortável de uso diário. Estado usado, excelente estado. Tamanho M. Peça essencial básica."
+    descricao: "Camiseta cinza claro básica lisa, marca SSB Brand. Tom neutro versátil, combina facilmente. Tecido confortável de uso diário. Estado usado, excelente estado. Tamanho M. Peça essencial básica.",
+    linkEnjoei: "#"
   },
   {
     id: "CAM007",
@@ -244,7 +259,8 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/pSh7qSF.jpeg","https://i.imgur.com/XTZ9UBw.jpeg","https://i.imgur.com/k1eKRx0.jpeg"],
-    descricao: "Camiseta azul marinho básica lisa, marca SSB Brand. Cor clássica elegante para o dia a dia. Algodão macio e durável. Estado usado, bem conservada. Tamanho M. Essencial masculino atemporal."
+    descricao: "Camiseta azul marinho básica lisa, marca SSB Brand. Cor clássica elegante para o dia a dia. Algodão macio e durável. Estado usado, bem conservada. Tamanho M. Essencial masculino atemporal.",
+    linkEnjoei: "#"
   },
   {
     id: "CAM008",
@@ -258,7 +274,8 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/sOV2wKP.jpeg","https://i.imgur.com/SpRDd1d.jpeg","https://i.imgur.com/f1cn9eU.jpeg"],
-    descricao: "Camiseta vermelha básica lisa, marca SSB Brand. Tom vibrante que destaca, versátil para combinar. Tecido de qualidade confortável. Estado usado, ótimo estado. Tamanho M. Adiciona cor ao visual."
+    descricao: "Camiseta vermelha básica lisa, marca SSB Brand. Tom vibrante que destaca, versátil para combinar. Tecido de qualidade confortável. Estado usado, ótimo estado. Tamanho M. Adiciona cor ao visual.",
+    linkEnjoei: "#"
   },
   {
     id: "CAM009",
@@ -272,7 +289,8 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/ITqlUTR.jpeg","https://i.imgur.com/nlAHYNE.jpeg","https://i.imgur.com/POaIPi5.jpeg"],
-    descricao: "Camiseta marrom oversized básica. Modelagem ampla moderna e confortável, estilo streetwear. Tom terra neutro diferenciado. Estado usado, bem mantida. Tamanho M. Caimento oversized atual."
+    descricao: "Camiseta marrom oversized básica. Modelagem ampla moderna e confortável, estilo streetwear. Tom terra neutro diferenciado. Estado usado, bem mantida. Tamanho M. Caimento oversized atual.",
+    linkEnjoei: "#"
   },
   {
     id: "CAM010",
@@ -286,7 +304,8 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/bAHWO29.jpeg","https://i.imgur.com/J89VoLN.jpeg","https://i.imgur.com/pScdM5s.jpeg"],
-    descricao: "Regata preta básica masculina, marca SSB Brand. Ideal para academia, praia ou looks casuais. Tecido leve e confortável. Estado usado, boa conservação. Tamanho M. Essencial para dias quentes."
+    descricao: "Regata preta básica masculina, marca SSB Brand. Ideal para academia, praia ou looks casuais. Tecido leve e confortável. Estado usado, boa conservação. Tamanho M. Essencial para dias quentes.",
+    linkEnjoei: "#"
   },
   {
     id: "CAM011",
@@ -300,7 +319,8 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/un6TloE.png","https://i.imgur.com/MhPMTeO.jpeg","https://i.imgur.com/kc4cJrY.jpeg"],
-    descricao: "Regata branca básica lisa, marca SSB Brand. Versátil para treinos ou verão, essencial masculino. Material leve respirável. Estado usado, bem cuidada. Tamanho M. Clássico funcional."
+    descricao: "Regata branca básica lisa, marca SSB Brand. Versátil para treinos ou verão, essencial masculino. Material leve respirável. Estado usado, bem cuidada. Tamanho M. Clássico funcional.",
+    linkEnjoei: "#"
   },
   {
     id: "CAM012",
@@ -314,7 +334,8 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/6H7qbtq.png","https://i.imgur.com/tMxLmZv.jpeg","https://i.imgur.com/bjfl3s7.jpeg"],
-    descricao: "Regata mescla cinza, marca SSB Brand. Tom neutro moderno, ideal para academia ou casual. Tecido confortável de algodão. Estado usado, conservada. Tamanho M. Visual clean despojado."
+    descricao: "Regata mescla cinza, marca SSB Brand. Tom neutro moderno, ideal para academia ou casual. Tecido confortável de algodão. Estado usado, conservada. Tamanho M. Visual clean despojado.",
+    linkEnjoei: "#"
   },
   {
     id: "CAM013",
@@ -328,7 +349,8 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/QqaNje0.png","https://i.imgur.com/pxKt8MM.jpeg","https://i.imgur.com/nUBpIGx.jpeg"],
-    descricao: "Regata branca mescla básica 100% algodão, marca SSB Brand. Textura diferenciada elegante, versátil para diversas ocasiões. Material de qualidade. Estado usado, ótimo estado. Tamanho M."
+    descricao: "Regata branca mescla básica 100% algodão, marca SSB Brand. Textura diferenciada elegante, versátil para diversas ocasiões. Material de qualidade. Estado usado, ótimo estado. Tamanho M.",
+    linkEnjoei: "#"
   },
   {
     id: "CAM014",
@@ -342,7 +364,8 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/9u8jPVA.jpeg","https://i.imgur.com/LpkorlE.jpeg","https://i.imgur.com/x9pK7nS.jpeg"],
-    descricao: "Camiseta cinza performance dry-fit fit slim, marca Shein. Tecnologia que afasta umidade, ideal para treinos. Tecido respirável de secagem rápida. Estado seminovo, impecável. Tamanho M. Perfeita para esportes."
+    descricao: "Camiseta cinza performance dry-fit fit slim, marca Shein. Tecnologia que afasta umidade, ideal para treinos. Tecido respirável de secagem rápida. Estado seminovo, impecável. Tamanho M. Perfeita para esportes.",
+    linkEnjoei: "#"
   },
   {
     id: "CAM015",
@@ -356,7 +379,8 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/VUuki4N.jpeg","https://i.imgur.com/a7JTDvp.jpeg","https://i.imgur.com/syXhuw2.jpeg"],
-    descricao: "Camiseta cinza fit com estampa ondulada moderna. Design diferenciado que se destaca, modelagem ajustada. Tecido de qualidade confortável. Estado seminovo, excelente. Tamanho M. Visual contemporâneo único."
+    descricao: "Camiseta cinza fit com estampa ondulada moderna. Design diferenciado que se destaca, modelagem ajustada. Tecido de qualidade confortável. Estado seminovo, excelente. Tamanho M. Visual contemporâneo único.",
+    linkEnjoei: "#"
   },
   {
     id: "CAM016",
@@ -370,7 +394,8 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/3Djbm9c.jpeg","https://i.imgur.com/K34ql9d.jpeg","https://i.imgur.com/lWVF7Ff.jpeg"],
-    descricao: "Camiseta azul marinho fit slim, marca Mizuno. Modelagem esportiva ajustada de alto desempenho. Material técnico de qualidade premium. Estado usado, bem conservada. Tamanho M. Design atlético profissional."
+    descricao: "Camiseta azul marinho fit slim, marca Mizuno. Modelagem esportiva ajustada de alto desempenho. Material técnico de qualidade premium. Estado usado, bem conservada. Tamanho M. Design atlético profissional.",
+    linkEnjoei: "#"
   },
   {
     id: "CAM017",
@@ -384,7 +409,8 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/bHEYeGi.jpeg","https://i.imgur.com/HrvfxIk.jpeg","https://i.imgur.com/tYoJMik.jpeg"],
-    descricao: "Camiseta azul Umbro gola V com faixas brancas fit slim. Estilo esportivo elegante, marca tradicional. Tecido de performance confortável. Estado seminovo, ótima conservação. Tamanho M. Visual esportivo refinado."
+    descricao: "Camiseta azul Umbro gola V com faixas brancas fit slim. Estilo esportivo elegante, marca tradicional. Tecido de performance confortável. Estado seminovo, ótima conservação. Tamanho M. Visual esportivo refinado.",
+    linkEnjoei: "#"
   },
   {
     id: "CAM018",
@@ -398,7 +424,8 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/ssvM8rw.jpeg","https://i.imgur.com/cmfkV7J.jpeg","https://i.imgur.com/yCswWvo.jpeg"],
-    descricao: "Regata azul marinho básica com bordado discreto, marca Reserva. Detalhe sofisticado sutil, qualidade premium. Tecido nobre confortável. Estado usado, bem cuidada. Tamanho M. Estilo casual elegante."
+    descricao: "Regata azul marinho básica com bordado discreto, marca Reserva. Detalhe sofisticado sutil, qualidade premium. Tecido nobre confortável. Estado usado, bem cuidada. Tamanho M. Estilo casual elegante.",
+    linkEnjoei: "#"
   },
   {
     id: "CAM019",
@@ -412,7 +439,8 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/bNQMmlR.jpeg","https://i.imgur.com/r10Z7XO.jpeg","https://i.imgur.com/kdh3hJ4.jpeg"],
-    descricao: "Camiseta térmica manga longa azul marinho canelada, marca Lecimar. Segunda pele aquece sem volume, ideal para frio. Tecido elástico confortável. Estado usado, ótimo. Tamanho P. Funcional para inverno."
+    descricao: "Camiseta térmica manga longa azul marinho canelada, marca Lecimar. Segunda pele aquece sem volume, ideal para frio. Tecido elástico confortável. Estado usado, ótimo. Tamanho P. Funcional para inverno.",
+    linkEnjoei: "#"
   },
   {
     id: "CAM020",
@@ -426,7 +454,8 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/p1sabnr.png","https://i.imgur.com/bPdF3Vt.jpeg","https://i.imgur.com/6Z6SPNa.jpeg","https://i.imgur.com/Tnn8D4Q.jpeg"],
-    descricao: "Camiseta manga longa degradê azul cinza, marca MCD. Efeito visual moderno sofisticado, estilo surf urbano. Tecido confortável de qualidade. Estado usado, bem conservada. Tamanho M. Design diferenciado autoral."
+    descricao: "Camiseta manga longa degradê azul cinza, marca MCD. Efeito visual moderno sofisticado, estilo surf urbano. Tecido confortável de qualidade. Estado usado, bem conservada. Tamanho M. Design diferenciado autoral.",
+    linkEnjoei: "#"
   },
   {
     id: "CAM021",
@@ -440,7 +469,8 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/9LagMmI.png","https://i.imgur.com/dUTc3uA.jpeg","https://i.imgur.com/toBAGAW.jpeg","https://i.imgur.com/TIufh85.jpeg","https://i.imgur.com/COn17wl.jpeg"],
-    descricao: "Camiseta polo manga longa preta com gola de zíper retrô, marca Shein. Design vintage diferenciado, elegante casual. Detalhes que destacam. Estado usado, ótima conservação. Tamanho M. Estilo único sofisticado."
+    descricao: "Camiseta polo manga longa preta com gola de zíper retrô, marca Shein. Design vintage diferenciado, elegante casual. Detalhes que destacam. Estado usado, ótima conservação. Tamanho M. Estilo único sofisticado.",
+    linkEnjoei: "#"
   },
   {
     id: "CAM022",
@@ -454,7 +484,8 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/WeE6bwY.jpeg","https://i.imgur.com/LfZvDXn.jpeg","https://i.imgur.com/mcpCti8.jpeg"],
-    descricao: "Polo laranja texturizada, marca 5. Tecido diferenciado com relevo elegante, cor vibrante. Modelagem tradicional confortável. Estado seminovo, impecável. Tamanho M. Visual marcante sofisticado."
+    descricao: "Polo laranja texturizada, marca 5. Tecido diferenciado com relevo elegante, cor vibrante. Modelagem tradicional confortável. Estado seminovo, impecável. Tamanho M. Visual marcante sofisticado.",
+    linkEnjoei: "#"
   },
   {
     id: "CAM023",
@@ -468,7 +499,8 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/O49opIU.png","https://i.imgur.com/XuLPtOz.png","https://i.imgur.com/6PbUrZK.jpeg","https://i.imgur.com/5PoEoX2.jpeg","https://i.imgur.com/gTZ3bSk.jpeg"],
-    descricao: "Camiseta rosa pink com logo pequeno bordado, marca Polo Wear. Cor ousada moderna, qualidade premium. Detalhe discreto elegante. Estado seminovo, excelente. Tamanho M. Tom diferenciado que destaca."
+    descricao: "Camiseta rosa pink com logo pequeno bordado, marca Polo Wear. Cor ousada moderna, qualidade premium. Detalhe discreto elegante. Estado seminovo, excelente. Tamanho M. Tom diferenciado que destaca.",
+    linkEnjoei: "#"
   },
   {
     id: "CAM024",
@@ -482,7 +514,8 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/1g8AaqI.jpeg","https://i.imgur.com/sNHtkNQ.png","https://i.imgur.com/cRzO8wE.jpeg","https://i.imgur.com/MkwMdL2.jpeg","https://i.imgur.com/tRuV8Z8.jpeg"],
-    descricao: "Camiseta off-white oversized com estampa Type, marca THPE Company. Design minimalista contemporâneo, modelagem ampla atual. Tecido premium de qualidade. Estado seminovo, impecável. Tamanho G. Estilo urbano moderno."
+    descricao: "Camiseta off-white oversized com estampa Type, marca THPE Company. Design minimalista contemporâneo, modelagem ampla atual. Tecido premium de qualidade. Estado seminovo, impecável. Tamanho G. Estilo urbano moderno.",
+    linkEnjoei: "#"
   },
   {
     id: "CAM025",
@@ -496,7 +529,8 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/WVYpxU0.png","https://i.imgur.com/UlTCxGM.jpeg","https://i.imgur.com/9Kp10Gx.jpeg"],
-    descricao: "Camiseta branca dry-fit com capuz único. Peça diferenciada funcional, tecnologia que seca rápido. Capuz adiciona estilo proteção. Estado seminovo, ótimo. Tamanho G. Inovadora e prática."
+    descricao: "Camiseta branca dry-fit com capuz único. Peça diferenciada funcional, tecnologia que seca rápido. Capuz adiciona estilo proteção. Estado seminovo, ótimo. Tamanho G. Inovadora e prática.",
+    linkEnjoei: "#"
   },
   {
     id: "CAM026",
@@ -510,7 +544,8 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/hhn90y6.jpeg","https://i.imgur.com/9oFdCpH.jpeg","https://i.imgur.com/ROMU352.jpeg","https://i.imgur.com/bC1nkGn.jpeg"],
-    descricao: "Colete cinza acolchoado com zíper, marca Hering. Peça versátil para meia estação, aquece sem peso. Enchimento de qualidade confortável. Estado novo, etiqueta original. Tamanho M. Coringa do guarda-roupa."
+    descricao: "Colete cinza acolchoado com zíper, marca Hering. Peça versátil para meia estação, aquece sem peso. Enchimento de qualidade confortável. Estado novo, etiqueta original. Tamanho M. Coringa do guarda-roupa.",
+    linkEnjoei: "#"
   },
   {
     id: "CAM027",
@@ -524,7 +559,8 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/H4TSi1w.png","https://i.imgur.com/16eAjcd.png","https://i.imgur.com/PxkCMOX.jpeg","https://i.imgur.com/s8uRilo.jpeg","https://i.imgur.com/YMsb1W0.jpeg"],
-    descricao: "Camiseta preta O'Neill com logo colorido horizontal, marca autêntica de surf. Design icônico reconhecível, estilo californiano. Tecido de qualidade durável. Estado usado, bem conservada. Tamanho G. Marca tradicional cult."
+    descricao: "Camiseta preta O'Neill com logo colorido horizontal, marca autêntica de surf. Design icônico reconhecível, estilo californiano. Tecido de qualidade durável. Estado usado, bem conservada. Tamanho G. Marca tradicional cult.",
+    linkEnjoei: "#"
   },
   {
     id: "CAM028",
@@ -538,7 +574,8 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/gHJkiuP.jpeg","https://i.imgur.com/5wxi5Kr.jpeg","https://i.imgur.com/pwBhuT7.jpeg","https://i.imgur.com/4jEpHZs.jpeg"],
-    descricao: "Camiseta amarela com logo branco minimalista, marca Diamond Supply Co. Brand icônico do skate, design clean sofisticado. Qualidade premium streetwear. Estado seminovo, impecável. Tamanho M. Estilo autêntico diferenciado."
+    descricao: "Camiseta amarela com logo branco minimalista, marca Diamond Supply Co. Brand icônico do skate, design clean sofisticado. Qualidade premium streetwear. Estado seminovo, impecável. Tamanho M. Estilo autêntico diferenciado.",
+    linkEnjoei: "#"
   },
   {
     id: "CAM029",
@@ -552,7 +589,8 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/zlMvUWQ.jpeg","https://i.imgur.com/dtf64ql.jpeg","https://i.imgur.com/Aen2vGq.jpeg"],
-    descricao: "Camiseta laranja com estampa de panda streetwear, marca Elite. Design artístico urbano que chama atenção. Cor vibrante única. Estado seminovo, excelente. Tamanho M. Visual ousado contemporâneo."
+    descricao: "Camiseta laranja com estampa de panda streetwear, marca Elite. Design artístico urbano que chama atenção. Cor vibrante única. Estado seminovo, excelente. Tamanho M. Visual ousado contemporâneo.",
+    linkEnjoei: "#"
   },
   {
     id: "CAM030",
@@ -566,7 +604,8 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/Pb2QqOj.png","https://i.imgur.com/ESHDmpq.jpeg","https://i.imgur.com/el6Rs4W.jpeg"],
-    descricao: "Regata branca Huntington Beach surf vintage 1914, marca Gratto. Estampa retrô californiana nostálgica, estilo surf clássico. Material confortável leve. Estado seminovo, ótimo. Tamanho M. Visual vintage autêntico."
+    descricao: "Regata branca Huntington Beach surf vintage 1914, marca Gratto. Estampa retrô californiana nostálgica, estilo surf clássico. Material confortável leve. Estado seminovo, ótimo. Tamanho M. Visual vintage autêntico.",
+    linkEnjoei: "#"
   },
   {
     id: "CAM031",
@@ -580,7 +619,8 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/ZNO3EFP.jpeg","https://i.imgur.com/NOaMvcX.jpeg","https://i.imgur.com/08M6wUj.jpeg"],
-    descricao: "Regata cinza com estampa de caveira, marca Long Island. Design rock urbano marcante, estilo despojado. Estampa de impacto visual. Estado usado, bem cuidada. Tamanho M. Atitude e personalidade."
+    descricao: "Regata cinza com estampa de caveira, marca Long Island. Design rock urbano marcante, estilo despojado. Estampa de impacto visual. Estado usado, bem cuidada. Tamanho M. Atitude e personalidade.",
+    linkEnjoei: "#"
   },
   {
     id: "CAM032",
@@ -594,7 +634,8 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/DmlWdAY.png","https://i.imgur.com/9w8BLCL.png","https://i.imgur.com/ETf5Hdl.jpeg","https://i.imgur.com/XurSwqb.jpeg"],
-    descricao: "Regata oficial Warriors #30 azul NBA autêntica. Camisa oficial do jogador Stephen Curry, qualidade premium licenciada. Material de jogo profissional. Estado seminovo, impecável. Tamanho G. Item colecionável valioso."
+    descricao: "Regata oficial Warriors #30 azul NBA autêntica. Camisa oficial do jogador Stephen Curry, qualidade premium licenciada. Material de jogo profissional. Estado seminovo, impecável. Tamanho G. Item colecionável valioso.",
+    linkEnjoei: "#"
   },
   {
     id: "CAM033",
@@ -607,9 +648,9 @@ export const products: Product[] = [
     precoEnjoei: 50.90,
     status: "Ativo",
     dataCadastro: "11/03",
-    fotosImgur: ["https://i.imgur.com/CSQNqMg.jpeg","https://i.imgur.com/9MBJoO1.png","https://i.imgur.com/2QP3Je5.jpeg","https://i.imgur.com/N3teSy9.jpeg","https://i.imgur.com/rGw6Kke.jpeg"
-],
-    descricao: "Camisa oficial Real Madrid branca 2024/2025, marca Adidas. Temporada atual lançamento recente, qualidade oficial. Tecido tecnológico de performance. Estado seminovo, excelente. Tamanho G. Para verdadeiros torcedores."
+    fotosImgur: ["https://i.imgur.com/CSQNqMg.jpeg","https://i.imgur.com/9MBJoO1.png","https://i.imgur.com/2QP3Je5.jpeg","https://i.imgur.com/N3teSy9.jpeg","https://i.imgur.com/rGw6Kke.jpeg"],
+    descricao: "Camisa oficial Real Madrid branca 2024/2025, marca Adidas. Temporada atual lançamento recente, qualidade oficial. Tecido tecnológico de performance. Estado seminovo, excelente. Tamanho G. Para verdadeiros torcedores.",
+    linkEnjoei: "#"
   },
   {
     id: "CAM034",
@@ -623,7 +664,8 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/F3sPD8r.jpeg","https://i.imgur.com/ugejC86.jpeg","https://i.imgur.com/TxYh5UJ.jpeg","https://i.imgur.com/iQwUR1o.jpeg"],
-    descricao: "Camisa Brasil original torcedor Pro 2 temporada 22/23 azul, marca Nike. Versão oficial de jogo premium, tecnologia Dri-Fit. Qualidade profissional licenciada. Estado seminovo, impecável. Tamanho M. Peça de colecionador."
+    descricao: "Camisa Brasil original torcedor Pro 2 temporada 22/23 azul, marca Nike. Versão oficial de jogo premium, tecnologia Dri-Fit. Qualidade profissional licenciada. Estado seminovo, impecável. Tamanho M. Peça de colecionador.",
+    linkEnjoei: "#"
   },
   {
     id: "CAM035",
@@ -637,7 +679,8 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/vgCJm4O.jpeg","https://i.imgur.com/0XHe094.jpeg","https://i.imgur.com/qfmizuE.jpeg"],
-    descricao: "Camiseta azul claro Manchester City estilo raglan. Design casual de torcedor, confortável para o dia a dia. Cores oficiais do clube. Estado seminovo, bem conservada. Tamanho M. Para fãs do City."
+    descricao: "Camiseta azul claro Manchester City estilo raglan. Design casual de torcedor, confortável para o dia a dia. Cores oficiais do clube. Estado seminovo, bem conservada. Tamanho M. Para fãs do City.",
+    linkEnjoei: "#"
   },
   {
     id: "CAM036",
@@ -651,7 +694,8 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/kFIy5EO.jpeg","https://i.imgur.com/SOOhrbp.jpeg","https://i.imgur.com/Ro8kH0y.jpeg"],
-    descricao: "Camiseta azul Palmeiras raglan com escudo bordado. Design de torcedor diferenciado, mangas em contraste. Escudo aplicado com qualidade. Estado seminovo, ótimo. Tamanho M. Palmeirense com estilo."
+    descricao: "Camiseta azul Palmeiras raglan com escudo bordado. Design de torcedor diferenciado, mangas em contraste. Escudo aplicado com qualidade. Estado seminovo, ótimo. Tamanho M. Palmeirense com estilo.",
+    linkEnjoei: "#"
   },
   {
     id: "CAM037",
@@ -665,7 +709,8 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/mBwzHf2.png","https://i.imgur.com/SB93vCo.jpeg","https://i.imgur.com/bsMttf6.jpeg"],
-    descricao: "Camiseta verde Palmeiras com patrocinador Crefisa. Cor oficial alviverde, design de torcedor. Material confortável de algodão. Estado seminovo, bem cuidada. Tamanho M. Verdão no coração."
+    descricao: "Camiseta verde Palmeiras com patrocinador Crefisa. Cor oficial alviverde, design de torcedor. Material confortável de algodão. Estado seminovo, bem cuidada. Tamanho M. Verdão no coração.",
+    linkEnjoei: "#"
   },
   {
     id: "CAM038",
@@ -679,7 +724,8 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/Qymit5k.jpeg","https://i.imgur.com/RwmzEmC.jpeg","https://i.imgur.com/6vauEvh.jpeg"],
-    descricao: "Camiseta raglan branca com mangas azuis, marca Scream Athletes. Design esportivo clássico bicolor, confortável e versátil. Tecido de qualidade. Estado usado, bem conservada. Tamanho G. Estilo atlético casual."
+    descricao: "Camiseta raglan branca com mangas azuis, marca Scream Athletes. Design esportivo clássico bicolor, confortável e versátil. Tecido de qualidade. Estado usado, bem conservada. Tamanho G. Estilo atlético casual.",
+    linkEnjoei: "#"
   },
   {
     id: "KIT001",
@@ -693,11 +739,10 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/sPDdvxf.jpeg"],
-    descricao: "Kit completo com 9 camisetas básicas essenciais marca SSB Brand. Cores versáteis: preta (2x), branca fit, cinza claro, azul marinho, vermelha, regatas preta/branca/mescla/mescla cinza. Todas tamanho M, estado usado/seminovo bem conservado. Renovação completa do guarda-roupa! Economia de 21% comprando o kit. Perfeito para quem busca praticidade e variedade."
-,
-    isKit: true
-,
-    desconto: 21
+    descricao: "Kit completo com 9 camisetas básicas essenciais marca SSB Brand. Cores versáteis: preta (2x), branca fit, cinza claro, azul marinho, vermelha, regatas preta/branca/mescla/mescla cinza. Todas tamanho M, estado usado/seminovo bem conservado. Renovação completa do guarda-roupa! Economia de 21% comprando o kit. Perfeito para quem busca praticidade e variedade.",
+    isKit: true,
+    desconto: 21,
+    linkEnjoei: "#"
   },
   {
     id: "KIT002",
@@ -711,11 +756,10 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/sPDdvxf.jpeg"],
-    descricao: "Kit torcedor Palmeiras com 2 camisetas temáticas. Azul raglan com escudo bordado + verde oficial Crefisa. Ambas tamanho M, estado seminovo. Combine e varie nos jogos! Economia de 16% no kit. Ideal para palmeirenses de coração."
-,
-    isKit: true
-,
-    desconto: 16
+    descricao: "Kit torcedor Palmeiras com 2 camisetas temáticas. Azul raglan com escudo bordado + verde oficial Crefisa. Ambas tamanho M, estado seminovo. Combine e varie nos jogos! Economia de 16% no kit. Ideal para palmeirenses de coração.",
+    isKit: true,
+    desconto: 16,
+    linkEnjoei: "#"
   },
   {
     id: "KIT003",
@@ -729,11 +773,10 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/sPDdvxf.jpeg"],
-    descricao: "Kit inverno premium com 2 jaquetas flanela xadrez Federal Art. Modelo azul/preto com forro + modelo cinza/preto. Ambas tamanho GG, qualidade superior, estado seminovo impecável. Aquecem com estilo! Economia de 15% no combo. Perfeitas para dias frios."
-,
-    isKit: true
-,
-    desconto: 15
+    descricao: "Kit inverno premium com 2 jaquetas flanela xadrez Federal Art. Modelo azul/preto com forro + modelo cinza/preto. Ambas tamanho GG, qualidade superior, estado seminovo impecável. Aquecem com estilo! Economia de 15% no combo. Perfeitas para dias frios.",
+    isKit: true,
+    desconto: 15,
+    linkEnjoei: "#"
   },
   {
     id: "DIV001",
@@ -747,7 +790,8 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/qIazgZv.jpeg","https://i.imgur.com/fxmDbRZ.jpeg"],
-    descricao: "Quadro lousa branco para marcador 60x40cm com canetas incluídas, marca Stalo. Ideal para home office, estudos ou lembretes. Superfície lisa que apaga facilmente. Acompanha canetas coloridas. Estado seminovo, bem conservado. Funcional e prático."
+    descricao: "Quadro lousa branco para marcador 60x40cm com canetas incluídas, marca Stalo. Ideal para home office, estudos ou lembretes. Superfície lisa que apaga facilmente. Acompanha canetas coloridas. Estado seminovo, bem conservado. Funcional e prático.",
+    linkEnjoei: "#"
   },
   {
     id: "ELE001",
@@ -761,7 +805,8 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/K0H4Em2.jpeg","https://i.imgur.com/ImaBdwr.jpeg","https://i.imgur.com/8AgkNph.jpeg","https://i.imgur.com/bpPuHpV.jpeg"],
-    descricao: "Ventilador de mesa compacto com umidificador 2 em 1, marca 3 Pao. Refresca e umidifica simultaneamente, ideal para ambientes secos. Tamanho compacto 26x10cm. USB recarregável portátil. Estado seminovo, funcionamento perfeito. Prático para escritório ou quarto."
+    descricao: "Ventilador de mesa compacto com umidificador 2 em 1, marca 3 Pao. Refresca e umidifica simultaneamente, ideal para ambientes secos. Tamanho compacto 26x10cm. USB recarregável portátil. Estado seminovo, funcionamento perfeito. Prático para escritório ou quarto.",
+    linkEnjoei: "#"
   },
   {
     id: "JAQ001",
@@ -775,7 +820,8 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/194WPec.jpeg","https://i.imgur.com/Kog7lYI.jpeg","https://i.imgur.com/1jsYDAE.jpeg","https://i.imgur.com/M1LRJOE.jpeg"],
-    descricao: "Jaqueta colete xadrez azul com capuz removível. Design versátil para meia estação, estampa clássica atemporal. Bolsos funcionais práticos. Estado usado, bem cuidada. Tamanho M. Estilo casual urbano."
+    descricao: "Jaqueta colete xadrez azul com capuz removível. Design versátil para meia estação, estampa clássica atemporal. Bolsos funcionais práticos. Estado usado, bem cuidada. Tamanho M. Estilo casual urbano.",
+    linkEnjoei: "#"
   },
   {
     id: "JAQ002",
@@ -789,7 +835,8 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/OP2EoFa.jpeg","https://i.imgur.com/DFFJ5Kr.jpeg","https://i.imgur.com/G7k1Qxp.jpeg","https://i.imgur.com/uy4ymC1.jpeg","https://i.imgur.com/6xssScc.jpeg","https://i.imgur.com/T8UTvGy.jpeg"],
-    descricao: "Jaqueta flanela xadrez azul e preta com forro interno, marca Federal Art. Aquecimento premium com estilo lenhador, qualidade superior. Botões reforçados acabamento impecável. Estado seminovo, excelente. Tamanho GG. Peça de inverno essencial."
+    descricao: "Jaqueta flanela xadrez azul e preta com forro interno, marca Federal Art. Aquecimento premium com estilo lenhador, qualidade superior. Botões reforçados acabamento impecável. Estado seminovo, excelente. Tamanho GG. Peça de inverno essencial.",
+    linkEnjoei: "#"
   },
   {
     id: "JAQ003",
@@ -803,7 +850,8 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/G8n9doE.jpeg","https://i.imgur.com/1J9uB3q.jpeg","https://i.imgur.com/jIFXBji.jpeg","https://i.imgur.com/utpx7Ct.jpeg"],
-    descricao: "Jaqueta moletom cinza com estampa vintage de Kombi. Design retrô nostálgico único, confortável e quentinha. Capuz ajustável bolsos canguru. Estado usado, boa conservação. Tamanho G. Estilo descolado autêntico."
+    descricao: "Jaqueta moletom cinza com estampa vintage de Kombi. Design retrô nostálgico único, confortável e quentinha. Capuz ajustável bolsos canguru. Estado usado, boa conservação. Tamanho G. Estilo descolado autêntico.",
+    linkEnjoei: "#"
   },
   {
     id: "JAQ004",
@@ -817,7 +865,8 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/XQMcONH.jpeg","https://i.imgur.com/mc6Nucg.jpeg","https://i.imgur.com/mwkykih.jpeg","https://i.imgur.com/L0CNigu.jpeg"],
-    descricao: "Jaqueta flanela xadrez cinza e preta premium, marca Federal Art. Modelo similar à azul, qualidade idêntica superior. Forro interno aquecido confortável. Estado seminovo, impecável. Tamanho GG. Excelente para frio intenso."
+    descricao: "Jaqueta flanela xadrez cinza e preta premium, marca Federal Art. Modelo similar à azul, qualidade idêntica superior. Forro interno aquecido confortável. Estado seminovo, impecável. Tamanho GG. Excelente para frio intenso.",
+    linkEnjoei: "#"
   },
   {
     id: "JAQ005",
@@ -831,7 +880,8 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/QQyzcfD.jpeg","https://i.imgur.com/MNY1lkO.jpeg","https://i.imgur.com/dmhN8sU.jpeg","https://i.imgur.com/spie3v7.jpeg"],
-    descricao: "Jaqueta moletom azul com listras horizontais, marca QuickSilver. Brand tradicional de surf, design esportivo elegante. Zíper frontal capuz ajustável. Estado usado, bem conservada. Tamanho G. Estilo surf urbano autêntico."
+    descricao: "Jaqueta moletom azul com listras horizontais, marca QuickSilver. Brand tradicional de surf, design esportivo elegante. Zíper frontal capuz ajustável. Estado usado, bem conservada. Tamanho G. Estilo surf urbano autêntico.",
+    linkEnjoei: "#"
   },
   {
     id: "SHO001",
@@ -845,7 +895,8 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/Xkqjn5x.jpeg","https://i.imgur.com/ALWAVit.jpeg","https://i.imgur.com/LBEgaiP.jpeg"],
-    descricao: "Bermuda de praia azul com estampa geométrica moderna. Design vibrante diferenciado, secagem rápida. Bolsos funcionais cordão ajustável. Estado seminovo, ótimo. Tamanho M. Perfeita para verão e piscina."
+    descricao: "Bermuda de praia azul com estampa geométrica moderna. Design vibrante diferenciado, secagem rápida. Bolsos funcionais cordão ajustável. Estado seminovo, ótimo. Tamanho M. Perfeita para verão e piscina.",
+    linkEnjoei: "#"
   },
   {
     id: "SHO002",
@@ -859,7 +910,8 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/CP6gTpB.jpeg","https://i.imgur.com/TTGfaA1.jpeg"],
-    descricao: "Bermuda branca dry-fit com recorte em mesh respirável, marca Get Over. Tecnologia esportiva de alta performance, ventilação estratégica. Leve e confortável. Estado usado, bem cuidada. Tamanho P. Ideal para treinos intensos."
+    descricao: "Bermuda branca dry-fit com recorte em mesh respirável, marca Get Over. Tecnologia esportiva de alta performance, ventilação estratégica. Leve e confortável. Estado usado, bem cuidada. Tamanho P. Ideal para treinos intensos.",
+    linkEnjoei: "#"
   },
   {
     id: "SHO003",
@@ -873,7 +925,8 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/3MLyagW.jpeg","https://i.imgur.com/0QSjw5N.jpeg","https://i.imgur.com/NuqqyIx.jpeg"],
-    descricao: "Bermuda cáqui cargo com bolsos laterais, marca Hugo Boss. Grife premium qualidade superior, estilo sofisticado casual. Tecido nobre resistente. Estado seminovo, impecável. Tamanho 42. Elegância e funcionalidade."
+    descricao: "Bermuda cáqui cargo com bolsos laterais, marca Hugo Boss. Grife premium qualidade superior, estilo sofisticado casual. Tecido nobre resistente. Estado seminovo, impecável. Tamanho 42. Elegância e funcionalidade.",
+    linkEnjoei: "#"
   },
   {
     id: "TEN001",
@@ -887,7 +940,8 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: ["https://i.imgur.com/L8D5Qt7.jpeg","https://i.imgur.com/vTptqYX.jpeg","https://i.imgur.com/44g4dje.jpeg","https://i.imgur.com/DtmDmaP.jpeg","https://i.imgur.com/fRGHsl3.jpeg","https://i.imgur.com/tBhqK3D.jpeg"],
-    descricao: "Tênis amarelo suede cano médio estilo skate, marca XXL. Cor vibrante que chama atenção, material nobre de qualidade. Palmilha confortável sola reforçada. Estado seminovo, pouco uso. Numeração 40-41. Visual ousado diferenciado."
+    descricao: "Tênis amarelo suede cano médio estilo skate, marca XXL. Cor vibrante que chama atenção, material nobre de qualidade. Palmilha confortável sola reforçada. Estado seminovo, pouco uso. Numeração 40-41. Visual ousado diferenciado.",
+    linkEnjoei: "#"
   },
   {
     id: "TEN002",
@@ -910,6 +964,6 @@ export const products: Product[] = [
       "https://i.imgur.com/SILCyAj.jpeg"
     ],
     descricao: "Tênis Nike Air Max DN azul e branco modelo mais recente. Tecnologia Air Max de última geração, conforto e estilo premium. Design futurista sofisticado. Estado seminovo, excelente conservação. Numeração 40-41. Sneaker de alto valor colecionável.",
-    linkEnjoei: "#" // <-- Link de teste adicionado aqui!
-  },
+    linkEnjoei: "#"
+  }
 ];
