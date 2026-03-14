@@ -946,9 +946,9 @@ export const products: Product[] = [
   },
   {
     id: "KIT001",
-    nome: "Kit SSB Basics - 9 Camisetas Básicas",
+    nome: "Kit 5 Camisetas Básicas",
     categoria: "Kits",
-    marca: "SSB Brand",
+    marca: "SSB Brand e Nexstar",
     tamanho: "M",
     estado: "Usado",
     preco: 129.90,
