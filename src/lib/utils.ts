@@ -25,7 +25,7 @@ export function getWhatsAppLink(productName: string): string {
   const phoneNumber = "5511996923876"; 
   
   // 2. A MENSAGEM DINÂMICA (O ${productName} vai ser substituído automaticamente!)
-  const message = `Fala, T-Hex! 🦖 Vi o produto *${productName}* na sua Garage e tenho interesse. Ainda está disponível?`;
+  const message = `Fala, T-Hex! Vi o produto *${productName}* na sua Garage e tenho interesse. Ainda está disponível?`;
   
   // 3. CODIFICAÇÃO (Transforma os espaços em %20 para o link do WhatsApp não quebrar)
   const encodedMessage = encodeURIComponent(message);
