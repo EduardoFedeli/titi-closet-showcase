@@ -1659,7 +1659,7 @@ export const products: Product[] = [
     categoria: "Livros",
     marca: "Sem Marca",
     tamanho: "Único",
-    estado: "Usado",
+    estado: "Seminovo",
     preco: 70.30,
     precoEnjoei: 80.90,
     status: "Ativo",
