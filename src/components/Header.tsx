@@ -12,63 +12,81 @@ export default function Header({ searchTerm, onSearchChange, currentPage = 'home
   return (
     <header className="sticky top-0 z-50 bg-card/95 backdrop-blur-sm border-b shadow-sm">
       <div className="max-w-7xl mx-auto px-4 lg:px-6 py-4">
-        {/* Container Principal: Em col no mobile, em grid no desktop */}
-        <div className="flex flex-col lg:grid lg:grid-cols-[1fr,auto,1fr] lg:items-center gap-4 lg:gap-6">
+        
+        {/* Container: Em col no celular, alinhado horizontalmente no desktop */}
+        <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
           
-          {/* LADO ESQUERDO: LOGO + TEXTO (O look que você ama) */}
-          <div 
-            className="flex items-center gap-3 shrink-0 cursor-pointer transition-transform lg:active:scale-95 lg:hover:scale-[1.02] justify-center lg:justify-start"
-            onClick={() => onNavigate?.('home')}
-          >
-            {/* O Container Largo e Arredondado do Dinossauro */}
-            <div className="bg-muted/10 rounded-xl px-4 py-2 flex items-center justify-center w-28 h-16 shadow-inner">
+          {/* LADO ESQUERDO: BRANDING EXATAMENTE COMO NA IMAGEM */}
+          <div className="flex items-center justify-between w-full lg:w-auto">
+            <div 
+              className="flex items-center gap-3 cursor-pointer transition-transform hover:scale-[1.02]"
+              onClick={() => onNavigate?.('home')}
+            >
               <img 
                 src="/Logo.jpg" 
                 alt="Logo T-Hex Garage" 
-                className="h-10 lg:h-12 w-auto object-contain" 
+                className="h-12 w-auto object-contain rounded-md" 
               />
+              <div className="flex flex-col justify-center">
+                <h1 className="font-bold text-xl text-primary leading-tight">
+                  T-Hex Garage
+                </h1>
+                <p className="text-sm font-medium text-muted-foreground leading-tight">
+                  Desapegos sustentáveis
+                </p>
+              </div>
             </div>
-            
-            {/* O Texto: Nome e Slogan empilhados */}
-            <div className="flex flex-col justify-center text-left">
-              <h1 className="font-bold text-lg lg:text-xl text-primary leading-none">T-Hex Garage</h1>
-              <p className="text-[10px] lg:text-xs text-muted-foreground mt-0.5 uppercase tracking-wider font-medium">
-                Desapegos Sustentáveis
-              </p>
-            </div>
+
+            {/* Ícones de Navegação no Mobile (Ficam na mesma linha da logo) */}
+            <nav className="flex items-center gap-2 lg:hidden">
+              <button
+                onClick={() => onNavigate?.('home')}
+                className={`p-2 rounded-full text-sm font-medium transition-colors ${
+                  currentPage === 'home' ? 'bg-primary/10 text-primary' : 'text-muted-foreground'
+                }`}
+              >
+                <Home className="w-5 h-5" />
+              </button>
+              <button
+                onClick={() => onNavigate?.('about')}
+                className={`p-2 rounded-full text-sm font-medium transition-colors ${
+                  currentPage === 'about' ? 'bg-primary/10 text-primary' : 'text-muted-foreground'
+                }`}
+              >
+                <Info className="w-5 h-5" />
+              </button>
+            </nav>
           </div>
 
-          {/* CENTRO (Grid col 2): BARRA DE BUSCA (Ajustada para o desktop) */}
-          <div className="flex-1 max-w-2xl w-full lg:mx-auto">
+          {/* CENTRO: BARRA DE BUSCA (Fica ao lado no desktop) */}
+          <div className="flex-1 w-full lg:max-w-xl lg:mx-6">
             <SearchBar value={searchTerm} onChange={onSearchChange} />
           </div>
 
-          {/* LADO DIREITO (Grid col 3): NAVEGAÇÃO */}
-          <nav className="flex items-center gap-1 lg:gap-4 absolute top-3 right-4 lg:static">
+          {/* LADO DIREITO: NAVEGAÇÃO DESKTOP */}
+          <nav className="hidden lg:flex items-center gap-6">
             <button
               onClick={() => onNavigate?.('home')}
-              className={`flex items-center gap-2 p-2 lg:px-3 lg:py-2 rounded-lg text-sm font-medium transition-all ${
+              className={`text-sm font-medium transition-colors pb-1 ${
                 currentPage === 'home' 
-                  ? 'bg-primary/10 text-primary' 
-                  : 'text-muted-foreground hover:bg-muted'
+                  ? 'text-primary border-b-2 border-primary' 
+                  : 'text-muted-foreground hover:text-foreground'
               }`}
             >
-              <Home className="w-5 h-5" />
-              <span className="hidden lg:inline">Início</span>
+              Início
             </button>
-            
             <button
               onClick={() => onNavigate?.('about')}
-              className={`flex items-center gap-2 p-2 lg:px-3 lg:py-2 rounded-lg text-sm font-medium transition-all ${
+              className={`text-sm font-medium transition-colors pb-1 ${
                 currentPage === 'about' 
-                  ? 'bg-primary/10 text-primary' 
-                  : 'text-muted-foreground hover:bg-muted'
+                  ? 'text-primary border-b-2 border-primary' 
+                  : 'text-muted-foreground hover:text-foreground'
               }`}
             >
-              <Info className="w-5 h-5" />
-              <span className="hidden lg:inline">Sobre</span>
+              Sobre
             </button>
           </nav>
+
         </div>
       </div>
     </header>
