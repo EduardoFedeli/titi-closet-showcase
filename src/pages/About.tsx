@@ -79,13 +79,19 @@ export default function About() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-primary mb-4">Negociação e Entregas (Somente SP)</h2>
-              <p className="mb-4">
-                Aqui o papo é reto! Eu <strong>estou super aberto a negociações</strong>. Viu uma peça que você amou mas o orçamento apertou? Me chame no WhatsApp e vamos conversar para fechar um valor que fique bom para nós dois!
-              </p>
-              <p className="mb-4">
-                <strong>Atenção à Logística:</strong> No momento, por questões operacionais, a entrega dos produtos é realizada <strong>exclusivamente para a região de São Paulo</strong>. Nós podemos combinar a entrega via aplicativos (como Uber Entregas, Lalamove, etc.) ou marcar um encontro presencial em locais seguros, como estações de metrô.
-              </p>
+                  <h2 className="text-2xl font-bold text-primary mb-4">Negociação e Entregas</h2>
+                  <p className="mb-4">
+                    Aqui o papo é reto! Eu <strong>estou super aberto a negociações</strong>. Viu uma peça que amou mas o orçamento apertou? Me chame no WhatsApp e vamos conversar.
+                  </p>
+                  
+                  <div className="space-y-4 bg-muted/20 p-4 rounded-xl border border-border">
+                    <p className="text-sm">
+                      <strong>🚚 Para todo o Brasil:</strong> Compre direto pelo meu link do <strong>Enjoei</strong>. Lá a logística é automática e você recebe em casa com seguro e frete reduzido em qualquer estado.
+                    </p>
+                    <p className="text-sm">
+                      <strong>🤝 Para São Paulo (Capital):</strong> Se preferir negociar direto pelo <strong>WhatsApp</strong> (com aquele desconto especial), a entrega é feita exclusivamente na região de SP via aplicativos de entrega ou encontros em locais seguros, como estações de metrô.
+                    </p>
+                  </div>
             </section>
             
             {/* SEÇÃO DO FORMS PARA O SAAS */}
