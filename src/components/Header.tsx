@@ -12,10 +12,20 @@ export default function Header({ searchTerm, onSearchChange, currentPage = 'home
     <header className="sticky top-0 z-50 bg-card/95 backdrop-blur-sm border-b shadow-sm">
       <div className="max-w-7xl mx-auto px-4 lg:px-6 py-4">
         <div className="flex items-center gap-4 lg:gap-6">
-          <div className="flex items-center gap-3 shrink-0">
-            <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-              <span className="text-2xl">🦖</span>
-            </div>
+          
+          {/* ÁREA DA LOGO */}
+          <div 
+            className="flex items-center gap-3 shrink-0 cursor-pointer transition-transform hover:scale-[1.02]"
+            onClick={() => onNavigate?.('home')}
+            title="Ir para o Início"
+          >
+            {/* A imagem da logo referenciando a pasta public */}
+            <img 
+              src="/public/Logo.jpg" // SE SUA LOGO FOR JPG OU SVG, MUDE A EXTENSÃO AQUI (ex: /logo.svg)
+              alt="Logo T-Hex Closet" 
+              className="h-12 w-auto object-contain rounded-md" 
+            />
+            
             <div className="hidden sm:block">
               <h1 className="font-bold text-xl text-primary leading-none">T-Hex Closet</h1>
               <p className="text-xs text-muted-foreground mt-0.5">Desapegos sustentáveis</p>
