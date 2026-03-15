@@ -27,7 +27,7 @@ export default function Header({ searchTerm, onSearchChange, currentPage = 'home
             />
             
             <div className="hidden sm:block">
-              <h1 className="font-bold text-xl text-primary leading-none">T-Hex Closet</h1>
+              <h1 className="font-bold text-xl text-primary leading-none">T-Hex Garage</h1>
               <p className="text-xs text-muted-foreground mt-0.5">Desapegos sustentáveis</p>
             </div>
           </div>
