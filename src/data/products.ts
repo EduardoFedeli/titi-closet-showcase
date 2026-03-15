@@ -1739,7 +1739,6 @@ export const products: Product[] = [
     linkEnjoei: ""
   },
   {
-    {
     id: "KIT007",
     nome: "Kit 2 Garrafa Grande Caixa Leite Suco Água Acrílica 1L",
     categoria: "Diversos, Kits", // <-- AQUI: Múltiplas categorias
