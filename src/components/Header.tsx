@@ -21,7 +21,7 @@ export default function Header({ searchTerm, onSearchChange, currentPage = 'home
           >
             {/* A imagem da logo referenciando a pasta public */}
             <img 
-              src="/public/Logo.jpg" // SE SUA LOGO FOR JPG OU SVG, MUDE A EXTENSÃO AQUI (ex: /logo.svg)
+              src="/Logo.jpg" // SE SUA LOGO FOR JPG OU SVG, MUDE A EXTENSÃO AQUI (ex: /logo.svg)
               alt="Logo T-Hex Closet" 
               className="h-12 w-auto object-contain rounded-md" 
             />
