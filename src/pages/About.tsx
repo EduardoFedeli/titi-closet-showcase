@@ -8,7 +8,7 @@ export default function About() {
           <div className="text-center mb-12">
             <div className="flex justify-center mb-6 transition-transform hover:scale-105">
               <img 
-                src="/Logo.jpg" 
+                src="/Logo.png" 
                 alt="Logo T-Hex Garage" 
                 className="h-24 w-auto object-contain rounded-xl" 
               />
