@@ -1424,8 +1424,8 @@ export const products: Product[] = [
     marca: "O",
     tamanho: "G",
     estado: "Usado",
-    preco: 0.00, // Preço não informado na planilha, ajustado para 0
-    precoEnjoei: 0.90,
+    preco: 22.40,
+    precoEnjoei: 25.90,
     status: "Ativo",
     dataCadastro: "15/03",
     fotosImgur: [
