@@ -19,7 +19,17 @@ export function isProductNew(dataCadastro: string, daysThreshold: number = 7): b
   }
 }
 
-export function getWhatsAppLink(productName: string, phoneNumber: string = "5511999999999"): string {
-  const message = `Olá! Tenho interesse no produto: ${productName}`;
-  return `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+export function getWhatsAppLink(productName: string): string {
+  // 1. COLOQUE O SEU NÚMERO AQUI (Apenas números: 55 + DDD + Seu Número)
+  // Exemplo: Se for DDD 11 e número 98765-4321, fica "5511987654321"
+  const phoneNumber = "5511996923876"; 
+  
+  // 2. A MENSAGEM DINÂMICA (O ${productName} vai ser substituído automaticamente!)
+  const message = `Fala, T-Hex! 🦖 Vi o produto *${productName}* na sua Garage e tenho interesse. Ainda está disponível?`;
+  
+  // 3. CODIFICAÇÃO (Transforma os espaços em %20 para o link do WhatsApp não quebrar)
+  const encodedMessage = encodeURIComponent(message);
+  
+  // 4. GERA O LINK FINAL
+  return `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 }
