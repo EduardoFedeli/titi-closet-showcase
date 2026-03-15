@@ -107,7 +107,7 @@ export default function About() {
                 para eu entender se vale a pena tirar esse projeto do papel:
               </p>
               <a 
-                href="#" // COLOQUE O LINK DO SEU GOOGLE FORMS AQUI
+                href="https://forms.gle/1jV2PbUa7seKVCR67" // COLOQUE O LINK DO SEU GOOGLE FORMS AQUI
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 w-full sm:w-auto bg-primary text-primary-foreground px-5 py-2.5 rounded-lg font-semibold hover:bg-primary/90 transition-colors shadow-sm"
