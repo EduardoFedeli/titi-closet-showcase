@@ -23,7 +23,7 @@ export default function Header({ searchTerm, onSearchChange, currentPage = 'home
               onClick={() => onNavigate?.('home')}
             >
               <img 
-                src="/Logo.jpg" 
+                src="/Logo.png" 
                 alt="Logo T-Hex Garage" 
                 className="h-12 w-auto object-contain rounded-md" 
               />
