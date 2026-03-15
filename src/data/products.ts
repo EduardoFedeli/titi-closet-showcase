@@ -979,6 +979,7 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
+      "https://i.imgur.com/qXoKnL7.png",
       "https://i.imgur.com/kFIy5EO.jpeg",
       "https://i.imgur.com/mBwzHf2.png"
     ],
@@ -999,6 +1000,7 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
+      "https://i.imgur.com/OP2EoFa.jpeg",
       "https://i.imgur.com/OP2EoFa.jpeg",
       "https://i.imgur.com/XQMcONH.jpeg"
     ],
