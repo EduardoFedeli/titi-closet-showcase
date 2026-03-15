@@ -956,7 +956,7 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
-      "https://i.imgur.com/sPDdvxf.jpeg",
+      "https://i.imgur.com/COtqyeu.jpeg",
       "https://i.imgur.com/DuOVV7A.jpeg",
       "https://i.imgur.com/KYhUC3x.jpeg",
       "https://i.imgur.com/pSh7qSF.jpeg",
@@ -1375,7 +1375,7 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "15/03",
     fotosImgur: [
-      "https://i.imgur.com/rQXK9dF.jpeG",
+      "https://i.imgur.com/rQXK9dF.jpeg",
       "https://i.imgur.com/aKn4U5G.jpeg",
       "https://i.imgur.com/J6KmjYr.jpeg"
     ],
@@ -1739,7 +1739,7 @@ export const products: Product[] = [
   {
     id: "KIT007",
     nome: "Kit 2 Garrafa Grande Caixa Leite Suco Água Acrílica 1L",
-    categoria: "Diversos",
+    categoria: "Diversos, Kits", // <-- AQUI: Múltiplas categorias
     marca: "LKS Shop Bazar Oficial",
     tamanho: "1L",
     estado: "Seminovo",
@@ -1759,7 +1759,7 @@ export const products: Product[] = [
   {
     id: "KIT008",
     nome: "Kit 6 potes Herméticos para Mantimentos",
-    categoria: "Diversos",
+    categoria: "Diversos, Kits", // <-- AQUI: Múltiplas categorias
     marca: "Via Borge Store",
     tamanho: "1L",
     estado: "Novo",
