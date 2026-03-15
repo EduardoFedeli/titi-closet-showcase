@@ -23,14 +23,9 @@ export default function Index() {
         product.marca.toLowerCase().includes(searchLower) ||
         product.descricao.toLowerCase().includes(searchLower);
 
-      // Conforme sua instrução explícita:
       const price = product.preco; 
       const matchesPrice = price >= filters.priceRange[0] && price <= filters.priceRange[1];
       
-      // NOVA LÓGICA DE CATEGORIAS MÚLTIPLAS:
-      // Se não houver filtro, mostra tudo. Caso contrário, verifica se ALGUM dos filtros 
-      // selecionados está incluso na string da categoria do produto (ex: "Diversos, Kits")
-      // ou se o produto tem a flag isKit marcada (garantia dupla).
       const matchesCategory = filters.categories.length === 0 || filters.categories.some(cat => 
         product.categoria.includes(cat) || (cat === 'Kits' && product.isKit)
       );
@@ -45,7 +40,7 @@ export default function Index() {
 
   if (currentPage === 'about') {
     return (
-      <div className="min-h-screen bg-background">
+      <div className="min-h-screen bg-background text-foreground">
         <Header 
           searchTerm={searchTerm} 
           onSearchChange={setSearchTerm}
@@ -58,7 +53,7 @@ export default function Index() {
   }
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background text-foreground">
       <Header 
         searchTerm={searchTerm} 
         onSearchChange={setSearchTerm}
@@ -73,8 +68,9 @@ export default function Index() {
         </nav>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 lg:px-6 pb-16">
+      <div className="max-w-7xl mx-auto px-4 lg:px-6 pb-24 lg:pb-16">
         <div className="flex gap-6">
+          {/* Sidebar visível apenas em Desktop */}
           <div className="hidden lg:block">{SidebarContent}</div>
           
           <div className="flex-1">
@@ -82,14 +78,11 @@ export default function Index() {
               <p className="text-sm text-muted-foreground">
                 <span className="font-semibold text-foreground">{produtosFiltrados.length}</span> produtos encontrados
               </p>
-              <Sheet>
-                <SheetTrigger asChild>
-                  <Button variant="outline" size="sm" className="lg:hidden">
-                    <Filter className="w-4 h-4 mr-2" />Filtros
-                  </Button>
-                </SheetTrigger>
-                <SheetContent side="left" className="w-80 overflow-y-auto">{SidebarContent}</SheetContent>
-              </Sheet>
+              
+              {/* Botão de Filtro em linha - visível apenas em Desktop (opcional) */}
+              <div className="hidden lg:block">
+                {/* Espaço reservado ou botões de ordenação futura */}
+              </div>
             </div>
 
             {produtosFiltrados.length === 0 ? (
@@ -97,7 +90,6 @@ export default function Index() {
                 <div className="text-6xl mb-4">🔍</div>
                 <h3 className="text-xl font-semibold mb-2">Nenhum produto encontrado</h3>
                 <p className="text-muted-foreground mb-6">Tente ajustar os filtros ou buscar por outro termo</p>
-                {/* Reset ajustado para 1500 para respeitar a regra de ancoragem */}
                 <Button variant="outline" onClick={() => { setSearchTerm(''); setFilters({ priceRange: [0, 1500], categories: [], estados: [] }); }}>
                   Limpar filtros
                 </Button>
@@ -111,6 +103,22 @@ export default function Index() {
             )}
           </div>
         </div>
+      </div>
+
+      {/* BOTÃO DE FILTRO FLUTUANTE - MOBILE APENAS */}
+      <div className="fixed bottom-6 right-6 z-40 lg:hidden">
+        <Sheet>
+          <SheetTrigger asChild>
+            <Button className="rounded-full h-14 w-14 shadow-2xl bg-primary text-primary-foreground hover:bg-primary/90 flex items-center justify-center p-0">
+              <Filter className="w-6 h-6" />
+            </Button>
+          </SheetTrigger>
+          <SheetContent side="left" className="w-[300px] sm:w-[350px] overflow-y-auto">
+            <div className="py-4">
+              {SidebarContent}
+            </div>
+          </SheetContent>
+        </Sheet>
       </div>
 
       {produtoSelecionado && (
