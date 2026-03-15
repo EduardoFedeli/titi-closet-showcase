@@ -947,30 +947,46 @@ export const products: Product[] = [
   {
     id: "KIT001",
     nome: "Kit 5 Camisetas Básicas Algodão",
-    categoria: "Kits",
-    marca: "SSB Brand",
+    categoria: "Kits, Camisas",
+    marca: "SSB Brand e Nexstar",
     tamanho: "M",
     estado: "Usado",
-    preco: 130.00,
-    precoEnjoei: 152.90,
+    preco: 90.00, // Sugestão ajustada! O total avulso é 110.00
+    precoEnjoei: 110.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
-      "https://i.imgur.com/COtqyeu.jpeg",
-      "https://i.imgur.com/DuOVV7A.jpeg",
+      "https://i.imgur.com/COtqyeu.jpeg", // Foto de capa
+      // CAM003
+      "https://i.imgur.com/irj5gP2.jpeg",
+      "https://i.imgur.com/1pfmd9h.jpeg",
+      "https://i.imgur.com/QROEXhi.jpeg",
+      // CAM004
+      "https://i.imgur.com/sPDdvxf.jpeg",
+      "https://i.imgur.com/Eha1dHU.jpeg",
+      "https://i.imgur.com/Cf4tytt.jpeg",
+      // CAM006
       "https://i.imgur.com/KYhUC3x.jpeg",
+      "https://i.imgur.com/gddRJos.jpeg",
+      "https://i.imgur.com/XQAwK0K.jpeg",
+      // CAM007
       "https://i.imgur.com/pSh7qSF.jpeg",
-      "https://i.imgur.com/sOV2wKP.jpeg"
+      "https://i.imgur.com/XTZ9UBw.jpeg",
+      "https://i.imgur.com/k1eKRx0.jpeg",
+      // CAM008
+      "https://i.imgur.com/sOV2wKP.jpeg",
+      "https://i.imgur.com/SpRDd1d.jpeg",
+      "https://i.imgur.com/f1cn9eU.jpeg"
     ],
-    descricao: "Kit completo com 9 camisetas básicas essenciais marca SSB Brand. Cores versáteis: preta (2x), branca fit, cinza claro, azul marinho, vermelha, regatas preta/branca/mescla/mescla cinza. Todas tamanho M, estado usado/seminovo bem conservado. Renovação completa do guarda-roupa! Economia de 21% comprando o kit. Perfeito para quem busca praticidade e variedade.",
+    descricao: "Kit reformulado com 5 camisetas básicas essenciais marcas SSB Brand e Nexstar. Cores versáteis: preta (2x), cinza claro, azul marinho e vermelha. Todas tamanho M, estado usado bem conservado. Renovação inteligente do guarda-roupa!",
     isKit: true,
-    desconto: 21,
-    produtosInclusos: ["CAM004", "CAM005", "CAM006", "CAM007", "CAM008", "CAM010", "CAM011", "CAM012", "CAM013"]
+    desconto: 18, // Reflete o desconto de R$110 para R$90
+    produtosInclusos: ["CAM003", "CAM004", "CAM006", "CAM007", "CAM008"]
   },
   {
     id: "KIT002",
     nome: "Kit Palmeiras Fan - 2 Camisetas",
-    categoria: "Kits",
+    categoria: "Kits, Camisas",
     marca: "Sem marca",
     tamanho: "M",
     estado: "Seminovo",
@@ -979,19 +995,26 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
-      "https://i.imgur.com/qXoKnL7.png",
+      "https://i.imgur.com/qXoKnL7.png", // Foto de capa solicitada
+      // Fotos da CAM036
       "https://i.imgur.com/kFIy5EO.jpeg",
-      "https://i.imgur.com/mBwzHf2.png"
+      "https://i.imgur.com/SOOhrbp.jpeg",
+      "https://i.imgur.com/Ro8kH0y.jpeg",
+      "https://i.imgur.com/tq9JkC1.jpeg",
+      // Fotos da CAM037
+      "https://i.imgur.com/mBwzHf2.png",
+      "https://i.imgur.com/SB93vCo.jpeg",
+      "https://i.imgur.com/bsMttf6.jpeg"
     ],
-    descricao: "Kit torcedor Palmeiras com 2 camisetas temáticas. Azul raglan com escudo bordado + verde oficial Crefisa. Ambas tamanho M, estado seminovo. Combine e varie nos jogos! Economia de 16% no kit. Ideal para palmeirenses de coração.",
+    descricao: "Kit torcedor Palmeiras com 2 camisetas temáticas. Azul raglan com escudo bordado + verde oficial Crefisa. Ambas tamanho M, estado seminovo. Combine e varie nos jogos! Economia de 21% no kit. Ideal para palmeirenses de coração.",
     isKit: true,
-    desconto: 16,
+    desconto: 21, // Atualizado com o cálculo real (21.4%)
     produtosInclusos: ["CAM036", "CAM037"]
   },
   {
     id: "KIT003",
     nome: "Kit Jaquetas Xadrez Federal Art",
-    categoria: "Kits",
+    categoria: "Kits, Jaquetas", // Adicionado "Jaquetas" para aparecer nos dois filtros!
     marca: "Federal Art",
     tamanho: "GG",
     estado: "Seminovo",
@@ -1000,11 +1023,21 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
-      "https://i.imgur.com/BD7wHbw.jpeg",
+      "https://i.imgur.com/BD7wHbw.jpeg", // Foto de capa
+      // Fotos da JAQ002
       "https://i.imgur.com/OP2EoFa.jpeg",
-      "https://i.imgur.com/XQMcONH.jpeg"
+      "https://i.imgur.com/DFFJ5Kr.jpeg",
+      "https://i.imgur.com/G7k1Qxp.jpeg",
+      "https://i.imgur.com/uy4ymC1.jpeg",
+      "https://i.imgur.com/6xssScc.jpeg",
+      "https://i.imgur.com/T8UTvGy.jpeg",
+      // Fotos da JAQ004
+      "https://i.imgur.com/XQMcONH.jpeg",
+      "https://i.imgur.com/mc6Nucg.jpeg",
+      "https://i.imgur.com/mwkykih.jpeg",
+      "https://i.imgur.com/L0CNigu.jpeg"
     ],
-    descricao: "Kit inverno premium com 2 jaquetas flanela xadrez Federal Art. Modelo azul/preto com forro + modelo cinza/preto. Ambas tamanho GG, qualidade superior, estado seminovo impecável. Aquecem com estilo! Economia de 15% no combo. Perfeitas para dias frios.",
+    descricao: "Kit inverno premium com 2 jaquetas flanela xadrez Federal Art. Modelo azul/preto com forro + modelo cinza/preto. Ambas tamanho GG, qualidade superior, estado seminovo impecável. Aquecem com estilo! Economia real de 15% no combo. Perfeitas para dias frios.",
     isKit: true,
     desconto: 15,
     produtosInclusos: ["JAQ002", "JAQ004"]
