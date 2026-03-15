@@ -63,7 +63,7 @@ export default function Index() {
       
       <div className="max-w-7xl mx-auto px-4 lg:px-6 py-4">
         <nav className="text-sm text-muted-foreground">
-          <span>Início</span>
+          <span>Catálogo</span>
           {searchTerm && <><span className="mx-2">›</span><span>Resultados para "{searchTerm}"</span></>}
         </nav>
       </div>
