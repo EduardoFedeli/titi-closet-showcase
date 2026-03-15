@@ -1276,7 +1276,7 @@ export const products: Product[] = [
   },
   {
     id: "BONE001",
-    nome: "Produto Genérico - BONE001",
+    nome: "BONE001",
     categoria: "Bone",
     marca: "Genérica",
     tamanho: "Ajustável",
@@ -1291,7 +1291,7 @@ export const products: Product[] = [
   },
   {
     id: "BONE002",
-    nome: "Produto Genérico - BONE002",
+    nome: "BONE002",
     categoria: "Bone",
     marca: "Genérica",
     tamanho: "Ajustável",
@@ -1306,7 +1306,7 @@ export const products: Product[] = [
   },
   {
     id: "BONE003",
-    nome: "Produto Genérico - BONE003",
+    nome: "BONE003",
     categoria: "Bone",
     marca: "Genérica",
     tamanho: "Ajustável",
@@ -1321,7 +1321,7 @@ export const products: Product[] = [
   },
   {
     id: "CAM039",
-    nome: "Produto Genérico - CAM039",
+    nome: "CAM039",
     categoria: "Camisas",
     marca: "Genérica",
     tamanho: "G",
@@ -1336,7 +1336,7 @@ export const products: Product[] = [
   },
   {
     id: "CAM040",
-    nome: "Produto Genérico - CAM040",
+    nome: "CAM040",
     categoria: "Camisas",
     marca: "Genérica",
     tamanho: "M",
@@ -1351,7 +1351,7 @@ export const products: Product[] = [
   },
   {
     id: "CAM041",
-    nome: "Produto Genérico - CAM041",
+    nome: "CAM041",
     categoria: "Camisas",
     marca: "Genérica",
     tamanho: "P",
@@ -1366,7 +1366,7 @@ export const products: Product[] = [
   },
   {
     id: "CAM042",
-    nome: "Produto Genérico - CAM042",
+    nome: "CAM042",
     categoria: "Camisas",
     marca: "Genérica",
     tamanho: "M",
@@ -1381,7 +1381,7 @@ export const products: Product[] = [
   },
   {
     id: "CAM043",
-    nome: "Produto Genérico - CAM043",
+    nome: "CAM043",
     categoria: "Camisas",
     marca: "Genérica",
     tamanho: "G",
@@ -1396,7 +1396,7 @@ export const products: Product[] = [
   },
   {
     id: "DIV002",
-    nome: "Produto Genérico - DIV002",
+    nome: "DIV002",
     categoria: "Diversos",
     marca: "Genérica",
     tamanho: "1L",
@@ -1411,7 +1411,7 @@ export const products: Product[] = [
   },
   {
     id: "DIV003",
-    nome: "Produto Genérico - DIV003",
+    nome: "DIV003",
     categoria: "Diversos",
     marca: "Genérica",
     tamanho: "1L",
@@ -1426,7 +1426,7 @@ export const products: Product[] = [
   },
   {
     id: "DIV004",
-    nome: "Produto Genérico - DIV004",
+    nome: "DIV004",
     categoria: "Diversos",
     marca: "Genérica",
     tamanho: "Oversized",
@@ -1441,7 +1441,7 @@ export const products: Product[] = [
   },
   {
     id: "DIV005",
-    nome: "Produto Genérico - DIV005",
+    nome: "DIV005",
     categoria: "Diversos",
     marca: "Genérica",
     tamanho: "17x47",
@@ -1456,7 +1456,7 @@ export const products: Product[] = [
   },
   {
     id: "DIV006",
-    nome: "Produto Genérico - DIV006",
+    nome: "DIV006",
     categoria: "Diversos",
     marca: "Genérica",
     tamanho: "100x112",
@@ -1471,7 +1471,7 @@ export const products: Product[] = [
   },
   {
     id: "ELE002",
-    nome: "Produto Genérico - ELE002",
+    nome: "ELE002",
     categoria: "Eletrônicos",
     marca: "Genérica",
     tamanho: "12x17",
@@ -1486,7 +1486,7 @@ export const products: Product[] = [
   },
   {
     id: "LIV001",
-    nome: "Produto Genérico - LIV001",
+    nome: "LIV001",
     categoria: "Livros",
     marca: "Genérica",
     tamanho: "Único",
@@ -1501,7 +1501,7 @@ export const products: Product[] = [
   },
   {
     id: "LIV002",
-    nome: "Produto Genérico - LIV002",
+    nome: "LIV002",
     categoria: "Livros",
     marca: "Genérica",
     tamanho: "Único",
@@ -1516,7 +1516,7 @@ export const products: Product[] = [
   },
   {
     id: "LIV003",
-    nome: "Produto Genérico - LIV003",
+    nome: "LIV003",
     categoria: "Livros",
     marca: "Genérica",
     tamanho: "Único",
@@ -1531,7 +1531,7 @@ export const products: Product[] = [
   },
   {
     id: "LIV004",
-    nome: "Produto Genérico - LIV004",
+    nome: "LIV004",
     categoria: "Livros",
     marca: "Genérica",
     tamanho: "Único",
@@ -1546,7 +1546,7 @@ export const products: Product[] = [
   },
   {
     id: "LIV005",
-    nome: "Produto Genérico - LIV005",
+    nome: "LIV005",
     categoria: "Livros",
     marca: "Genérica",
     tamanho: "Único",
@@ -1561,7 +1561,7 @@ export const products: Product[] = [
   },
   {
     id: "TEN003",
-    nome: "Produto Genérico - TEN003",
+    nome: "TEN003",
     categoria: "Tênis",
     marca: "Genérica",
     tamanho: "40-41",
@@ -1576,7 +1576,7 @@ export const products: Product[] = [
   },
   {
     id: "TOUCA001",
-    nome: "Produto Genérico - TOUCA001",
+    nome: "TOUCA001",
     categoria: "Touca",
     marca: "Genérica",
     tamanho: "Adulto",
@@ -1591,7 +1591,7 @@ export const products: Product[] = [
   },
   {
     id: "TOUCA002",
-    nome: "Produto Genérico - TOUCA002",
+    nome: "TOUCA002",
     categoria: "Touca",
     marca: "Genérica",
     tamanho: "Adulto",
@@ -1606,7 +1606,7 @@ export const products: Product[] = [
   },
   {
     id: "TOUCA003",
-    nome: "Produto Genérico - TOUCA003",
+    nome: "TOUCA003",
     categoria: "Touca",
     marca: "Genérica",
     tamanho: "Adulto",
@@ -1621,7 +1621,7 @@ export const products: Product[] = [
   },
   {
     id: "TOUCA004",
-    nome: "Produto Genérico - TOUCA004",
+    nome: "TOUCA004",
     categoria: "Touca",
     marca: "Genérica",
     tamanho: "Adulto",
