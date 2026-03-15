@@ -17,8 +17,16 @@ interface FilterSidebarProps {
 }
 
 export default function FilterSidebar({ products, filters, onChange }: FilterSidebarProps) {
-  // Pegamos todas as categorias existentes e ordenamos alfabeticamente
-  const allCategories = Array.from(new Set(products.map(p => p.categoria))).sort();
+  // LÓGICA CORRIGIDA: Extrai as categorias, divide pelas vírgulas se for múltipla, 
+  // remove espaços em branco e cria um Set único ordenado alfabeticamente.
+  const allCategories = Array.from(
+    new Set(
+      products.flatMap(p => 
+        p.categoria.split(',').map(cat => cat.trim())
+      )
+    )
+  ).sort();
+
   const allEstados = Array.from(new Set(products.map(p => p.estado))).sort();
 
   const handleCategoryToggle = (category: string) => {
@@ -28,7 +36,7 @@ export default function FilterSidebar({ products, filters, onChange }: FilterSid
       return;
     }
 
-    // Comportamento normal para as outras categorias
+    // Comportamento normal para as outras categorias (Sintaxe corrigida)
     const newCategories = filters.categories.includes(category)
       ? filters.categories.filter(c => c !== category)
       : [...filters.categories, category];
@@ -96,7 +104,7 @@ export default function FilterSidebar({ products, filters, onChange }: FilterSid
             </label>
           </div>
 
-          {/* Renderiza o resto das categorias */}
+          {/* Renderiza o resto das categorias (agora corretamente separadas) */}
           {allCategories.map(category => (
             <div key={category} className="flex items-center space-x-2">
               <Checkbox
