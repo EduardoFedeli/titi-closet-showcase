@@ -1511,8 +1511,8 @@ export const products: Product[] = [
     marca: "Sem Marca",
     tamanho: "100x112",
     estado: "Seminovo",
-    preco: 78.00,
-    precoEnjoei: 89.90,
+    preco: 112,80,
+    precoEnjoei: 129,90,
     status: "Ativo",
     dataCadastro: "15/03",
     fotosImgur: [
