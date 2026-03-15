@@ -7,25 +7,27 @@ export default function About() {
           {/* CABEÇALHO COM A LOGO NOVA */}
           <div className="text-center mb-12">
             <div className="flex justify-center mb-6 transition-transform hover:scale-105">
-              {/* CORRIGIDO: Removido o "/public/" do caminho da imagem */}
               <img 
                 src="/Logo.jpg" 
-                alt="Logo T-Hex Closet" 
+                alt="Logo T-Hex Garage" 
                 className="h-24 w-auto object-contain rounded-xl" 
               />
             </div>
-            <h1 className="text-4xl font-bold text-primary mb-4">T-Hex Closet</h1>
+            {/* NOVO NOME APLICADO */}
+            <h1 className="text-4xl font-bold text-primary mb-4">T-Hex Garage</h1>
             <p className="text-xl text-muted-foreground">Desapegos com pegada jurássica 🦖</p>
           </div>
 
           <div className="space-y-8 text-foreground/90 leading-relaxed">
+            
+            {/* TEXTO NOVO: CASUAL, DIRETO E SINCERO */}
             <section>
               <h2 className="text-2xl font-bold text-primary mb-4">A Minha História</h2>
-              <p>
-                Bem-vindo ao T-Hex Closet! Embora o nome "Closet" remeta imediatamente a um guarda-roupa (e a moda sustentável seja sim o nosso carro-chefe!), este espaço é muito mais do que um brechó tradicional. 
+              <p className="mb-4">
+                Sabe aquela tentação de escolher o caminho mais fácil e simplesmente jogar fora ou doar de qualquer jeito o que a gente não usa mais? Eu (e muita gente) não curto a ideia desse descarte fácil. 
               </p>
-              <p className="mt-4">
-                Ele é o meu cantinho pessoal de desapegos e achados incríveis. Aqui você encontra roupas cheias de estilo, mas também se depara com livros clássicos, eletrônicos em ótimo estado, utilidades e até cartas colecionáveis de Pokémon! É uma curadoria de coisas boas com preços justos. Faço toda a seleção, fotografia, design do site e atendimento sozinho, garantindo atenção a cada detalhe.
+              <p className="mb-4">
+                O <strong>T-Hex Garage</strong> nasceu exatamente disso. Criei este espaço online pra deixar linkado nas minhas redes sociais. É a minha vitrine pessoal pra vender meus desapegos com a maior transparência possível e, claro, recuperar uma graninha do que paguei lá atrás.
               </p>
             </section>
 
@@ -35,7 +37,18 @@ export default function About() {
                 O nome vem de uma brincadeira de amigos. Meu nick sempre foi "Tierspy", o que naturalmente gerou 
                 o apelido "Titi". Com o tempo, a criatividade da galera evoluiu isso para "T-Hex", e eu 
                 simplesmente adorei a ideia de usar isso como uma identidade visual única e divertida para o 
-                meu projeto de desapegos.
+                meu projeto de desapegos na minha "garagem" online.
+              </p>
+            </section>
+
+            {/* TEXTO NOVO SOBRE ECONOMIA CIRCULAR BASEADO NA SUA VISÃO */}
+            <section className="bg-primary/5 rounded-lg p-6 border border-primary/20">
+              <h2 className="text-2xl font-bold text-primary mb-3">Fazendo a Roda Girar ♻️</h2>
+              <p className="mb-4">
+                Tem um papo sério por trás disso tudo: o Brasil é um dos países que mais gera lixo têxtil e eletrônico no mundo (são milhões de toneladas por ano indo parar em aterros).
+              </p>
+              <p>
+                Acredito que se cada brasileiro se preocupasse em dar uma segunda vida pras coisas que estão paradas em casa, a gente não só ajudaria o planeta, mas movimentaria a economia de forma muito positiva. É a grana trocando de mãos entre pessoas reais. Você economiza comprando algo de qualidade, eu recupero uma parte do meu dinheiro, e todo mundo sai ganhando!
               </p>
             </section>
             
@@ -44,21 +57,20 @@ export default function About() {
               <p className="mb-4">
                 Completamente! O site é 100% estático, o que significa que nenhum dado seu (como senhas, e-mails ou 
                 informações de cartão) é inserido ou armazenado aqui. Construí o site dessa forma justamente para que 
-                você tenha total privacidade enquanto navega pela vitrine.
+                você tenha total privacidade enquanto navega.
               </p>
               <p className="mb-4">
                 A negociação real acontece diretamente comigo no WhatsApp. Para garantir a segurança de ambos os lados, 
-                combinamos como a peça vai chegar até você (entrega em mãos ou envio) e <strong>o Pix só precisa ser feito 
-                no momento em que você estiver com o produto!</strong>
+                combinamos como a peça vai chegar até você e <strong>o Pix só precisa ser feito 
+                no momento em que você estiver com o produto em mãos!</strong>
               </p>
               <p className="mb-4">
-                Ainda desconfiado ou prefere parcelar no cartão de crédito? Sem problemas! Todos os produtos 
+                Prefere parcelar no cartão de crédito? Sem problemas! Todos os produtos 
                 possuem um botão alternativo com link direto para a minha lojinha no <strong>Enjoei</strong>. Lá você tem a segurança da 
                 plataforma como intermediária (apenas com um pequeno acréscimo no valor devido às taxas do app).
               </p>
             </section>
 
-            {/* SEÇÃO NOVA: FOTOS E IA */}
             <section className="bg-muted/30 p-6 rounded-lg border border-border">
               <h2 className="text-2xl font-bold text-primary mb-4">Atenção às Fotos! 📸</h2>
               <p>
@@ -66,42 +78,14 @@ export default function About() {
               </p>
             </section>
 
-            {/* SEÇÃO NOVA: NEGOCIAÇÃO E LOGÍSTICA */}
             <section>
               <h2 className="text-2xl font-bold text-primary mb-4">Negociação e Entregas (Somente SP)</h2>
               <p className="mb-4">
                 Aqui o papo é reto! Eu <strong>estou super aberto a negociações</strong>. Viu uma peça que você amou mas o orçamento apertou? Me chame no WhatsApp e vamos conversar para fechar um valor que fique bom para nós dois!
               </p>
               <p className="mb-4">
-                <strong>Atenção à Logística:</strong> No momento, por questões operacionais, a entrega dos produtos é realizada <strong>exclusivamente para a região de São Paulo</strong>. Nós podemos combinar a entrega via aplicativos (como Uber Entregas, Lalamove, etc.) ou marcar um encontro presencial em locais seguros, como estações de metrô, para a negociação.
+                <strong>Atenção à Logística:</strong> No momento, por questões operacionais, a entrega dos produtos é realizada <strong>exclusivamente para a região de São Paulo</strong>. Nós podemos combinar a entrega via aplicativos (como Uber Entregas, Lalamove, etc.) ou marcar um encontro presencial em locais seguros, como estações de metrô.
               </p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-bold text-primary mb-4">Sustentabilidade em Foco</h2>
-              <p className="mb-4">
-                Acredito que dar uma segunda vida aos objetos é um ato de amor ao planeta.
-                Cada peça que você adquire aqui:
-              </p>
-              <ul className="list-disc list-inside space-y-2 ml-4">
-                <li>Evita o descarte desnecessário no meio ambiente</li>
-                <li>Reduz o consumo massivo de recursos naturais</li>
-                <li>Promove a economia circular de forma real</li>
-                <li>Te entrega um produto cheio de história, útil e sustentável</li>
-              </ul>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-bold text-primary mb-4">Como Comprar?</h2>
-              <p className="mb-4">
-                É super fácil! Todos os produtos têm fotos reais na galeria e descrições detalhadas.
-                Quando encontrar algo que gostar:
-              </p>
-              <ol className="list-decimal list-inside space-y-2 ml-4">
-                <li>Clique no produto na página inicial para abrir os detalhes</li>
-                <li>Use o botão verde "Comprar no WhatsApp" para negociar diretamente comigo</li>
-                <li>Ou use o botão roxo "Ir para o Enjoei" se preferir a segurança/cartão do aplicativo</li>
-              </ol>
             </section>
             
             {/* SEÇÃO DO FORMS PARA O SAAS */}
@@ -109,8 +93,8 @@ export default function About() {
               <h2 className="text-xl font-bold text-primary mb-3">Quer ter o seu próprio espaço online?</h2>
               <p className="mb-4 text-sm text-muted-foreground">
                 Estou estudando a possibilidade de transformar toda essa tecnologia que você está vendo em uma 
-                plataforma por assinatura (SaaS). A ideia é que qualquer pessoa possa criar seu próprio site de 
-                desapegos lindo e intuitivo assim, sem precisar saber escrever uma linha de código!
+                plataforma por assinatura (SaaS). A ideia é que qualquer pessoa possa criar sua própria vitrine de 
+                desapegos linda e intuitiva assim, sem precisar saber escrever uma linha de código!
               </p>
               <p className="mb-4 text-sm text-foreground font-medium">
                 Acha a ideia interessante? Me ajudaria demais se você respondesse um formulário super rápido 
@@ -129,7 +113,7 @@ export default function About() {
             <section className="bg-primary/5 rounded-lg p-6 border border-primary/20 mt-8">
               <h2 className="text-2xl font-bold text-primary mb-4">Entre em Contato</h2>
               <p className="mb-4">
-                Ficou com alguma dúvida? Quer fazer uma oferta ou saber se aquela peça que você amou ainda está disponível?
+                Ficou com alguma dúvida? Quer fazer uma oferta ou saber se aquele item que você curtiu ainda está disponível?
               </p>
               
               <a 
