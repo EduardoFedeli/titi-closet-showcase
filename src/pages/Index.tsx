@@ -23,12 +23,18 @@ export default function Index() {
         product.marca.toLowerCase().includes(searchLower) ||
         product.descricao.toLowerCase().includes(searchLower);
 
-      // ANTES ESTAVA ASSIM: const price = product.precoEnjoei ?? product.preco;
-      // DEIXE ASSIM:
-      
+      // Conforme sua instrução explícita:
       const price = product.preco; 
       const matchesPrice = price >= filters.priceRange[0] && price <= filters.priceRange[1];
-      const matchesCategory = filters.categories.length === 0 || filters.categories.includes(product.categoria);
+      
+      // NOVA LÓGICA DE CATEGORIAS MÚLTIPLAS:
+      // Se não houver filtro, mostra tudo. Caso contrário, verifica se ALGUM dos filtros 
+      // selecionados está incluso na string da categoria do produto (ex: "Diversos, Kits")
+      // ou se o produto tem a flag isKit marcada (garantia dupla).
+      const matchesCategory = filters.categories.length === 0 || filters.categories.some(cat => 
+        product.categoria.includes(cat) || (cat === 'Kits' && product.isKit)
+      );
+      
       const matchesEstado = filters.estados.length === 0 || filters.estados.includes(product.estado);
 
       return matchesSearch && matchesPrice && matchesCategory && matchesEstado;
@@ -91,7 +97,8 @@ export default function Index() {
                 <div className="text-6xl mb-4">🔍</div>
                 <h3 className="text-xl font-semibold mb-2">Nenhum produto encontrado</h3>
                 <p className="text-muted-foreground mb-6">Tente ajustar os filtros ou buscar por outro termo</p>
-                <Button variant="outline" onClick={() => { setSearchTerm(''); setFilters({ priceRange: [0, 1000], categories: [], estados: [] }); }}>
+                {/* Reset ajustado para 1500 para respeitar a regra de ancoragem */}
+                <Button variant="outline" onClick={() => { setSearchTerm(''); setFilters({ priceRange: [0, 1500], categories: [], estados: [] }); }}>
                   Limpar filtros
                 </Button>
               </div>
