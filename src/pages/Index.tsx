@@ -95,7 +95,6 @@ export default function Index() {
                 </Button>
               </div>
             ) : (
-              {/* Mobile: 2 colunas. Tablet: 3 colunas. Desktop (lg): 4 colunas. Telas Giga (xl): 5 colunas. */}
         <div className="grid gap-3 sm:gap-6 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
                 {produtosFiltrados.map((product, index) => (
                   <ProductCard key={product.id} product={product} index={index} onClick={() => setProdutoSelecionado(product)} />
