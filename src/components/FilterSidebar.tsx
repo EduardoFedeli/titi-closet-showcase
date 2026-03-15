@@ -17,13 +17,22 @@ interface FilterSidebarProps {
 }
 
 export default function FilterSidebar({ products, filters, onChange }: FilterSidebarProps) {
-  const allCategories = Array.from(new Set(products.map(p => p.categoria)));
-  const allEstados = Array.from(new Set(products.map(p => p.estado)));
+  // Pegamos todas as categorias existentes e ordenamos alfabeticamente
+  const allCategories = Array.from(new Set(products.map(p => p.categoria))).sort();
+  const allEstados = Array.from(new Set(products.map(p => p.estado))).sort();
 
   const handleCategoryToggle = (category: string) => {
+    // Se o usuário clicou em "Tudo", limpamos o array de categorias
+    if (category === "Tudo") {
+      onChange({ ...filters, categories: [] });
+      return;
+    }
+
+    // Comportamento normal para as outras categorias
     const newCategories = filters.categories.includes(category)
       ? filters.categories.filter(c => c !== category)
       : [...filters.categories, category];
+    
     onChange({ ...filters, categories: newCategories });
   };
 
@@ -35,14 +44,17 @@ export default function FilterSidebar({ products, filters, onChange }: FilterSid
   };
 
   const clearFilters = () => {
-  onChange({ priceRange: [0, 1500], categories: [], estados: [] });
-};
+    onChange({ priceRange: [0, 1500], categories: [], estados: [] });
+  };
 
   const activeCount = filters.categories.length + filters.estados.length + 
-    (filters.priceRange[0] !== 0 || filters.priceRange[1] !== 1000 ? 1 : 0);
+    (filters.priceRange[0] !== 0 || filters.priceRange[1] !== 1500 ? 1 : 0);
+
+  // Verifica se "Tudo" deve estar marcado (se o array de categorias estiver vazio)
+  const isAllCategoriesSelected = filters.categories.length === 0;
 
   return (
-     <aside className="w-72 bg-card rounded-xl border p-6 sticky top-24 max-h-[calc(100vh-7rem)] overflow-y-auto">
+    <aside className="w-72 bg-card rounded-xl border p-6 sticky top-24 max-h-[calc(100vh-7rem)] overflow-y-auto">
       <div className="flex items-center justify-between mb-6">
         <h3 className="font-bold text-lg">Filtros</h3>
         {activeCount > 0 && (
@@ -58,7 +70,7 @@ export default function FilterSidebar({ products, filters, onChange }: FilterSid
           value={filters.priceRange}
           onValueChange={(val) => onChange({ ...filters, priceRange: [val[0], val[1]] })}
           min={0}
-          max={1500} // <-- Mude aqui para 1500
+          max={1500}
           step={10}
           className="mb-3"
         />
@@ -71,6 +83,20 @@ export default function FilterSidebar({ products, filters, onChange }: FilterSid
       <div className="mb-8">
         <Label className="text-sm font-semibold mb-3 block">Categoria</Label>
         <div className="space-y-3">
+          
+          {/* Opção fixa "Tudo" no topo da lista */}
+          <div className="flex items-center space-x-2">
+            <Checkbox
+              id="cat-Tudo"
+              checked={isAllCategoriesSelected}
+              onCheckedChange={() => handleCategoryToggle("Tudo")}
+            />
+            <label htmlFor="cat-Tudo" className={`text-sm cursor-pointer flex-1 ${isAllCategoriesSelected ? 'font-semibold text-primary' : ''}`}>
+              Tudo
+            </label>
+          </div>
+
+          {/* Renderiza o resto das categorias */}
           {allCategories.map(category => (
             <div key={category} className="flex items-center space-x-2">
               <Checkbox
@@ -86,7 +112,7 @@ export default function FilterSidebar({ products, filters, onChange }: FilterSid
         </div>
       </div>
 
-      <div className="mb-8">
+      <div className="mb-4">
         <Label className="text-sm font-semibold mb-3 block">Estado</Label>
         <div className="space-y-3">
           {allEstados.map(estado => (
