@@ -24,7 +24,6 @@ export default function ProductCard({ product, onClick, index }: ProductCardProp
         <img
           src={mainImage}
           alt={product.nome}
-          {/* Voltamos para object-cover e tiramos o bg-white para preencher o card! */}
           className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
           loading="lazy"
           onError={(e) => { (e.currentTarget as HTMLImageElement).src = "/placeholder.svg"; }}
