@@ -7,8 +7,9 @@ export default function About() {
           {/* CABEÇALHO COM A LOGO NOVA */}
           <div className="text-center mb-12">
             <div className="flex justify-center mb-6 transition-transform hover:scale-105">
+              {/* CORRIGIDO: Removido o "/public/" do caminho da imagem */}
               <img 
-                src="/public/Logo.jpg" 
+                src="/Logo.jpg" 
                 alt="Logo T-Hex Closet" 
                 className="h-24 w-auto object-contain rounded-xl" 
               />
@@ -21,9 +22,10 @@ export default function About() {
             <section>
               <h2 className="text-2xl font-bold text-primary mb-4">A Minha História</h2>
               <p>
-                Bem-vindo ao T-Hex Closet! Este é o meu brechó online focado em moda sustentável,
-                onde você encontra peças únicas de qualidade com preços justos. Faço toda a 
-                curadoria, fotografia, design do site e atendimento sozinho, garantindo atenção a cada detalhe.
+                Bem-vindo ao T-Hex Closet! Embora o nome "Closet" remeta imediatamente a um guarda-roupa (e a moda sustentável seja sim o nosso carro-chefe!), este espaço é muito mais do que um brechó tradicional. 
+              </p>
+              <p className="mt-4">
+                Ele é o meu cantinho pessoal de desapegos e achados incríveis. Aqui você encontra roupas cheias de estilo, mas também se depara com livros clássicos, eletrônicos em ótimo estado, utilidades e até cartas colecionáveis de Pokémon! É uma curadoria de coisas boas com preços justos. Faço toda a seleção, fotografia, design do site e atendimento sozinho, garantindo atenção a cada detalhe.
               </p>
             </section>
 
@@ -60,7 +62,7 @@ export default function About() {
             <section className="bg-muted/30 p-6 rounded-lg border border-border">
               <h2 className="text-2xl font-bold text-primary mb-4">Atenção às Fotos! 📸</h2>
               <p>
-                Para te ajudar a visualizar melhor como as peças vestem, <strong>a primeira foto de alguns produtos (principalmente roupas e bonés) é meramente ilustrativa, gerada por Inteligência Artificial</strong>. O objetivo é apenas te dar uma noção maior do conceito e do caimento. Para ver os detalhes 100% reais de costura, tecido e estado do produto, basta conferir as fotos seguintes na galeria de cada item!
+                Para te ajudar a visualizar melhor como as peças vestem, <strong>a primeira foto de TODOS os produtos é meramente ilustrativa, gerada por Inteligência Artificial</strong>. O objetivo é apenas te dar uma noção maior do conceito e do caimento. Para ver os detalhes 100% reais de costura, tecido e estado do produto, basta conferir as fotos seguintes na galeria de cada item!
               </p>
             </section>
 
@@ -68,7 +70,7 @@ export default function About() {
             <section>
               <h2 className="text-2xl font-bold text-primary mb-4">Negociação e Entregas (Somente SP)</h2>
               <p className="mb-4">
-                Aqui o papo é reto! Eu <strong>estou super aberto a negociações</strong>. Viu uma peça que você amou mas o orçamento apertou? Montou um carrinho com vários itens? Me chame no WhatsApp e vamos conversar para fechar um valor que fique bom para nós dois!
+                Aqui o papo é reto! Eu <strong>estou super aberto a negociações</strong>. Viu uma peça que você amou mas o orçamento apertou? Me chame no WhatsApp e vamos conversar para fechar um valor que fique bom para nós dois!
               </p>
               <p className="mb-4">
                 <strong>Atenção à Logística:</strong> No momento, por questões operacionais, a entrega dos produtos é realizada <strong>exclusivamente para a região de São Paulo</strong>. Nós podemos combinar a entrega via aplicativos (como Uber Entregas, Lalamove, etc.) ou marcar um encontro presencial em locais seguros, como estações de metrô, para a negociação.
@@ -76,23 +78,23 @@ export default function About() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-primary mb-4">Moda Sustentável</h2>
+              <h2 className="text-2xl font-bold text-primary mb-4">Sustentabilidade em Foco</h2>
               <p className="mb-4">
-                Acredito que dar uma segunda vida às roupas é um ato de amor ao planeta.
+                Acredito que dar uma segunda vida aos objetos é um ato de amor ao planeta.
                 Cada peça que você adquire aqui:
               </p>
               <ul className="list-disc list-inside space-y-2 ml-4">
                 <li>Evita o descarte desnecessário no meio ambiente</li>
                 <li>Reduz o consumo massivo de recursos naturais</li>
                 <li>Promove a economia circular de forma real</li>
-                <li>Te deixa com um estilo único, autêntico e sustentável</li>
+                <li>Te entrega um produto cheio de história, útil e sustentável</li>
               </ul>
             </section>
 
             <section>
               <h2 className="text-2xl font-bold text-primary mb-4">Como Comprar?</h2>
               <p className="mb-4">
-                É super fácil! Todos os produtos têm fotos reais e descrições detalhadas.
+                É super fácil! Todos os produtos têm fotos reais na galeria e descrições detalhadas.
                 Quando encontrar algo que gostar:
               </p>
               <ol className="list-decimal list-inside space-y-2 ml-4">
@@ -104,7 +106,7 @@ export default function About() {
             
             {/* SEÇÃO DO FORMS PARA O SAAS */}
             <section className="bg-secondary/10 rounded-lg p-6 border border-secondary/30 mt-12 shadow-sm">
-              <h2 className="text-xl font-bold text-primary mb-3">Quer ter o seu próprio brechó online?</h2>
+              <h2 className="text-xl font-bold text-primary mb-3">Quer ter o seu próprio espaço online?</h2>
               <p className="mb-4 text-sm text-muted-foreground">
                 Estou estudando a possibilidade de transformar toda essa tecnologia que você está vendo em uma 
                 plataforma por assinatura (SaaS). A ideia é que qualquer pessoa possa criar seu próprio site de 
