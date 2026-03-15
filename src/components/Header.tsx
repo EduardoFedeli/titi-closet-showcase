@@ -11,34 +11,39 @@ interface HeaderProps {
 export default function Header({ searchTerm, onSearchChange, currentPage = 'home', onNavigate }: HeaderProps) {
   return (
     <header className="sticky top-0 z-50 bg-card/95 backdrop-blur-sm border-b shadow-sm">
-      <div className="max-w-7xl mx-auto px-4 lg:px-6 py-3 lg:py-4">
-        {/* Container Principal: Em col no mobile, em row no desktop */}
-        <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+      <div className="max-w-7xl mx-auto px-4 lg:px-6 py-4">
+        {/* Container Principal: Em col no mobile, em grid no desktop */}
+        <div className="flex flex-col lg:grid lg:grid-cols-[1fr,auto,1fr] lg:items-center gap-4 lg:gap-6">
           
-          {/* LADO ESQUERDO: LOGO + SLOGAN */}
+          {/* LADO ESQUERDO: LOGO + TEXTO (O look que você ama) */}
           <div 
-            className="flex items-center gap-3 shrink-0 cursor-pointer transition-transform active:scale-95 lg:hover:scale-[1.02]"
+            className="flex items-center gap-3 shrink-0 cursor-pointer transition-transform lg:active:scale-95 lg:hover:scale-[1.02] justify-center lg:justify-start"
             onClick={() => onNavigate?.('home')}
           >
-            <img 
-              src="/Logo.jpg" 
-              alt="Logo T-Hex Garage" 
-              className="h-10 lg:h-12 w-auto object-contain rounded-lg" 
-            />
-            <div className="flex flex-col justify-center">
+            {/* O Container Largo e Arredondado do Dinossauro */}
+            <div className="bg-muted/10 rounded-xl px-4 py-2 flex items-center justify-center w-28 h-16 shadow-inner">
+              <img 
+                src="/Logo.jpg" 
+                alt="Logo T-Hex Garage" 
+                className="h-10 lg:h-12 w-auto object-contain" 
+              />
+            </div>
+            
+            {/* O Texto: Nome e Slogan empilhados */}
+            <div className="flex flex-col justify-center text-left">
               <h1 className="font-bold text-lg lg:text-xl text-primary leading-none">T-Hex Garage</h1>
-              <p className="hidden sm:block text-[10px] lg:text-xs text-muted-foreground mt-0.5 uppercase tracking-wider font-medium">
+              <p className="text-[10px] lg:text-xs text-muted-foreground mt-0.5 uppercase tracking-wider font-medium">
                 Desapegos Sustentáveis
               </p>
             </div>
           </div>
 
-          {/* CENTRO: BARRA DE BUSCA (Larga no desktop, cheia no mobile) */}
-          <div className="flex-1 max-w-2xl w-full">
+          {/* CENTRO (Grid col 2): BARRA DE BUSCA (Ajustada para o desktop) */}
+          <div className="flex-1 max-w-2xl w-full lg:mx-auto">
             <SearchBar value={searchTerm} onChange={onSearchChange} />
           </div>
 
-          {/* LADO DIREITO: NAVEGAÇÃO */}
+          {/* LADO DIREITO (Grid col 3): NAVEGAÇÃO */}
           <nav className="flex items-center gap-1 lg:gap-4 absolute top-3 right-4 lg:static">
             <button
               onClick={() => onNavigate?.('home')}
