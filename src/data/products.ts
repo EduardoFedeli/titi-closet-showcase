@@ -41,7 +41,7 @@ export const products: Product[] = [
       "https://i.imgur.com/3PHvxV5.jpeg"
     ],
     descricao: "Calça jogger marrom com ajuste elástico na cintura, marca JDY. Modelo confortável e versátil, ideal para uso casual ou esportivo. Tecido resistente com caimento moderno. Estado seminovo, conservada, sem defeitos. Tamanho G (44/46).",
-    linkEnjoei: "#"
+    linkEnjoei: "https://www.enjoei.com.br/p/calca-jogger-marrom-elastico-138532299?rsid=f8712f8a-23bd-4429-a8d2-9c1af7346887-1773594962079&rsp=1&rspix=9"
   },
   {
     id: "CAL002",
