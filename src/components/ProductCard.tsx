@@ -94,7 +94,7 @@ export default function ProductCard({ product, onClick, index }: ProductCardProp
             className="w-full font-semibold shadow-sm h-8 sm:h-9 px-1 sm:px-3 text-[9px] xs:text-[10px] sm:text-sm" 
             onClick={(e) => { e.stopPropagation(); onClick(); }}
           >
-            <span className="truncate w-full text-center">Ver detalhes e comprar</span>
+            <span className="truncate w-full text-center">Ver detalhes</span>
           </Button>
         </div>
       </div>
