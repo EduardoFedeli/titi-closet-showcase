@@ -36,7 +36,7 @@ export default function About() {
               <p className="mb-4">
                 O nome vem de uma brincadeira de amigos. Meu nick sempre foi "Tierspy", o que naturalmente gerou 
                 o apelido "Titi". Com o tempo, a criatividade da galera evoluiu isso para "T-Hex", e eu 
-                simplesmente adorei a ideia de usar isso como uma identidade visual única e divertida para o 
+                gostei da ideia de usar isso como uma identidade visual única e divertida para o 
                 meu projeto de desapegos na minha "garagem" online.
               </p>
             </section>
