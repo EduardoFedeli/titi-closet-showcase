@@ -3,9 +3,15 @@ export default function About() {
     <div className="min-h-screen bg-background">
       <div className="max-w-4xl mx-auto px-4 lg:px-6 py-16">
         <div className="bg-card rounded-2xl border shadow-lg p-8 lg:p-12">
+          
+          {/* CABEÇALHO COM A LOGO NOVA */}
           <div className="text-center mb-12">
-            <div className="w-24 h-24 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-              <span className="text-6xl">🦖</span>
+            <div className="flex justify-center mb-6 transition-transform hover:scale-105">
+              <img 
+                src="/public/Logo.jpg" 
+                alt="Logo T-Hex Closet" 
+                className="h-24 w-auto object-contain rounded-xl" 
+              />
             </div>
             <h1 className="text-4xl font-bold text-primary mb-4">T-Hex Closet</h1>
             <p className="text-xl text-muted-foreground">Desapegos com pegada jurássica 🦖</p>
@@ -47,6 +53,25 @@ export default function About() {
                 Ainda desconfiado ou prefere parcelar no cartão de crédito? Sem problemas! Todos os produtos 
                 possuem um botão alternativo com link direto para a minha lojinha no <strong>Enjoei</strong>. Lá você tem a segurança da 
                 plataforma como intermediária (apenas com um pequeno acréscimo no valor devido às taxas do app).
+              </p>
+            </section>
+
+            {/* SEÇÃO NOVA: FOTOS E IA */}
+            <section className="bg-muted/30 p-6 rounded-lg border border-border">
+              <h2 className="text-2xl font-bold text-primary mb-4">Atenção às Fotos! 📸</h2>
+              <p>
+                Para te ajudar a visualizar melhor como as peças vestem, <strong>a primeira foto de alguns produtos (principalmente roupas e bonés) é meramente ilustrativa, gerada por Inteligência Artificial</strong>. O objetivo é apenas te dar uma noção maior do conceito e do caimento. Para ver os detalhes 100% reais de costura, tecido e estado do produto, basta conferir as fotos seguintes na galeria de cada item!
+              </p>
+            </section>
+
+            {/* SEÇÃO NOVA: NEGOCIAÇÃO E LOGÍSTICA */}
+            <section>
+              <h2 className="text-2xl font-bold text-primary mb-4">Negociação e Entregas (Somente SP)</h2>
+              <p className="mb-4">
+                Aqui o papo é reto! Eu <strong>estou super aberto a negociações</strong>. Viu uma peça que você amou mas o orçamento apertou? Montou um carrinho com vários itens? Me chame no WhatsApp e vamos conversar para fechar um valor que fique bom para nós dois!
+              </p>
+              <p className="mb-4">
+                <strong>Atenção à Logística:</strong> No momento, por questões operacionais, a entrega dos produtos é realizada <strong>exclusivamente para a região de São Paulo</strong>. Nós podemos combinar a entrega via aplicativos (como Uber Entregas, Lalamove, etc.) ou marcar um encontro presencial em locais seguros, como estações de metrô, para a negociação.
               </p>
             </section>
 
@@ -102,7 +127,7 @@ export default function About() {
             <section className="bg-primary/5 rounded-lg p-6 border border-primary/20 mt-8">
               <h2 className="text-2xl font-bold text-primary mb-4">Entre em Contato</h2>
               <p className="mb-4">
-                Ficou com alguma dúvida? Quer sugerir algo ou saber se aquela peça que você amou ainda está disponível?
+                Ficou com alguma dúvida? Quer fazer uma oferta ou saber se aquela peça que você amou ainda está disponível?
               </p>
               
               <a 
