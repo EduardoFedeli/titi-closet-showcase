@@ -1,5 +1,5 @@
 // src/data/products.ts
-// Atualizado: 13/03/2026 - 62 produtos (59 + 3 kits)
+// Atualizado: 15/03/2026 - Catálogo Completo T-Hex Closet
 
 export interface Product {
   id: string;
@@ -29,8 +29,8 @@ export const products: Product[] = [
     marca: "JDY",
     tamanho: "G (44/46)",
     estado: "Seminovo",
-    preco: 50,
-    precoEnjoei: 60,
+    preco: 50.00,
+    precoEnjoei: 58.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
@@ -41,7 +41,7 @@ export const products: Product[] = [
       "https://i.imgur.com/3PHvxV5.jpeg"
     ],
     descricao: "Calça jogger marrom com ajuste elástico na cintura, marca JDY. Modelo confortável e versátil, ideal para uso casual ou esportivo. Tecido resistente com caimento moderno. Estado seminovo, conservada, sem defeitos. Tamanho G (44/46).",
-    linkEnjoei: "#"
+    linkEnjoei: ""
   },
   {
     id: "CAL002",
@@ -50,8 +50,8 @@ export const products: Product[] = [
     marca: "JDY",
     tamanho: "G (44/46)",
     estado: "Seminovo",
-    preco: 40,
-    precoEnjoei: 45,
+    preco: 40.00,
+    precoEnjoei: 46.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
@@ -61,7 +61,7 @@ export const products: Product[] = [
       "https://i.imgur.com/qwlSXsT.jpeg"
     ],
     descricao: "Calça jogger bege com cintura elástica ajustável, marca JDY. Design casual e prático, perfeita para o dia a dia. Tecido confortável e durável. Estado seminovo, bem conservada. Tamanho G (44/46).",
-    linkEnjoei: "#"
+    linkEnjoei: ""
   },
   {
     id: "CAL003",
@@ -70,8 +70,8 @@ export const products: Product[] = [
     marca: "Nicoboco",
     tamanho: "40",
     estado: "Usado",
-    preco: 60,
-    precoEnjoei: 70,
+    preco: 60.00,
+    precoEnjoei: 70.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
@@ -82,7 +82,7 @@ export const products: Product[] = [
       "https://i.imgur.com/AimovT4.jpeg"
     ],
     descricao: "Calça cargo cinza com múltiplos bolsos utilitários, marca Nicoboco. Estilo urbano funcional, ideal para atividades ao ar livre ou look streetwear. Tecido resistente. Estado usado, bom estado geral. Tamanho 40.",
-    linkEnjoei: "#"
+    linkEnjoei: ""
   },
   {
     id: "CAL004",
@@ -91,8 +91,8 @@ export const products: Product[] = [
     marca: "Ecko Unltd",
     tamanho: "44",
     estado: "Seminovo",
-    preco: 50,
-    precoEnjoei: 60,
+    preco: 50.00,
+    precoEnjoei: 58.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
@@ -102,7 +102,7 @@ export const products: Product[] = [
       "https://i.imgur.com/xjw8uVb.jpeg"
     ],
     descricao: "Calça jeans azul clássica, marca Ecko Unltd Oficial. Modelagem tradicional atemporal, versátil para diversas ocasiões. Denim de qualidade com acabamento premium. Estado seminovo, excelente conservação. Tamanho 44.",
-    linkEnjoei: "#"
+    linkEnjoei: ""
   },
   {
     id: "CAL005",
@@ -111,8 +111,8 @@ export const products: Product[] = [
     marca: "JDY",
     tamanho: "G (44/46)",
     estado: "Usado",
-    preco: 60,
-    precoEnjoei: 70,
+    preco: 60.00,
+    precoEnjoei: 70.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
@@ -121,17 +121,17 @@ export const products: Product[] = [
       "https://i.imgur.com/iRieaqD.jpeg"
     ],
     descricao: "Calça cargo bege com ajuste por cordão na cintura, marca JDY. Modelo utilitário com bolsos funcionais, estilo casual moderno. Tecido resistente e confortável. Estado usado, bem cuidada. Tamanho G (44/46).",
-    linkEnjoei: "#"
+    linkEnjoei: ""
   },
   {
     id: "CAL006",
-    nome: "Calça Moletom Cinza Escuro",
+    nome: "Calça Jogger Cinza Escuro",
     categoria: "Calças",
     marca: "Centauro",
     tamanho: "G (44/46)",
     estado: "Usado",
-    preco: 40,
-    precoEnjoei: 45,
+    preco: 40.00,
+    precoEnjoei: 46.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
@@ -140,8 +140,8 @@ export const products: Product[] = [
       "https://i.imgur.com/1FGkLny.jpeg",
       "https://i.imgur.com/hwU20G2.jpeg"
     ],
-    descricao: "Calça Moletom cinza escuro, Sem marca. Design esportivo com elástico na barra, perfeita para look casual. Material leve e respirável. Estado usado, boa conservação. Tamanho G (44/46).",
-    linkEnjoei: "#"
+    descricao: "Calça jogger cinza escuro, marca Centauro. Design esportivo com elástico na barra, perfeita para treinos ou look casual. Material leve e respirável. Estado usado, boa conservação. Tamanho G (44/46).",
+    linkEnjoei: ""
   },
   {
     id: "CAL007",
@@ -150,8 +150,8 @@ export const products: Product[] = [
     marca: "Shein",
     tamanho: "M (40/42)",
     estado: "Usado",
-    preco: 40,
-    precoEnjoei: 45,
+    preco: 40.00,
+    precoEnjoei: 46.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
@@ -161,7 +161,7 @@ export const products: Product[] = [
       "https://i.imgur.com/z6uZaCd.jpeg"
     ],
     descricao: "Calça cargo preta estilo skate streetwear retro com elástico, marca Shein. Visual urbano moderno com múltiplos bolsos. Acabamento jogger nas barras. Estado usado, bem mantida. Tamanho M (40/42).",
-    linkEnjoei: "#"
+    linkEnjoei: ""
   },
   {
     id: "CAL008",
@@ -170,8 +170,8 @@ export const products: Product[] = [
     marca: "Nicoboco",
     tamanho: "46",
     estado: "Seminovo",
-    preco: 65,
-    precoEnjoei: 75,
+    preco: 65.00,
+    precoEnjoei: 76.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
@@ -180,7 +180,7 @@ export const products: Product[] = [
       "https://i.imgur.com/YlSADNQ.jpeg"
     ],
     descricao: "Calça jeans azul escuro, marca Nicoboco. Lavagem clássica com caimento confortável, ideal para uso diário. Denim de boa qualidade e durabilidade. Estado seminovo, impecável. Tamanho 46.",
-    linkEnjoei: "#"
+    linkEnjoei: ""
   },
   {
     id: "CAL009",
@@ -189,8 +189,8 @@ export const products: Product[] = [
     marca: "Náutica",
     tamanho: "38",
     estado: "Novo",
-    preco: 100,
-    precoEnjoei: 115,
+    preco: 100.00,
+    precoEnjoei: 117.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
@@ -199,7 +199,7 @@ export const products: Product[] = [
       "https://i.imgur.com/cP0bQNp.jpeg"
     ],
     descricao: "Calça chino verde militar, marca Náutica. Estilo elegante casual, perfeita para looks mais arrumados. Tecido premium com excelente caimento. Estado novo, nunca usada. Tamanho 38.",
-    linkEnjoei: "#"
+    linkEnjoei: ""
   },
   {
     id: "CAM001",
@@ -208,8 +208,8 @@ export const products: Product[] = [
     marca: "Hering",
     tamanho: "M",
     estado: "Novo",
-    preco: 40,
-    precoEnjoei: 45,
+    preco: 40.00,
+    precoEnjoei: 46.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
@@ -220,7 +220,7 @@ export const products: Product[] = [
       "https://i.imgur.com/nni0OYO.png"
     ],
     descricao: "Camiseta amarela básica 100% algodão, marca Hering. Modelagem clássica confortável, perfeita para o dia a dia. Tecido macio de alta qualidade. Estado novo, etiqueta preservada. Tamanho M. Cor vibrante e versátil.",
-    linkEnjoei: "#"
+    linkEnjoei: ""
   },
   {
     id: "CAM002",
@@ -229,8 +229,8 @@ export const products: Product[] = [
     marca: "Shein",
     tamanho: "G",
     estado: "Novo",
-    preco: 30,
-    precoEnjoei: 35,
+    preco: 30.00,
+    precoEnjoei: 35.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
@@ -241,7 +241,7 @@ export const products: Product[] = [
       "https://i.imgur.com/ARVn2lh.jpeg"
     ],
     descricao: "Camiseta unissex roxa 100% algodão estilo streetwear, marca Shein. Design moderno e confortável, ideal para looks casuais. Tecido respirável de qualidade. Estado novo. Tamanho G. Tom roxo diferenciado.",
-    linkEnjoei: "#"
+    linkEnjoei: ""
   },
   {
     id: "CAM003",
@@ -250,8 +250,8 @@ export const products: Product[] = [
     marca: "Nexstar",
     tamanho: "M",
     estado: "Usado",
-    preco: 30,
-    precoEnjoei: 35,
+    preco: 30.00,
+    precoEnjoei: 35.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
@@ -260,7 +260,7 @@ export const products: Product[] = [
       "https://i.imgur.com/QROEXhi.jpeg"
     ],
     descricao: "Camiseta preta básica essencial, marca Nexstar. Peça coringa do guarda-roupa, combina com tudo. Modelagem confortável tradicional. Estado usado, bem conservada. Tamanho M. Clássico atemporal.",
-    linkEnjoei: "#"
+    linkEnjoei: ""
   },
   {
     id: "CAM004",
@@ -269,8 +269,8 @@ export const products: Product[] = [
     marca: "SSB Brand",
     tamanho: "M",
     estado: "Usado",
-    preco: 20,
-    precoEnjoei: 25,
+    preco: 20.00,
+    precoEnjoei: 23.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
@@ -279,7 +279,7 @@ export const products: Product[] = [
       "https://i.imgur.com/Cf4tytt.jpeg"
     ],
     descricao: "Camiseta preta lisa básica, marca SSB Brand. Essencial versátil para qualquer ocasião. Tecido de algodão confortável. Estado usado, ótima conservação. Tamanho M. Perfeita para compor looks.",
-    linkEnjoei: "#"
+    linkEnjoei: ""
   },
   {
     id: "CAM005",
@@ -288,8 +288,8 @@ export const products: Product[] = [
     marca: "Shein",
     tamanho: "M",
     estado: "Seminovo",
-    preco: 20,
-    precoEnjoei: 25,
+    preco: 22.00,
+    precoEnjoei: 25.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
@@ -298,7 +298,7 @@ export const products: Product[] = [
       "https://i.imgur.com/1cHXXEG.jpeg"
     ],
     descricao: "Camiseta branca masculina fit slim, marca Shein. Modelagem ajustada moderna e confortável. Tecido de qualidade que valoriza o shape. Estado seminovo, impecável. Tamanho M. Corte contemporâneo elegante.",
-    linkEnjoei: "#"
+    linkEnjoei: ""
   },
   {
     id: "CAM006",
@@ -307,8 +307,8 @@ export const products: Product[] = [
     marca: "SSB Brand",
     tamanho: "M",
     estado: "Usado",
-    preco: 20,
-    precoEnjoei: 25,
+    preco: 20.00,
+    precoEnjoei: 23.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
@@ -317,7 +317,7 @@ export const products: Product[] = [
       "https://i.imgur.com/XQAwK0K.jpeg"
     ],
     descricao: "Camiseta cinza claro básica lisa, marca SSB Brand. Tom neutro versátil, combina facilmente. Tecido confortável de uso diário. Estado usado, excelente estado. Tamanho M. Peça essencial básica.",
-    linkEnjoei: "#"
+    linkEnjoei: ""
   },
   {
     id: "CAM007",
@@ -326,8 +326,8 @@ export const products: Product[] = [
     marca: "SSB Brand",
     tamanho: "M",
     estado: "Usado",
-    preco: 20,
-    precoEnjoei: 25,
+    preco: 20.00,
+    precoEnjoei: 23.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
@@ -336,7 +336,7 @@ export const products: Product[] = [
       "https://i.imgur.com/k1eKRx0.jpeg"
     ],
     descricao: "Camiseta azul marinho básica lisa, marca SSB Brand. Cor clássica elegante para o dia a dia. Algodão macio e durável. Estado usado, bem conservada. Tamanho M. Essencial masculino atemporal.",
-    linkEnjoei: "#"
+    linkEnjoei: ""
   },
   {
     id: "CAM008",
@@ -345,8 +345,8 @@ export const products: Product[] = [
     marca: "SSB Brand",
     tamanho: "M",
     estado: "Usado",
-    preco: 20,
-    precoEnjoei: 25,
+    preco: 20.00,
+    precoEnjoei: 23.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
@@ -355,7 +355,7 @@ export const products: Product[] = [
       "https://i.imgur.com/f1cn9eU.jpeg"
     ],
     descricao: "Camiseta vermelha básica lisa, marca SSB Brand. Tom vibrante que destaca, versátil para combinar. Tecido de qualidade confortável. Estado usado, ótimo estado. Tamanho M. Adiciona cor ao visual.",
-    linkEnjoei: "#"
+    linkEnjoei: ""
   },
   {
     id: "CAM009",
@@ -364,8 +364,8 @@ export const products: Product[] = [
     marca: "Sem marca",
     tamanho: "M",
     estado: "Usado",
-    preco: 25,
-    precoEnjoei: 25,
+    preco: 25.00,
+    precoEnjoei: 29.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
@@ -374,7 +374,7 @@ export const products: Product[] = [
       "https://i.imgur.com/POaIPi5.jpeg"
     ],
     descricao: "Camiseta marrom oversized básica. Modelagem ampla moderna e confortável, estilo streetwear. Tom terra neutro diferenciado. Estado usado, bem mantida. Tamanho M. Caimento oversized atual.",
-    linkEnjoei: "#"
+    linkEnjoei: ""
   },
   {
     id: "CAM010",
@@ -383,8 +383,8 @@ export const products: Product[] = [
     marca: "SSB Brand",
     tamanho: "M",
     estado: "Usado",
-    preco: 15,
-    precoEnjoei: 15,
+    preco: 15.00,
+    precoEnjoei: 17.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
@@ -393,7 +393,7 @@ export const products: Product[] = [
       "https://i.imgur.com/pScdM5s.jpeg"
     ],
     descricao: "Regata preta básica masculina, marca SSB Brand. Ideal para academia, praia ou looks casuais. Tecido leve e confortável. Estado usado, boa conservação. Tamanho M. Essencial para dias quentes.",
-    linkEnjoei: "#"
+    linkEnjoei: ""
   },
   {
     id: "CAM011",
@@ -402,8 +402,8 @@ export const products: Product[] = [
     marca: "SSB Brand",
     tamanho: "M",
     estado: "Usado",
-    preco: 15,
-    precoEnjoei: 15,
+    preco: 15.00,
+    precoEnjoei: 17.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
@@ -412,17 +412,17 @@ export const products: Product[] = [
       "https://i.imgur.com/kc4cJrY.jpeg"
     ],
     descricao: "Regata branca básica lisa, marca SSB Brand. Versátil para treinos ou verão, essencial masculino. Material leve respirável. Estado usado, bem cuidada. Tamanho M. Clássico funcional.",
-    linkEnjoei: "#"
+    linkEnjoei: ""
   },
   {
     id: "CAM012",
-    nome: "Regata Mescla Cinza",
+    nome: "Regata Cinza Básica",
     categoria: "Camisas",
     marca: "SSB Brand",
     tamanho: "M",
     estado: "Usado",
-    preco: 15,
-    precoEnjoei: 15,
+    preco: 15.00,
+    precoEnjoei: 17.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
@@ -431,17 +431,17 @@ export const products: Product[] = [
       "https://i.imgur.com/bjfl3s7.jpeg"
     ],
     descricao: "Regata mescla cinza, marca SSB Brand. Tom neutro moderno, ideal para academia ou casual. Tecido confortável de algodão. Estado usado, conservada. Tamanho M. Visual clean despojado.",
-    linkEnjoei: "#"
+    linkEnjoei: ""
   },
   {
     id: "CAM013",
-    nome: "Regata Branca Mescla",
+    nome: "Regata Branca Básica 02",
     categoria: "Camisas",
     marca: "SSB Brand",
     tamanho: "M",
     estado: "Usado",
-    preco: 15,
-    precoEnjoei: 15,
+    preco: 15.00,
+    precoEnjoei: 17.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
@@ -450,17 +450,17 @@ export const products: Product[] = [
       "https://i.imgur.com/nUBpIGx.jpeg"
     ],
     descricao: "Regata branca mescla básica 100% algodão, marca SSB Brand. Textura diferenciada elegante, versátil para diversas ocasiões. Material de qualidade. Estado usado, ótimo estado. Tamanho M.",
-    linkEnjoei: "#"
+    linkEnjoei: ""
   },
   {
     id: "CAM014",
-    nome: "Camiseta Cinza Performance",
+    nome: "Camiseta Cinza Fit Slim",
     categoria: "Camisas",
     marca: "Shein",
     tamanho: "M",
     estado: "Seminovo",
-    preco: 20,
-    precoEnjoei: 20,
+    preco: 22.00,
+    precoEnjoei: 25.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
@@ -469,7 +469,7 @@ export const products: Product[] = [
       "https://i.imgur.com/x9pK7nS.jpeg"
     ],
     descricao: "Camiseta cinza performance dry-fit fit slim, marca Shein. Tecnologia que afasta umidade, ideal para treinos. Tecido respirável de secagem rápida. Estado seminovo, impecável. Tamanho M. Perfeita para esportes.",
-    linkEnjoei: "#"
+    linkEnjoei: ""
   },
   {
     id: "CAM015",
@@ -478,8 +478,8 @@ export const products: Product[] = [
     marca: "Sem marca",
     tamanho: "M",
     estado: "Seminovo",
-    preco: 30,
-    precoEnjoei: 35,
+    preco: 30.00,
+    precoEnjoei: 35.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
@@ -488,7 +488,7 @@ export const products: Product[] = [
       "https://i.imgur.com/syXhuw2.jpeg"
     ],
     descricao: "Camiseta cinza fit com estampa ondulada moderna. Design diferenciado que se destaca, modelagem ajustada. Tecido de qualidade confortável. Estado seminovo, excelente. Tamanho M. Visual contemporâneo único.",
-    linkEnjoei: "#"
+    linkEnjoei: ""
   },
   {
     id: "CAM016",
@@ -497,8 +497,8 @@ export const products: Product[] = [
     marca: "Mizuno",
     tamanho: "M",
     estado: "Usado",
-    preco: 35,
-    precoEnjoei: 40,
+    preco: 35.00,
+    precoEnjoei: 40.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
@@ -507,7 +507,7 @@ export const products: Product[] = [
       "https://i.imgur.com/lWVF7Ff.jpeg"
     ],
     descricao: "Camiseta azul marinho fit slim, marca Mizuno. Modelagem esportiva ajustada de alto desempenho. Material técnico de qualidade premium. Estado usado, bem conservada. Tamanho M. Design atlético profissional.",
-    linkEnjoei: "#"
+    linkEnjoei: ""
   },
   {
     id: "CAM017",
@@ -516,8 +516,8 @@ export const products: Product[] = [
     marca: "Umbro",
     tamanho: "M",
     estado: "Seminovo",
-    preco: 35,
-    precoEnjoei: 40,
+    preco: 35.00,
+    precoEnjoei: 40.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
@@ -526,7 +526,7 @@ export const products: Product[] = [
       "https://i.imgur.com/tYoJMik.jpeg"
     ],
     descricao: "Camiseta azul Umbro gola V com faixas brancas fit slim. Estilo esportivo elegante, marca tradicional. Tecido de performance confortável. Estado seminovo, ótima conservação. Tamanho M. Visual esportivo refinado.",
-    linkEnjoei: "#"
+    linkEnjoei: ""
   },
   {
     id: "CAM018",
@@ -535,8 +535,8 @@ export const products: Product[] = [
     marca: "Reserva",
     tamanho: "M",
     estado: "Usado",
-    preco: 35,
-    precoEnjoei: 40,
+    preco: 35.00,
+    precoEnjoei: 40.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
@@ -545,7 +545,7 @@ export const products: Product[] = [
       "https://i.imgur.com/yCswWvo.jpeg"
     ],
     descricao: "Regata azul marinho básica com bordado discreto, marca Reserva. Detalhe sofisticado sutil, qualidade premium. Tecido nobre confortável. Estado usado, bem cuidada. Tamanho M. Estilo casual elegante.",
-    linkEnjoei: "#"
+    linkEnjoei: ""
   },
   {
     id: "CAM019",
@@ -554,8 +554,8 @@ export const products: Product[] = [
     marca: "Lecimar",
     tamanho: "P",
     estado: "Usado",
-    preco: 20,
-    precoEnjoei: 20,
+    preco: 20.00,
+    precoEnjoei: 23.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
@@ -564,7 +564,7 @@ export const products: Product[] = [
       "https://i.imgur.com/kdh3hJ4.jpeg"
     ],
     descricao: "Camiseta térmica manga longa azul marinho canelada, marca Lecimar. Segunda pele aquece sem volume, ideal para frio. Tecido elástico confortável. Estado usado, ótimo. Tamanho P. Funcional para inverno.",
-    linkEnjoei: "#"
+    linkEnjoei: ""
   },
   {
     id: "CAM020",
@@ -573,8 +573,8 @@ export const products: Product[] = [
     marca: "MCD",
     tamanho: "M",
     estado: "Usado",
-    preco: 30,
-    precoEnjoei: 35,
+    preco: 30.00,
+    precoEnjoei: 35.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
@@ -584,7 +584,7 @@ export const products: Product[] = [
       "https://i.imgur.com/Tnn8D4Q.jpeg"
     ],
     descricao: "Camiseta manga longa degradê azul cinza, marca MCD. Efeito visual moderno sofisticado, estilo surf urbano. Tecido confortável de qualidade. Estado usado, bem conservada. Tamanho M. Design diferenciado autoral.",
-    linkEnjoei: "#"
+    linkEnjoei: ""
   },
   {
     id: "CAM021",
@@ -593,8 +593,8 @@ export const products: Product[] = [
     marca: "Shein",
     tamanho: "M",
     estado: "Usado",
-    preco: 60,
-    precoEnjoei: 70,
+    preco: 60.00,
+    precoEnjoei: 70.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
@@ -605,17 +605,17 @@ export const products: Product[] = [
       "https://i.imgur.com/COn17wl.jpeg"
     ],
     descricao: "Camiseta polo manga longa preta com gola de zíper retrô, marca Shein. Design vintage diferenciado, elegante casual. Detalhes que destacam. Estado usado, ótima conservação. Tamanho M. Estilo único sofisticado.",
-    linkEnjoei: "#"
+    linkEnjoei: ""
   },
   {
     id: "CAM022",
-    nome: "Polo Laranja Texturizada",
+    nome: "Camiseta Polo Laranja Texturizada",
     categoria: "Camisas",
-    marca: "Five Brand",
+    marca: "Five",
     tamanho: "M",
     estado: "Seminovo",
-    preco: 40,
-    precoEnjoei: 45,
+    preco: 40.00,
+    precoEnjoei: 46.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
@@ -623,18 +623,18 @@ export const products: Product[] = [
       "https://i.imgur.com/LfZvDXn.jpeg",
       "https://i.imgur.com/mcpCti8.jpeg"
     ],
-    descricao: "Polo laranja texturizada, marca 5. Tecido diferenciado com relevo elegante, cor vibrante. Modelagem tradicional confortável. Estado seminovo, impecável. Tamanho M. Visual marcante sofisticado.",
-    linkEnjoei: "#"
+    descricao: "Polo laranja texturizada, marca Five. Tecido diferenciado com relevo elegante, cor vibrante. Modelagem tradicional confortável. Estado seminovo, impecável. Tamanho M. Visual marcante sofisticado.",
+    linkEnjoei: ""
   },
   {
     id: "CAM023",
-    nome: "Camiseta Rosa Pink Logo",
+    nome: "Camiseta Rosa Polo Wear",
     categoria: "Camisas",
     marca: "Polo Wear",
     tamanho: "M",
     estado: "Seminovo",
-    preco: 50,
-    precoEnjoei: 60,
+    preco: 50.00,
+    precoEnjoei: 58.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
@@ -645,7 +645,7 @@ export const products: Product[] = [
       "https://i.imgur.com/gTZ3bSk.jpeg"
     ],
     descricao: "Camiseta rosa pink com logo pequeno bordado, marca Polo Wear. Cor ousada moderna, qualidade premium. Detalhe discreto elegante. Estado seminovo, excelente. Tamanho M. Tom diferenciado que destaca.",
-    linkEnjoei: "#"
+    linkEnjoei: ""
   },
   {
     id: "CAM024",
@@ -654,8 +654,8 @@ export const products: Product[] = [
     marca: "THPE Company",
     tamanho: "G",
     estado: "Seminovo",
-    preco: 70,
-    precoEnjoei: 80,
+    preco: 70.00,
+    precoEnjoei: 81.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
@@ -666,7 +666,7 @@ export const products: Product[] = [
       "https://i.imgur.com/tRuV8Z8.jpeg"
     ],
     descricao: "Camiseta off-white oversized com estampa Type, marca THPE Company. Design minimalista contemporâneo, modelagem ampla atual. Tecido premium de qualidade. Estado seminovo, impecável. Tamanho G. Estilo urbano moderno.",
-    linkEnjoei: "#"
+    linkEnjoei: ""
   },
   {
     id: "CAM025",
@@ -675,8 +675,8 @@ export const products: Product[] = [
     marca: "Sem marca",
     tamanho: "G",
     estado: "Seminovo",
-    preco: 60,
-    precoEnjoei: 70,
+    preco: 60.00,
+    precoEnjoei: 70.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
@@ -685,7 +685,7 @@ export const products: Product[] = [
       "https://i.imgur.com/9Kp10Gx.jpeg"
     ],
     descricao: "Camiseta branca dry-fit com capuz único. Peça diferenciada funcional, tecnologia que seca rápido. Capuz adiciona estilo proteção. Estado seminovo, ótimo. Tamanho G. Inovadora e prática.",
-    linkEnjoei: "#"
+    linkEnjoei: ""
   },
   {
     id: "CAM026",
@@ -694,8 +694,8 @@ export const products: Product[] = [
     marca: "Hering",
     tamanho: "M",
     estado: "Novo",
-    preco: 90,
-    precoEnjoei: 105,
+    preco: 90.00,
+    precoEnjoei: 105.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
@@ -705,7 +705,7 @@ export const products: Product[] = [
       "https://i.imgur.com/bC1nkGn.jpeg"
     ],
     descricao: "Colete cinza acolchoado com zíper, marca Hering. Peça versátil para meia estação, aquece sem peso. Enchimento de qualidade confortável. Estado novo, etiqueta original. Tamanho M. Coringa do guarda-roupa.",
-    linkEnjoei: "#"
+    linkEnjoei: ""
   },
   {
     id: "CAM027",
@@ -714,8 +714,8 @@ export const products: Product[] = [
     marca: "O'Neill",
     tamanho: "G",
     estado: "Usado",
-    preco: 35,
-    precoEnjoei: 40,
+    preco: 35.00,
+    precoEnjoei: 40.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
@@ -726,7 +726,7 @@ export const products: Product[] = [
       "https://i.imgur.com/YMsb1W0.jpeg"
     ],
     descricao: "Camiseta preta O'Neill com logo colorido horizontal, marca autêntica de surf. Design icônico reconhecível, estilo californiano. Tecido de qualidade durável. Estado usado, bem conservada. Tamanho G. Marca tradicional cult.",
-    linkEnjoei: "#"
+    linkEnjoei: ""
   },
   {
     id: "CAM028",
@@ -735,8 +735,8 @@ export const products: Product[] = [
     marca: "Diamond",
     tamanho: "M",
     estado: "Seminovo",
-    preco: 60,
-    precoEnjoei: 70,
+    preco: 60.00,
+    precoEnjoei: 70.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
@@ -746,7 +746,7 @@ export const products: Product[] = [
       "https://i.imgur.com/4jEpHZs.jpeg"
     ],
     descricao: "Camiseta amarela com logo branco minimalista, marca Diamond Supply Co. Brand icônico do skate, design clean sofisticado. Qualidade premium streetwear. Estado seminovo, impecável. Tamanho M. Estilo autêntico diferenciado.",
-    linkEnjoei: "#"
+    linkEnjoei: ""
   },
   {
     id: "CAM029",
@@ -755,8 +755,8 @@ export const products: Product[] = [
     marca: "Elite",
     tamanho: "M",
     estado: "Seminovo",
-    preco: 65,
-    precoEnjoei: 75,
+    preco: 65.00,
+    precoEnjoei: 76.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
@@ -765,7 +765,7 @@ export const products: Product[] = [
       "https://i.imgur.com/Aen2vGq.jpeg"
     ],
     descricao: "Camiseta laranja com estampa de panda streetwear, marca Elite. Design artístico urbano que chama atenção. Cor vibrante única. Estado seminovo, excelente. Tamanho M. Visual ousado contemporâneo.",
-    linkEnjoei: "#"
+    linkEnjoei: ""
   },
   {
     id: "CAM030",
@@ -774,8 +774,8 @@ export const products: Product[] = [
     marca: "Gratto",
     tamanho: "M",
     estado: "Seminovo",
-    preco: 20,
-    precoEnjoei: 20,
+    preco: 20.00,
+    precoEnjoei: 23.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
@@ -784,7 +784,7 @@ export const products: Product[] = [
       "https://i.imgur.com/el6Rs4W.jpeg"
     ],
     descricao: "Regata branca Huntington Beach surf vintage 1914, marca Gratto. Estampa retrô californiana nostálgica, estilo surf clássico. Material confortável leve. Estado seminovo, ótimo. Tamanho M. Visual vintage autêntico.",
-    linkEnjoei: "#"
+    linkEnjoei: ""
   },
   {
     id: "CAM031",
@@ -793,8 +793,8 @@ export const products: Product[] = [
     marca: "Long Island",
     tamanho: "M",
     estado: "Usado",
-    preco: 20,
-    precoEnjoei: 25,
+    preco: 20.00,
+    precoEnjoei: 23.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
@@ -803,7 +803,7 @@ export const products: Product[] = [
       "https://i.imgur.com/08M6wUj.jpeg"
     ],
     descricao: "Regata cinza com estampa de caveira, marca Long Island. Design rock urbano marcante, estilo despojado. Estampa de impacto visual. Estado usado, bem cuidada. Tamanho M. Atitude e personalidade.",
-    linkEnjoei: "#"
+    linkEnjoei: ""
   },
   {
     id: "CAM032",
@@ -812,8 +812,8 @@ export const products: Product[] = [
     marca: "NBA",
     tamanho: "G",
     estado: "Seminovo",
-    preco: 195,
-    precoEnjoei: 230,
+    preco: 195.00,
+    precoEnjoei: 228.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
@@ -823,7 +823,7 @@ export const products: Product[] = [
       "https://i.imgur.com/XurSwqb.jpeg"
     ],
     descricao: "Regata oficial Warriors #30 azul NBA autêntica. Camisa oficial do jogador Stephen Curry, qualidade premium licenciada. Material de jogo profissional. Estado seminovo, impecável. Tamanho G. Item colecionável valioso.",
-    linkEnjoei: "#"
+    linkEnjoei: ""
   },
   {
     id: "CAM033",
@@ -832,8 +832,8 @@ export const products: Product[] = [
     marca: "Adidas",
     tamanho: "G",
     estado: "Seminovo",
-    preco: 45,
-    precoEnjoei: 50,
+    preco: 45.00,
+    precoEnjoei: 52.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
@@ -844,7 +844,7 @@ export const products: Product[] = [
       "https://i.imgur.com/rGw6Kke.jpeg"
     ],
     descricao: "Camisa oficial Real Madrid branca 2024/2025, marca Adidas. Temporada atual lançamento recente, qualidade oficial. Tecido tecnológico de performance. Estado seminovo, excelente. Tamanho G. Para verdadeiros torcedores.",
-    linkEnjoei: "#"
+    linkEnjoei: ""
   },
   {
     id: "CAM034",
@@ -853,8 +853,8 @@ export const products: Product[] = [
     marca: "Nike",
     tamanho: "M",
     estado: "Seminovo",
-    preco: 245,
-    precoEnjoei: 285,
+    preco: 245.00,
+    precoEnjoei: 286.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
@@ -864,7 +864,7 @@ export const products: Product[] = [
       "https://i.imgur.com/iQwUR1o.jpeg"
     ],
     descricao: "Camisa Brasil original torcedor Pro 2 temporada 22/23 azul, marca Nike. Versão oficial de jogo premium, tecnologia Dri-Fit. Qualidade profissional licenciada. Estado seminovo, impecável. Tamanho M. Peça de colecionador.",
-    linkEnjoei: "#"
+    linkEnjoei: ""
   },
   {
     id: "CAM035",
@@ -873,18 +873,18 @@ export const products: Product[] = [
     marca: "Sem marca",
     tamanho: "M",
     estado: "Seminovo",
-    preco: 30,
-    precoEnjoei: 35,
+    preco: 30.00,
+    precoEnjoei: 35.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
       "https://i.imgur.com/vgCJm4O.jpeg",
       "https://i.imgur.com/0XHe094.jpeg",
       "https://i.imgur.com/qfmizuE.jpeg",
-      "https://i.imgur.com/WQRfFNT.jpeg"
+      "https://i.imgur.com/HhQF0rX.jpeg"
     ],
     descricao: "Camiseta azul claro Manchester City estilo raglan. Design casual de torcedor, confortável para o dia a dia. Cores oficiais do clube. Estado seminovo, bem conservada. Tamanho M. Para fãs do City.",
-    linkEnjoei: "#"
+    linkEnjoei: ""
   },
   {
     id: "CAM036",
@@ -893,18 +893,18 @@ export const products: Product[] = [
     marca: "Sem marca",
     tamanho: "M",
     estado: "Seminovo",
-    preco: 40,
-    precoEnjoei: 45,
+    preco: 40.00,
+    precoEnjoei: 46.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
       "https://i.imgur.com/kFIy5EO.jpeg",
       "https://i.imgur.com/SOOhrbp.jpeg",
       "https://i.imgur.com/Ro8kH0y.jpeg",
-      "https://i.imgur.com/AtaetKo.jpeg"
+      "https://i.imgur.com/tq9JkC1.jpeg"
     ],
     descricao: "Camiseta azul Palmeiras raglan com escudo bordado. Design de torcedor diferenciado, mangas em contraste. Escudo aplicado com qualidade. Estado seminovo, ótimo. Tamanho M. Palmeirense com estilo.",
-    linkEnjoei: "#"
+    linkEnjoei: ""
   },
   {
     id: "CAM037",
@@ -913,8 +913,8 @@ export const products: Product[] = [
     marca: "Sem marca",
     tamanho: "M",
     estado: "Seminovo",
-    preco: 30,
-    precoEnjoei: 35,
+    preco: 30.00,
+    precoEnjoei: 35.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
@@ -923,7 +923,7 @@ export const products: Product[] = [
       "https://i.imgur.com/bsMttf6.jpeg"
     ],
     descricao: "Camiseta verde Palmeiras com patrocinador Crefisa. Cor oficial alviverde, design de torcedor. Material confortável de algodão. Estado seminovo, bem cuidada. Tamanho M. Verdão no coração.",
-    linkEnjoei: "#"
+    linkEnjoei: ""
   },
   {
     id: "CAM038",
@@ -932,8 +932,8 @@ export const products: Product[] = [
     marca: "Scream Athletes",
     tamanho: "G",
     estado: "Usado",
-    preco: 35,
-    precoEnjoei: 40,
+    preco: 35.00,
+    precoEnjoei: 40.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
@@ -942,41 +942,30 @@ export const products: Product[] = [
       "https://i.imgur.com/6vauEvh.jpeg"
     ],
     descricao: "Camiseta raglan branca com mangas azuis, marca Scream Athletes. Design esportivo clássico bicolor, confortável e versátil. Tecido de qualidade. Estado usado, bem conservada. Tamanho G. Estilo atlético casual.",
-    linkEnjoei: "#"
+    linkEnjoei: ""
   },
   {
     id: "KIT001",
-    nome: "Kit 5 Camisetas Básicas",
+    nome: "Kit 5 Camisetas Básicas Algodão",
     categoria: "Kits",
-    marca: "SSB Brand e Nexstar",
+    marca: "SSB Brand",
     tamanho: "M",
     estado: "Usado",
-    preco: 130,
-    precoEnjoei: 150,
+    preco: 130.00,
+    precoEnjoei: 152.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
-      "https://i.imgur.com/COtqyeu.jpeg",
-      "https://i.imgur.com/irj5gP2.jpeg",
-      "https://i.imgur.com/1pfmd9h.jpeg",
-      "https://i.imgur.com/QROEXhi.jpeg",
       "https://i.imgur.com/sPDdvxf.jpeg",
-      "https://i.imgur.com/Eha1dHU.jpeg",
-      "https://i.imgur.com/Cf4tytt.jpeg",
+      "https://i.imgur.com/DuOVV7A.jpeg",
       "https://i.imgur.com/KYhUC3x.jpeg",
-      "https://i.imgur.com/gddRJos.jpeg",
-      "https://i.imgur.com/XQAwK0K.jpeg",
       "https://i.imgur.com/pSh7qSF.jpeg",
-      "https://i.imgur.com/XTZ9UBw.jpeg",
-      "https://i.imgur.com/k1eKRx0.jpeg",
-      "https://i.imgur.com/sOV2wKP.jpeg",
-      "https://i.imgur.com/SpRDd1d.jpeg",
-      "https://i.imgur.com/f1cn9eU.jpeg"
+      "https://i.imgur.com/sOV2wKP.jpeg"
     ],
-    descricao: "Kit com 5 camisetas básicas essenciais marcas SSB Brand e Nexstar. Cores versáteis, perfeitas para o dia a dia. Todas tamanho M, estado usado/seminovo bem conservado. Economia garantida comprando o kit. Perfeito para quem busca praticidade e variedade.",
+    descricao: "Kit completo com 9 camisetas básicas essenciais marca SSB Brand. Cores versáteis: preta (2x), branca fit, cinza claro, azul marinho, vermelha, regatas preta/branca/mescla/mescla cinza. Todas tamanho M, estado usado/seminovo bem conservado. Renovação completa do guarda-roupa! Economia de 21% comprando o kit. Perfeito para quem busca praticidade e variedade.",
     isKit: true,
     desconto: 21,
-    linkEnjoei: "#"
+    produtosInclusos: ["CAM004", "CAM005", "CAM006", "CAM007", "CAM008", "CAM010", "CAM011", "CAM012", "CAM013"]
   },
   {
     id: "KIT002",
@@ -985,24 +974,18 @@ export const products: Product[] = [
     marca: "Sem marca",
     tamanho: "M",
     estado: "Seminovo",
-    preco: 55,
-    precoEnjoei: 65,
+    preco: 55.00,
+    precoEnjoei: 64.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
-      "https://i.imgur.com/qXoKnL7.png",
       "https://i.imgur.com/kFIy5EO.jpeg",
-      "https://i.imgur.com/SOOhrbp.jpeg",
-      "https://i.imgur.com/Ro8kH0y.jpeg",
-      "https://i.imgur.com/AtaetKo.jpeg",
-      "https://i.imgur.com/mBwzHf2.png",
-      "https://i.imgur.com/SB93vCo.jpeg",
-      "https://i.imgur.com/bsMttf6.jpeg"
+      "https://i.imgur.com/mBwzHf2.png"
     ],
     descricao: "Kit torcedor Palmeiras com 2 camisetas temáticas. Azul raglan com escudo bordado + verde oficial Crefisa. Ambas tamanho M, estado seminovo. Combine e varie nos jogos! Economia de 16% no kit. Ideal para palmeirenses de coração.",
     isKit: true,
     desconto: 16,
-    linkEnjoei: "#"
+    produtosInclusos: ["CAM036", "CAM037"]
   },
   {
     id: "KIT003",
@@ -1011,27 +994,18 @@ export const products: Product[] = [
     marca: "Federal Art",
     tamanho: "GG",
     estado: "Seminovo",
-    preco: 235,
-    precoEnjoei: 275,
+    preco: 235.00,
+    precoEnjoei: 274.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
-      "https://i.imgur.com/BD7wHbw.jpeg",
       "https://i.imgur.com/OP2EoFa.jpeg",
-      "https://i.imgur.com/DFFJ5Kr.jpeg",
-      "https://i.imgur.com/G7k1Qxp.jpeg",
-      "https://i.imgur.com/uy4ymC1.jpeg",
-      "https://i.imgur.com/6xssScc.jpeg",
-      "https://i.imgur.com/T8UTvGy.jpeg",
-      "https://i.imgur.com/XQMcONH.jpeg",
-      "https://i.imgur.com/mc6Nucg.jpeg",
-      "https://i.imgur.com/mwkykih.jpeg",
-      "https://i.imgur.com/L0CNigu.jpeg"
+      "https://i.imgur.com/XQMcONH.jpeg"
     ],
     descricao: "Kit inverno premium com 2 jaquetas flanela xadrez Federal Art. Modelo azul/preto com forro + modelo cinza/preto. Ambas tamanho GG, qualidade superior, estado seminovo impecável. Aquecem com estilo! Economia de 15% no combo. Perfeitas para dias frios.",
     isKit: true,
     desconto: 15,
-    linkEnjoei: "#"
+    produtosInclusos: ["JAQ002", "JAQ004"]
   },
   {
     id: "DIV001",
@@ -1040,8 +1014,8 @@ export const products: Product[] = [
     marca: "Stalo",
     tamanho: "60x40 cm",
     estado: "Seminovo",
-    preco: 45,
-    precoEnjoei: 50,
+    preco: 45.00,
+    precoEnjoei: 52.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
@@ -1049,7 +1023,7 @@ export const products: Product[] = [
       "https://i.imgur.com/fxmDbRZ.jpeg"
     ],
     descricao: "Quadro lousa branco para marcador 60x40cm com canetas incluídas, marca Stalo. Ideal para home office, estudos ou lembretes. Superfície lisa que apaga facilmente. Acompanha canetas coloridas. Estado seminovo, bem conservado. Funcional e prático.",
-    linkEnjoei: "#"
+    linkEnjoei: ""
   },
   {
     id: "ELE001",
@@ -1058,8 +1032,8 @@ export const products: Product[] = [
     marca: "3 Pao",
     tamanho: "26x10 cm",
     estado: "Seminovo",
-    preco: 20,
-    precoEnjoei: 25,
+    preco: 20.00,
+    precoEnjoei: 23.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
@@ -1069,7 +1043,7 @@ export const products: Product[] = [
       "https://i.imgur.com/bpPuHpV.jpeg"
     ],
     descricao: "Ventilador de mesa compacto com umidificador 2 em 1, marca 3 Pao. Refresca e umidifica simultaneamente, ideal para ambientes secos. Tamanho compacto 26x10cm. USB recarregável portátil. Estado seminovo, funcionamento perfeito. Prático para escritório ou quarto.",
-    linkEnjoei: "#"
+    linkEnjoei: ""
   },
   {
     id: "JAQ001",
@@ -1078,8 +1052,8 @@ export const products: Product[] = [
     marca: "Sem marca",
     tamanho: "M",
     estado: "Usado",
-    preco: 90,
-    precoEnjoei: 105,
+    preco: 90.00,
+    precoEnjoei: 105.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
@@ -1089,7 +1063,7 @@ export const products: Product[] = [
       "https://i.imgur.com/M1LRJOE.jpeg"
     ],
     descricao: "Jaqueta colete xadrez azul com capuz removível. Design versátil para meia estação, estampa clássica atemporal. Bolsos funcionais práticos. Estado usado, bem cuidada. Tamanho M. Estilo casual urbano.",
-    linkEnjoei: "#"
+    linkEnjoei: ""
   },
   {
     id: "JAQ002",
@@ -1098,8 +1072,8 @@ export const products: Product[] = [
     marca: "Federal Art",
     tamanho: "GG",
     estado: "Seminovo",
-    preco: 135,
-    precoEnjoei: 160,
+    preco: 135.00,
+    precoEnjoei: 157.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
@@ -1111,7 +1085,7 @@ export const products: Product[] = [
       "https://i.imgur.com/T8UTvGy.jpeg"
     ],
     descricao: "Jaqueta flanela xadrez azul e preta com forro interno, marca Federal Art. Aquecimento premium com estilo lenhador, qualidade superior. Botões reforçados acabamento impecável. Estado seminovo, excelente. Tamanho GG. Peça de inverno essencial.",
-    linkEnjoei: "#"
+    linkEnjoei: ""
   },
   {
     id: "JAQ003",
@@ -1120,8 +1094,8 @@ export const products: Product[] = [
     marca: "Sem marca",
     tamanho: "G",
     estado: "Usado",
-    preco: 110,
-    precoEnjoei: 125,
+    preco: 110.00,
+    precoEnjoei: 128.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
@@ -1131,7 +1105,7 @@ export const products: Product[] = [
       "https://i.imgur.com/utpx7Ct.jpeg"
     ],
     descricao: "Jaqueta moletom cinza com estampa vintage de Kombi. Design retrô nostálgico único, confortável e quentinha. Capuz ajustável bolsos canguru. Estado usado, boa conservação. Tamanho G. Estilo descolado autêntico.",
-    linkEnjoei: "#"
+    linkEnjoei: ""
   },
   {
     id: "JAQ004",
@@ -1140,8 +1114,8 @@ export const products: Product[] = [
     marca: "Federal Art",
     tamanho: "GG",
     estado: "Seminovo",
-    preco: 140,
-    precoEnjoei: 165,
+    preco: 140.00,
+    precoEnjoei: 163.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
@@ -1151,7 +1125,7 @@ export const products: Product[] = [
       "https://i.imgur.com/L0CNigu.jpeg"
     ],
     descricao: "Jaqueta flanela xadrez cinza e preta premium, marca Federal Art. Modelo similar à azul, qualidade idêntica superior. Forro interno aquecido confortável. Estado seminovo, impecável. Tamanho GG. Excelente para frio intenso.",
-    linkEnjoei: "#"
+    linkEnjoei: ""
   },
   {
     id: "JAQ005",
@@ -1160,8 +1134,8 @@ export const products: Product[] = [
     marca: "QuickSilver",
     tamanho: "G",
     estado: "Usado",
-    preco: 120,
-    precoEnjoei: 140,
+    preco: 120.00,
+    precoEnjoei: 140.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
@@ -1171,7 +1145,7 @@ export const products: Product[] = [
       "https://i.imgur.com/spie3v7.jpeg"
     ],
     descricao: "Jaqueta moletom azul com listras horizontais, marca QuickSilver. Brand tradicional de surf, design esportivo elegante. Zíper frontal capuz ajustável. Estado usado, bem conservada. Tamanho G. Estilo surf urbano autêntico.",
-    linkEnjoei: "#"
+    linkEnjoei: ""
   },
   {
     id: "SHO001",
@@ -1180,8 +1154,8 @@ export const products: Product[] = [
     marca: "Sem marca",
     tamanho: "M",
     estado: "Seminovo",
-    preco: 40,
-    precoEnjoei: 45,
+    preco: 40.00,
+    precoEnjoei: 46.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
@@ -1190,7 +1164,7 @@ export const products: Product[] = [
       "https://i.imgur.com/LBEgaiP.jpeg"
     ],
     descricao: "Bermuda de praia azul com estampa geométrica moderna. Design vibrante diferenciado, secagem rápida. Bolsos funcionais cordão ajustável. Estado seminovo, ótimo. Tamanho M. Perfeita para verão e piscina.",
-    linkEnjoei: "#"
+    linkEnjoei: ""
   },
   {
     id: "SHO002",
@@ -1199,8 +1173,8 @@ export const products: Product[] = [
     marca: "Get Over",
     tamanho: "P",
     estado: "Usado",
-    preco: 45,
-    precoEnjoei: 50,
+    preco: 45.00,
+    precoEnjoei: 52.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
@@ -1208,7 +1182,7 @@ export const products: Product[] = [
       "https://i.imgur.com/TTGfaA1.jpeg"
     ],
     descricao: "Bermuda branca dry-fit com recorte em mesh respirável, marca Get Over. Tecnologia esportiva de alta performance, ventilação estratégica. Leve e confortável. Estado usado, bem cuidada. Tamanho P. Ideal para treinos intensos.",
-    linkEnjoei: "#"
+    linkEnjoei: ""
   },
   {
     id: "SHO003",
@@ -1217,8 +1191,8 @@ export const products: Product[] = [
     marca: "Hugo Boss",
     tamanho: "42",
     estado: "Seminovo",
-    preco: 45,
-    precoEnjoei: 50,
+    preco: 45.00,
+    precoEnjoei: 52.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
@@ -1227,17 +1201,17 @@ export const products: Product[] = [
       "https://i.imgur.com/NuqqyIx.jpeg"
     ],
     descricao: "Bermuda cáqui cargo com bolsos laterais, marca Hugo Boss. Grife premium qualidade superior, estilo sofisticado casual. Tecido nobre resistente. Estado seminovo, impecável. Tamanho 42. Elegância e funcionalidade.",
-    linkEnjoei: "#"
+    linkEnjoei: ""
   },
   {
-    id: "TEN001",
-    nome: "Tênis Amarelo Suede Cano Médio",
-    categoria: "Tênis",
+    id: "CALCADO001",
+    nome: "Bota Amarelo Suede Cano Médio",
+    categoria: "Calçados",
     marca: "XXL",
     tamanho: "40-41",
     estado: "Seminovo",
-    preco: 295,
-    precoEnjoei: 345,
+    preco: 295.00,
+    precoEnjoei: 345.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
@@ -1249,17 +1223,17 @@ export const products: Product[] = [
       "https://i.imgur.com/tBhqK3D.jpeg"
     ],
     descricao: "Tênis amarelo suede cano médio estilo skate, marca XXL. Cor vibrante que chama atenção, material nobre de qualidade. Palmilha confortável sola reforçada. Estado seminovo, pouco uso. Numeração 40-41. Visual ousado diferenciado.",
-    linkEnjoei: "#"
+    linkEnjoei: ""
   },
   {
-    id: "TEN002",
+    id: "CALCADO002",
     nome: "Tênis Nike Air Max DN Azul",
-    categoria: "Tênis",
+    categoria: "Calçados",
     marca: "Nike",
     tamanho: "40-41",
     estado: "Seminovo",
-    preco: 975,
-    precoEnjoei: 1140,
+    preco: 975.00,
+    precoEnjoei: 1121.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
@@ -1272,366 +1246,533 @@ export const products: Product[] = [
       "https://i.imgur.com/SILCyAj.jpeg"
     ],
     descricao: "Tênis Nike Air Max DN azul e branco modelo mais recente. Tecnologia Air Max de última geração, conforto e estilo premium. Design futurista sofisticado. Estado seminovo, excelente conservação. Numeração 40-41. Sneaker de alto valor colecionável.",
-    linkEnjoei: "#"
+    linkEnjoei: ""
   },
   {
     id: "BONE001",
-    nome: "BONE001",
+    nome: "Boné Branco e Azul Estilo Baseball",
     categoria: "Bone",
-    marca: "Genérica",
+    marca: "Sem Marca",
     tamanho: "Ajustável",
     estado: "Novo",
-    preco: 50,
-    precoEnjoei: 60,
+    preco: 40.00,
+    precoEnjoei: 46.90,
     status: "Ativo",
     dataCadastro: "15/03",
-    fotosImgur: ["https://i.imgur.com/H2O7Rva.jpeg", "https://i.imgur.com/SufoyDI.jpeg", "https://i.imgur.com/1jryB46.jpeg", "https://i.imgur.com/l2anThC.jpeg"],
-    descricao: "Descrição pendente. Em breve adicionaremos mais detalhes sobre este produto.",
-    linkEnjoei: "#"
+    fotosImgur: [
+      "https://i.imgur.com/H2O7Rva.jpeg",
+      "https://i.imgur.com/SufoyDI.jpeg",
+      "https://i.imgur.com/1jryB46.jpeg",
+      "https://i.imgur.com/l2anThC.jpeg"
+    ],
+    descricao: "Boné ajustável branco com aba azul, estilo clássico casual. Primeira imagem com modelo gerado por IA apenas para demonstrar o caimento da peça.",
+    linkEnjoei: ""
   },
   {
     id: "BONE002",
-    nome: "BONE002",
+    nome: "Boné Camuflado Verde Ajustável",
     categoria: "Bone",
-    marca: "Genérica",
+    marca: "Sem Marca",
     tamanho: "Ajustável",
     estado: "Usado",
-    preco: 50,
-    precoEnjoei: 60,
+    preco: 25.00,
+    precoEnjoei: 28.90,
     status: "Ativo",
     dataCadastro: "15/03",
-    fotosImgur: ["https://i.imgur.com/JeBxTme.jpeg", "https://i.imgur.com/XgMU6Jy.jpeg", "https://i.imgur.com/xab2Haf.jpeg"],
-    descricao: "Descrição pendente. Em breve adicionaremos mais detalhes sobre este produto.",
-    linkEnjoei: "#"
+    fotosImgur: [
+      "https://i.imgur.com/JeBxTme.jpeg",
+      "https://i.imgur.com/XgMU6Jy.jpeg",
+      "https://i.imgur.com/xab2Haf.jpeg"
+    ],
+    descricao: "Boné camuflado em tons de verde com ajuste traseiro. Design robusto para um visual outdoor. Primeira imagem com modelo gerado por IA apenas para demonstrar o caimento da peça.",
+    linkEnjoei: ""
   },
   {
     id: "BONE003",
-    nome: "BONE003",
+    nome: "Boné Cinza Casual Ajustável",
     categoria: "Bone",
-    marca: "Genérica",
+    marca: "Shein",
     tamanho: "Ajustável",
     estado: "Seminovo",
-    preco: 50,
-    precoEnjoei: 60,
+    preco: 25.00,
+    precoEnjoei: 28.90,
     status: "Ativo",
     dataCadastro: "15/03",
-    fotosImgur: ["https://i.imgur.com/9ys1rOR.jpeg", "https://i.imgur.com/Vd6brot.jpeg", "https://i.imgur.com/mMeB0AB.jpeg"],
-    descricao: "Descrição pendente. Em breve adicionaremos mais detalhes sobre este produto.",
-    linkEnjoei: "#"
+    fotosImgur: [
+      "https://i.imgur.com/9ys1rOR.jpeg",
+      "https://i.imgur.com/Vd6brot.jpeg",
+      "https://i.imgur.com/mMeB0AB.jpeg"
+    ],
+    descricao: "Boné cinza de estilo casual, fácil de combinar no dia a dia. Confortável e com ajuste preciso. Primeira imagem com modelo gerado por IA apenas para demonstrar o caimento da peça.",
+    linkEnjoei: ""
   },
   {
     id: "CAM039",
-    nome: "CAM039",
+    nome: "Camiseta Vermelha Polo Masculina",
     categoria: "Camisas",
-    marca: "Genérica",
+    marca: "Polo Wear",
     tamanho: "G",
     estado: "Novo",
-    preco: 50,
-    precoEnjoei: 60,
+    preco: 83.00,
+    precoEnjoei: 95.90,
     status: "Ativo",
     dataCadastro: "15/03",
-    fotosImgur: ["https://i.imgur.com/vjHOvkd.jpeg", "https://i.imgur.com/G6BD14b.jpeg", "https://i.imgur.com/5isG44E.jpeg"],
-    descricao: "Descrição pendente. Em breve adicionaremos mais detalhes sobre este produto.",
-    linkEnjoei: "#"
+    fotosImgur: [
+      "https://i.imgur.com/vjHOvkd.jpeg",
+      "https://i.imgur.com/G6BD14b.jpeg",
+      "https://i.imgur.com/5isG44E.jpeg"
+    ],
+    descricao: "Camiseta vermelha de modelagem simples e confortável para uso diário. Qualidade Polo Wear com ótimo caimento. Primeira imagem com modelo gerado por IA apenas para demonstrar o caimento da peça.",
+    linkEnjoei: ""
   },
   {
     id: "CAM040",
-    nome: "CAM040",
+    nome: "Camiseta Preta Fit Slim",
     categoria: "Camisas",
-    marca: "Genérica",
+    marca: "Shein",
     tamanho: "M",
     estado: "Novo",
-    preco: 50,
-    precoEnjoei: 60,
+    preco: 22.00,
+    precoEnjoei: 25.90,
     status: "Ativo",
     dataCadastro: "15/03",
-    fotosImgur: ["https://i.imgur.com/Qyh2jBr.jpeg", "https://i.imgur.com/RUAjU8A.jpeg", "https://i.imgur.com/cTcahyg.jpeg"],
-    descricao: "Descrição pendente. Em breve adicionaremos mais detalhes sobre este produto.",
-    linkEnjoei: "#"
+    fotosImgur: [
+      "https://i.imgur.com/Qyh2jBr.jpeg",
+      "https://i.imgur.com/RUAjU8A.jpeg",
+      "https://i.imgur.com/cTcahyg.jpeg"
+    ],
+    descricao: "Camiseta preta básica com corte Fit Slim, valorizando a silhueta. Tecido leve e moderno da Shein. Ideal para composições casuais ou esportivas.",
+    linkEnjoei: ""
   },
   {
     id: "CAM041",
-    nome: "CAM041",
+    nome: "Camiseta Polo Cinza Texturizada",
     categoria: "Camisas",
-    marca: "Genérica",
+    marca: "Five",
     tamanho: "P",
     estado: "Seminovo",
-    preco: 50,
-    precoEnjoei: 60,
+    preco: 40.00,
+    precoEnjoei: 46.90,
     status: "Ativo",
     dataCadastro: "15/03",
-    fotosImgur: ["https://i.imgur.com/fmWWBaB.jpeg", "https://i.imgur.com/ja6Dalh.jpeg", "https://i.imgur.com/gFgnJqL.jpeg"],
-    descricao: "Descrição pendente. Em breve adicionaremos mais detalhes sobre este produto.",
-    linkEnjoei: "#"
+    fotosImgur: [
+      "https://i.imgur.com/fmWWBaB.jpeg",
+      "https://i.imgur.com/ja6Dalh.jpeg",
+      "https://i.imgur.com/gFgnJqL.jpeg"
+    ],
+    descricao: "Camiseta Polo em tom cinza com tecido texturizado premium. Elegância e conforto para ocasiões semi-formais. Tamanho P com excelente conservação.",
+    linkEnjoei: ""
   },
   {
     id: "CAM042",
-    nome: "CAM042",
+    nome: "Camiseta Polo Branca Texturizada",
     categoria: "Camisas",
-    marca: "Genérica",
+    marca: "Five",
     tamanho: "M",
     estado: "Seminovo",
-    preco: 50,
-    precoEnjoei: 60,
+    preco: 40.00,
+    precoEnjoei: 46.90,
     status: "Ativo",
     dataCadastro: "15/03",
-    fotosImgur: ["https://i.imgur.com/rQXK9dF.jpeg", "https://i.imgur.com/aKn4U5G.jpeg", "https://i.imgur.com/J6KmjYr.jpeg"],
-    descricao: "Descrição pendente. Em breve adicionaremos mais detalhes sobre este produto.",
-    linkEnjoei: "#"
+    fotosImgur: [
+      "https://i.imgur.com/rQXK9dF.jpeG",
+      "https://i.imgur.com/aKn4U5G.jpeg",
+      "https://i.imgur.com/J6KmjYr.jpeg"
+    ],
+    descricao: "Camiseta Polo branca clássica com detalhe texturizado. Peça versátil e indispensável no guarda-roupa masculino. Tamanho M, estado impecável.",
+    linkEnjoei: ""
   },
   {
     id: "CAM043",
-    nome: "CAM043",
+    nome: "Camiseta Azul Marinho Masculina",
     categoria: "Camisas",
-    marca: "Genérica",
+    marca: "O",
     tamanho: "G",
     estado: "Usado",
-    preco: 50,
-    precoEnjoei: 60,
+    preco: 0.00, // Preço não informado na planilha, ajustado para 0
+    precoEnjoei: 0.90,
     status: "Ativo",
     dataCadastro: "15/03",
-    fotosImgur: ["https://i.imgur.com/lOrq11p.jpeg", "https://i.imgur.com/xqU1L4Z.jpeg", "https://i.imgur.com/MrzRNEr.jpeg", "https://i.imgur.com/IXHyXgp.jpeg"],
-    descricao: "Descrição pendente. Em breve adicionaremos mais detalhes sobre este produto.",
-    linkEnjoei: "#"
+    fotosImgur: [
+      "https://i.imgur.com/lOrq11p.jpeg",
+      "https://i.imgur.com/xqU1L4Z.jpeg",
+      "https://i.imgur.com/MrzRNEr.jpeg",
+      "https://i.imgur.com/IXHyXgp.jpeg"
+    ],
+    descricao: "Camiseta básica na cor azul marinho. Peça confortável de uso diário com modelagem tradicional tamanho G.",
+    linkEnjoei: ""
+  },
+  {
+    id: "KIT004",
+    nome: "Kit 3 Camisetas Polo Texturizadas",
+    categoria: "Kits",
+    marca: "Five",
+    tamanho: "2 M, 1 P",
+    estado: "Seminovo",
+    preco: 100.00,
+    precoEnjoei: 115.90,
+    status: "Ativo",
+    dataCadastro: "15/03",
+    fotosImgur: [
+      "https://i.imgur.com/YKX4LNo.jpeg",
+      "https://i.imgur.com/fmWWBaB.jpeg",
+      "https://i.imgur.com/rQXK9dF.jpeG"
+    ],
+    descricao: "Combo especial com 3 camisetas polo texturizadas da marca Five. Inclui cores variadas para renovar seu estilo com elegância e economia.",
+    isKit: true,
+    desconto: 17,
+    produtosInclusos: ["CAM022", "CAM041", "CAM042"]
+  },
+  {
+    id: "KIT005",
+    nome: "Kit 4 Regatas básicas 100% Algodão",
+    categoria: "Kits",
+    marca: "SSB Brand",
+    tamanho: "M",
+    estado: "Usado",
+    preco: 47.50,
+    precoEnjoei: 54.90,
+    status: "Ativo",
+    dataCadastro: "15/03",
+    fotosImgur: [
+      "https://i.imgur.com/GWFjSKR.jpeg",
+      "https://i.imgur.com/bAHWO29.jpeg",
+      "https://i.imgur.com/un6TloE.png"
+    ],
+    descricao: "Kit promocional com 4 regatas básicas em algodão. Perfeitas para treino ou dias quentes. Conforto térmico e durabilidade SSB Brand.",
+    isKit: true,
+    desconto: 20,
+    produtosInclusos: ["CAM010", "CAM011", "CAM012", "CAM013"]
+  },
+  {
+    id: "KIT006",
+    nome: "KIT 3 Camisetas Fit Slim",
+    categoria: "Kits",
+    marca: "Shein",
+    tamanho: "M",
+    estado: "Novo",
+    preco: 64.50,
+    precoEnjoei: 74.90,
+    status: "Ativo",
+    dataCadastro: "15/03",
+    fotosImgur: [
+      "https://i.imgur.com/4Ig4LLe.jpeg",
+      "https://i.imgur.com/DuOVV7A.jpeg",
+      "https://i.imgur.com/Qyh2jBr.jpeg"
+    ],
+    descricao: "Três camisetas com corte moderno Fit Slim. Cores neutras e tecido tecnológico que se ajusta ao corpo. Economia máxima no conjunto.",
+    isKit: true,
+    desconto: 15,
+    produtosInclusos: ["CAM005", "CAM014", "CAM040"]
   },
   {
     id: "DIV002",
-    nome: "DIV002",
+    nome: "Carta Colecionável Pokémon Deoxy Oversized",
     categoria: "Diversos",
-    marca: "Genérica",
-    tamanho: "1L",
-    estado: "Seminovo",
-    preco: 50,
-    precoEnjoei: 60,
+    marca: "Creatures Inc",
+    tamanho: "Oversized",
+    estado: "Usado",
+    preco: 41.60,
+    precoEnjoei: 47.90,
     status: "Ativo",
     dataCadastro: "15/03",
-    fotosImgur: ["https://i.imgur.com/fXDHbPN.jpeg", "https://i.imgur.com/tnpdgjT.jpeg", "https://i.imgur.com/LysrVrS.jpeg"],
-    descricao: "Descrição pendente. Em breve adicionaremos mais detalhes sobre este produto.",
-    linkEnjoei: "#"
+    fotosImgur: [
+      "https://i.imgur.com/RU5Neua.jpeg",
+      "https://i.imgur.com/GaGXdEO.jpeg"
+    ],
+    descricao: "Carta colecionável para fãs e colecionadores. Produto raro em tamanho oversized, conforme mostrado nas imagens.",
+    linkEnjoei: ""
   },
   {
     id: "DIV003",
-    nome: "DIV003",
+    nome: "Decoração 2 Espadas + Suporte",
     categoria: "Diversos",
-    marca: "Genérica",
-    tamanho: "1L",
-    estado: "Novo",
-    preco: 50,
-    precoEnjoei: 60,
+    marca: "M&H",
+    tamanho: "17x47",
+    estado: "Usado",
+    preco: 127.90,
+    precoEnjoei: 147.90,
     status: "Ativo",
     dataCadastro: "15/03",
-    fotosImgur: ["https://i.imgur.com/3GfkiS0.jpeg", "https://i.imgur.com/sWStgDf.jpeg"],
-    descricao: "Descrição pendente. Em breve adicionaremos mais detalhes sobre este produto.",
-    linkEnjoei: "#"
+    fotosImgur: [
+      "https://i.imgur.com/rSQUvks.jpeg",
+      "https://i.imgur.com/VYGWn3B.jpeg",
+      "https://i.imgur.com/DJjY71X.jpeg"
+    ],
+    descricao: "Conjunto decorativo contendo duas espadas ornamentais e suporte de madeira. Ideal para colecionadores e decoração de ambientes temáticos.",
+    linkEnjoei: ""
   },
   {
     id: "DIV004",
-    nome: "DIV004",
+    nome: "Tábua de Passar Roupa",
     categoria: "Diversos",
-    marca: "Genérica",
-    tamanho: "Oversized",
-    estado: "Usado",
-    preco: 50,
-    precoEnjoei: 60,
-    status: "Ativo",
-    dataCadastro: "15/03",
-    fotosImgur: ["https://i.imgur.com/RU5Neua.jpeg", "https://i.imgur.com/GaGXdEO.jpeg"],
-    descricao: "Descrição pendente. Em breve adicionaremos mais detalhes sobre este produto.",
-    linkEnjoei: "#"
-  },
-  {
-    id: "DIV005",
-    nome: "DIV005",
-    categoria: "Diversos",
-    marca: "Genérica",
-    tamanho: "17x47",
-    estado: "Usado",
-    preco: 50,
-    precoEnjoei: 60,
-    status: "Ativo",
-    dataCadastro: "15/03",
-    fotosImgur: ["https://i.imgur.com/rSQUvks.jpeg", "https://i.imgur.com/VYGWn3B.jpeg", "https://i.imgur.com/DJjY71X.jpeg"],
-    descricao: "Descrição pendente. Em breve adicionaremos mais detalhes sobre este produto.",
-    linkEnjoei: "#"
-  },
-  {
-    id: "DIV006",
-    nome: "DIV006",
-    categoria: "Diversos",
-    marca: "Genérica",
+    marca: "Sem Marca",
     tamanho: "100x112",
     estado: "Seminovo",
-    preco: 50,
-    precoEnjoei: 60,
+    preco: 78.00,
+    precoEnjoei: 89.90,
     status: "Ativo",
     dataCadastro: "15/03",
-    fotosImgur: ["https://i.imgur.com/5vptsyV.jpeg", "https://i.imgur.com/28PtXCk.jpeg", "https://i.imgur.com/XOSv0fn.jpeg", "https://i.imgur.com/NUvhnQc.jpeg"],
-    descricao: "Descrição pendente. Em breve adicionaremos mais detalhes sobre este produto.",
-    linkEnjoei: "#"
+    fotosImgur: [
+      "https://i.imgur.com/5vptsyV.jpeg",
+      "https://i.imgur.com/28PtXCk.jpeg",
+      "https://i.imgur.com/XOSv0fn.jpeg",
+      "https://i.imgur.com/NUvhnQc.jpeg"
+    ],
+    descricao: "Tábua de passar robusta e estável. Superfície ampla para facilitar o trabalho doméstico. Dobrável e fácil de guardar.",
+    linkEnjoei: ""
   },
   {
     id: "ELE002",
-    nome: "ELE002",
+    nome: "Aspirador e Soprador Portátil 4 em 1",
     categoria: "Eletrônicos",
-    marca: "Genérica",
+    marca: "Haoyo",
     tamanho: "12x17",
     estado: "Novo",
-    preco: 50,
-    precoEnjoei: 60,
+    preco: 20.88,
+    precoEnjoei: 24.90,
     status: "Ativo",
     dataCadastro: "15/03",
-    fotosImgur: ["https://i.imgur.com/mP499lJ.jpeg", "https://i.imgur.com/0X5uZdy.jpeg", "https://i.imgur.com/8csa5cf.jpeg", "https://i.imgur.com/0H0H1B9.jpeg"],
-    descricao: "Descrição pendente. Em breve adicionaremos mais detalhes sobre este produto.",
-    linkEnjoei: "#"
+    fotosImgur: [
+      "https://i.imgur.com/mP499lJ.jpeg",
+      "https://i.imgur.com/0X5uZdy.jpeg",
+      "https://i.imgur.com/8csa5cf.jpeg",
+      "https://i.imgur.com/0H0H1B9.jpeg"
+    ],
+    descricao: "Dispositivo versátil 4 em 1: aspira e sopra com eficiência. Portátil e ideal para limpeza de veículos e teclados. Produto novo na caixa.",
+    linkEnjoei: ""
   },
   {
     id: "LIV001",
-    nome: "LIV001",
+    nome: "Ponto de inflexão: Uma decisão muda tudo",
     categoria: "Livros",
-    marca: "Genérica",
+    marca: "Sem Marca",
     tamanho: "Único",
     estado: "Seminovo",
-    preco: 50,
-    precoEnjoei: 60,
+    preco: 30.00,
+    precoEnjoei: 34.90,
     status: "Ativo",
     dataCadastro: "15/03",
-    fotosImgur: ["https://i.imgur.com/eqiQIpN.jpeg", "https://i.imgur.com/dwzBV75.jpeg", "https://i.imgur.com/JPIbGgc.jpeg"],
-    descricao: "Descrição pendente. Em breve adicionaremos mais detalhes sobre este produto.",
-    linkEnjoei: "#"
+    fotosImgur: [
+      "https://i.imgur.com/eqiQIpN.jpeg",
+      "https://i.imgur.com/dwzBV75.jpeg",
+      "https://i.imgur.com/JPIbGgc.jpeg"
+    ],
+    descricao: "Livro em bom estado para leitura ou coleção. Obra inspiradora sobre decisões e mudanças de vida. Fotos mostram o exemplar real.",
+    linkEnjoei: ""
   },
   {
     id: "LIV002",
-    nome: "LIV002",
+    nome: "Dom Quixote - O Cavaleiro da Triste Figura",
     categoria: "Livros",
-    marca: "Genérica",
+    marca: "Sem Marca",
     tamanho: "Único",
     estado: "Usado",
-    preco: 50,
-    precoEnjoei: 60,
+    preco: 43.00,
+    precoEnjoei: 49.90,
     status: "Ativo",
     dataCadastro: "15/03",
-    fotosImgur: ["https://i.imgur.com/bFLtM3x.jpeg", "https://i.imgur.com/cC8tZMY.jpeg", "https://i.imgur.com/PVNCNoP.jpeg"],
-    descricao: "Descrição pendente. Em breve adicionaremos mais detalhes sobre este produto.",
-    linkEnjoei: "#"
+    fotosImgur: [
+      "https://i.imgur.com/bFLtM3x.jpeg",
+      "https://i.imgur.com/cC8tZMY.jpeg",
+      "https://i.imgur.com/PVNCNoP.jpeg"
+    ],
+    descricao: "Clássico da literatura em edição para leitura e coleção. Uma das obras mais importantes da literatura mundial. Fotos mostram o exemplar real.",
+    linkEnjoei: ""
   },
   {
     id: "LIV003",
-    nome: "LIV003",
+    nome: "Angústia - Graciliano Ramos",
     categoria: "Livros",
-    marca: "Genérica",
+    marca: "Sem Marca",
     tamanho: "Único",
     estado: "Usado",
-    preco: 50,
-    precoEnjoei: 60,
+    preco: 26.50,
+    precoEnjoei: 30.90,
     status: "Ativo",
     dataCadastro: "15/03",
-    fotosImgur: ["https://i.imgur.com/5unqfeK.jpeg", "https://i.imgur.com/WF7P7Av.jpeg", "https://i.imgur.com/W6UtOBO.jpeg"],
-    descricao: "Descrição pendente. Em breve adicionaremos mais detalhes sobre este produto.",
-    linkEnjoei: "#"
+    fotosImgur: [
+      "https://i.imgur.com/5unqfeK.jpeg",
+      "https://i.imgur.com/WF7P7Av.jpeg",
+      "https://i.imgur.com/W6UtOBO.jpeg"
+    ],
+    descricao: "Obra clássica da literatura brasileira em bom estado. Mergulhe na narrativa densa e psicológica de Graciliano Ramos.",
+    linkEnjoei: ""
   },
   {
     id: "LIV004",
-    nome: "LIV004",
+    nome: "1984 - George Orwell",
     categoria: "Livros",
-    marca: "Genérica",
+    marca: "Sem Marca",
     tamanho: "Único",
     estado: "Novo",
-    preco: 50,
-    precoEnjoei: 60,
+    preco: 14.26,
+    precoEnjoei: 16.90,
     status: "Ativo",
     dataCadastro: "15/03",
-    fotosImgur: ["https://i.imgur.com/crErxfU.jpeg", "https://i.imgur.com/MzkVj1X.jpeg", "https://i.imgur.com/Z3ILtgp.jpeg"],
-    descricao: "Descrição pendente. Em breve adicionaremos mais detalhes sobre este produto.",
-    linkEnjoei: "#"
+    fotosImgur: [
+      "https://i.imgur.com/crErxfU.jpeg",
+      "https://i.imgur.com/MzkVj1X.jpeg",
+      "https://i.imgur.com/Z3ILtgp.jpeg"
+    ],
+    descricao: "Clássico da literatura distópica em edição nova para leitura. Uma reflexão atemporal sobre vigilância e liberdade.",
+    linkEnjoei: ""
   },
   {
     id: "LIV005",
-    nome: "LIV005",
+    nome: "Sonho de uma noite de verão",
     categoria: "Livros",
-    marca: "Genérica",
+    marca: "Sem Marca",
     tamanho: "Único",
     estado: "Usado",
-    preco: 50,
-    precoEnjoei: 60,
+    preco: 70.30,
+    precoEnjoei: 80.90,
     status: "Ativo",
     dataCadastro: "15/03",
-    fotosImgur: ["https://i.imgur.com/Cynsp9W.jpeg", "https://i.imgur.com/C06ncY1.jpeg", "https://i.imgur.com/34MFgih.jpeg"],
-    descricao: "Descrição pendente. Em breve adicionaremos mais detalhes sobre este produto.",
-    linkEnjoei: "#"
+    fotosImgur: [
+      "https://i.imgur.com/Cynsp9W.jpeg",
+      "https://i.imgur.com/C06ncY1.jpeg",
+      "https://i.imgur.com/34MFgih.jpeg"
+    ],
+    descricao: "Obra clássica de William Shakespeare em edição de leitura. Uma comédia mística e encantadora sobre o amor.",
+    linkEnjoei: ""
   },
   {
-    id: "TEN003",
-    nome: "TEN003",
-    categoria: "Tênis",
-    marca: "Genérica",
+    id: "CALCADO003",
+    nome: "Sapato Social Preto Masculino",
+    categoria: "Calçados",
+    marca: "Sem Marca",
     tamanho: "40-41",
     estado: "Novo",
-    preco: 50,
-    precoEnjoei: 60,
+    preco: 45.40,
+    precoEnjoei: 52.90,
     status: "Ativo",
     dataCadastro: "15/03",
-    fotosImgur: ["https://i.imgur.com/OMuRmYf.jpeg", "https://i.imgur.com/TvvgN0Y.jpeg", "https://i.imgur.com/vCl2oM0.jpeg", "https://i.imgur.com/y4rLKii.jpeg"],
-    descricao: "Descrição pendente. Em breve adicionaremos mais detalhes sobre este produto.",
-    linkEnjoei: "#"
+    fotosImgur: [
+      "https://i.imgur.com/OMuRmYf.jpeg",
+      "https://i.imgur.com/TvvgN0Y.jpeg",
+      "https://i.imgur.com/vCl2oM0.jpeg",
+      "https://i.imgur.com/y4rLKii.jpeg"
+    ],
+    descricao: "Sapato social preto com acabamento elegante, ideal para ocasiões formais. Conforto e sofisticação em um produto novo.",
+    linkEnjoei: ""
   },
   {
     id: "TOUCA001",
-    nome: "TOUCA001",
+    nome: "Touca Azul Marinho de Inverno",
     categoria: "Touca",
-    marca: "Genérica",
+    marca: "Sports",
     tamanho: "Adulto",
     estado: "Novo",
-    preco: 50,
-    precoEnjoei: 60,
+    preco: 20.90,
+    precoEnjoei: 24.90,
     status: "Ativo",
     dataCadastro: "15/03",
-    fotosImgur: ["https://i.imgur.com/spk48Vr.jpeg", "https://i.imgur.com/ePjyyMZ.jpeg", "https://i.imgur.com/Dg0vmBu.jpeg", "https://i.imgur.com/qTBg9ta.jpeg"],
-    descricao: "Descrição pendente. Em breve adicionaremos mais detalhes sobre este produto.",
-    linkEnjoei: "#"
+    fotosImgur: [
+      "https://i.imgur.com/spk48Vr.jpeg",
+      "https://i.imgur.com/ePjyyMZ.jpeg",
+      "https://i.imgur.com/Dg0vmBu.jpeg",
+      "https://i.imgur.com/qTBg9ta.jpeg"
+    ],
+    descricao: "Touca de inverno em tecido confortável para dias frios. Proteção e estilo com a qualidade Sports. Cor azul marinho clássica.",
+    linkEnjoei: ""
   },
   {
     id: "TOUCA002",
-    nome: "TOUCA002",
+    nome: "Touca Azul Royal Casual",
     categoria: "Touca",
-    marca: "Genérica",
+    marca: "Sem Marca",
     tamanho: "Adulto",
     estado: "Usado",
-    preco: 50,
-    precoEnjoei: 60,
+    preco: 16.90,
+    precoEnjoei: 19.90,
     status: "Ativo",
     dataCadastro: "15/03",
-    fotosImgur: ["https://i.imgur.com/E7RGF8C.jpeg", "https://i.imgur.com/lrCohOD.jpeg", "https://i.imgur.com/uLhDSrd.jpeg", "https://i.imgur.com/tHf4fQI.jpeg"],
-    descricao: "Descrição pendente. Em breve adicionaremos mais detalhes sobre este produto.",
-    linkEnjoei: "#"
+    fotosImgur: [
+      "https://i.imgur.com/E7RGF8C.jpeg",
+      "https://i.imgur.com/lrCohOD.jpeg",
+      "https://i.imgur.com/uLhDSrd.jpeg",
+      "https://i.imgur.com/tHf4fQI.jpeg"
+    ],
+    descricao: "Touca azul estilo casual, confortável para uso no frio. Malha macia e tom vibrante para dias de inverno.",
+    linkEnjoei: ""
   },
   {
     id: "TOUCA003",
-    nome: "TOUCA003",
+    nome: "Touca Bege Tricot",
     categoria: "Touca",
-    marca: "Genérica",
+    marca: "wed`ze",
     tamanho: "Adulto",
     estado: "Novo",
-    preco: 50,
-    precoEnjoei: 60,
+    preco: 28.90,
+    precoEnjoei: 33.90,
     status: "Ativo",
     dataCadastro: "15/03",
-    fotosImgur: ["https://i.imgur.com/PPfdOBK.jpeg", "https://i.imgur.com/wGAPsFE.jpeg", "https://i.imgur.com/h21HiPM.jpeg"],
-    descricao: "Descrição pendente. Em breve adicionaremos mais detalhes sobre este produto.",
-    linkEnjoei: "#"
+    fotosImgur: [
+      "https://i.imgur.com/PPfdOBK.jpeg",
+      "https://i.imgur.com/wGAPsFE.jpeg",
+      "https://i.imgur.com/h21HiPM.jpeg"
+    ],
+    descricao: "Touca de tricot bege com visual simples e versátil. Marca wed`ze, conhecida pelo conforto térmico em baixas temperaturas.",
+    linkEnjoei: ""
   },
   {
     id: "TOUCA004",
-    nome: "TOUCA004",
+    nome: "Touca Listrada Preto e Cinza",
     categoria: "Touca",
-    marca: "Genérica",
+    marca: "Sem Marca",
     tamanho: "Adulto",
     estado: "Usado",
-    preco: 50,
-    precoEnjoei: 60,
+    preco: 20.30,
+    precoEnjoei: 23.90,
     status: "Ativo",
     dataCadastro: "15/03",
-    fotosImgur: ["https://i.imgur.com/fFkqSRr.jpeg", "https://i.imgur.com/gMussQk.jpeg", "https://i.imgur.com/yhCkYnp.jpeg", "https://i.imgur.com/2j7pOLu.jpeg"],
-    descricao: "Descrição pendente. Em breve adicionaremos mais detalhes sobre este produto.",
-    linkEnjoei: "#"
+    fotosImgur: [
+      "https://i.imgur.com/fFkqSRr.jpeg",
+      "https://i.imgur.com/gMussQk.jpeg",
+      "https://i.imgur.com/yhCkYnp.jpeg",
+      "https://i.imgur.com/2j7pOLu.jpeg"
+    ],
+    descricao: "Touca listrada em tons escuros, ideal para uso casual no inverno. Estilo despojado e aquecimento garantido.",
+    linkEnjoei: ""
+  },
+  {
+    id: "KIT007",
+    nome: "Kit 2 Garrafa Grande Caixa Leite Suco Água Acrílica 1L",
+    categoria: "Diversos",
+    marca: "LKS Shop Bazar Oficial",
+    tamanho: "1L",
+    estado: "Seminovo",
+    preco: 30.00,
+    precoEnjoei: 34.90,
+    status: "Ativo",
+    dataCadastro: "15/03",
+    fotosImgur: [
+      "https://i.imgur.com/fXDHbPN.jpeg",
+      "https://i.imgur.com/tnpdgjT.jpeg",
+      "https://i.imgur.com/LysrVrS.jpeg"
+    ],
+    descricao: "Conjunto com 2 garrafas de acrílico em formato criativo de caixa de leite. Capacidade de 1L cada, ideal para servir sucos e águas com estilo.",
+    isKit: true,
+    desconto: 0
+  },
+  {
+    id: "KIT008",
+    nome: "Kit 6 potes Herméticos para Mantimentos",
+    categoria: "Diversos",
+    marca: "Via Borge Store",
+    tamanho: "1L",
+    estado: "Novo",
+    preco: 95.00,
+    precoEnjoei: 109.90,
+    status: "Ativo",
+    dataCadastro: "15/03",
+    fotosImgur: [
+      "https://i.imgur.com/sseX1CT.jpeg",
+      "https://i.imgur.com/X9qb8S8.jpeg"
+    ],
+    descricao: "Kit com 6 potes herméticos de 1L. Dimensões: 10,5x11,5x13cm. Vedação perfeita para conservar mantimentos na despensa ou armário. Produto novo.",
+    isKit: true,
+    desconto: 0
   }
 ];
