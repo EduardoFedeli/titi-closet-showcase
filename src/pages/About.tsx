@@ -123,7 +123,7 @@ export default function About() {
               </p>
               
               <a 
-                href="https://wa.me/5511999999999" // NÃO ESQUEÇA DE COLOCAR SEU NÚMERO AQUI
+                href="https://wa.me/5511996923876" // NÃO ESQUEÇA DE COLOCAR SEU NÚMERO AQUI
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-[#25D366] text-white px-6 py-3 rounded-lg font-bold hover:bg-[#20b858] transition-colors shadow-md"
