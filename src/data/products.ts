@@ -1000,7 +1000,7 @@ export const products: Product[] = [
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
-      "https://i.imgur.com/OP2EoFa.jpeg",
+      "https://i.imgur.com/BD7wHbw.jpeg",
       "https://i.imgur.com/OP2EoFa.jpeg",
       "https://i.imgur.com/XQMcONH.jpeg"
     ],
@@ -1741,7 +1741,7 @@ export const products: Product[] = [
   {
     id: "KIT007",
     nome: "Kit 2 Garrafa Grande Caixa Leite Suco Água Acrílica 1L",
-    categoria: "Diversos, Kits", // <-- AQUI: Múltiplas categorias
+    categoria: "Diversos", "Kits"// <-- AQUI: Múltiplas categorias
     marca: "LKS Shop Bazar Oficial",
     tamanho: "1L",
     estado: "Seminovo",
