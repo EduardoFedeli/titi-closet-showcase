@@ -11,7 +11,6 @@ interface ProductCardProps {
 export default function ProductCard({ product, onClick, index }: ProductCardProps) {
   const mainImage = product?.fotosImgur?.[0] || "/placeholder.svg";
   
-  // No card principal, mostramos sempre o menor preço para chamar atenção
   const displayPrice = product.preco ?? 0;
 
   return (
@@ -25,12 +24,12 @@ export default function ProductCard({ product, onClick, index }: ProductCardProp
         <img
           src={mainImage}
           alt={product.nome}
-          className="object-contain w-full h-full transition-transform duration-500 group-hover:scale-110 bg-white/50"
+          {/* Voltamos para object-cover e tiramos o bg-white para preencher o card! */}
+          className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
           loading="lazy"
           onError={(e) => { (e.currentTarget as HTMLImageElement).src = "/placeholder.svg"; }}
         />
 
-        {/* Mantive apenas as mini-fotos no hover para dar um charme, sem botões em cima da imagem */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
           <div className="absolute bottom-3 left-3 flex gap-2">
             {product.fotosImgur.slice(0, 3).map((foto, i) => (
@@ -67,13 +66,17 @@ export default function ProductCard({ product, onClick, index }: ProductCardProp
         
         <div className="h-px bg-border mt-auto" />
         
-        <div className="flex items-baseline gap-2">
+        <div className="flex flex-col pt-1">
           <span className="text-2xl font-bold text-primary">R$ {displayPrice.toFixed(2).replace('.', ',')}</span>
+          {product.precoEnjoei && product.precoEnjoei !== product.preco && (
+            <span className="text-xs text-muted-foreground font-medium">
+              No Enjoei: <span className="line-through">R$ {product.precoEnjoei.toFixed(2).replace('.', ',')}</span>
+            </span>
+          )}
         </div>
         
         <div className="pt-2">
-          {/* Botão único chamando para dentro do modal */}
-          <Button className="w-full font-semibold" size="sm" onClick={(e) => { e.stopPropagation(); onClick(); }}>
+          <Button className="w-full font-semibold shadow-sm" size="sm" onClick={(e) => { e.stopPropagation(); onClick(); }}>
             Ver detalhes e comprar
           </Button>
         </div>
