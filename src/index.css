@@ -93,3 +93,15 @@
 ::-webkit-scrollbar-thumb:hover {
   background: hsl(var(--accent));
 }
+
+/* --- OCULTAR O BADGE DO LOVABLE --- */
+/* Força a remoção visual e interativa do selo injetado */
+[id^="lovable-"], 
+.lovable-badge,
+a[href*="lovable.dev"] {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  z-index: -9999 !important;
+}
