@@ -111,7 +111,7 @@ export default function ProductCard({ product, onClick, index }: ProductCardProp
             }}
           >
             <span className="truncate w-full text-center">
-              {isVendido ? "Produto Esgotado" : "Ver detalhes e comprar"}
+              {isVendido ? "Produto Vendido" : "Ver detalhes e comprar"}
             </span>
           </Button>
         </div>
