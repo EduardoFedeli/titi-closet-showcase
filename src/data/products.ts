@@ -8,6 +8,7 @@ export interface Product {
   marca: string;
   tamanho: string;
   estado: string;
+  vendido?: boolean;
   preco: number;
   precoEnjoei?: number;
   status: string;
@@ -833,6 +834,7 @@ export const products: Product[] = [
     tamanho: "G",
     estado: "Seminovo",
     preco: 45.00,
+    vendido: true,
     precoEnjoei: 52.90,
     status: "Ativo",
     dataCadastro: "11/03",
