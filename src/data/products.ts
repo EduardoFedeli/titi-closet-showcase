@@ -71,7 +71,7 @@ export const products: Product[] = [
     marca: "Nicoboco",
     tamanho: "40",
     estado: "Usado",
-    preco: 60.00,
+    preco: 53.40,
     precoEnjoei: 70.90,
     status: "Ativo",
     dataCadastro: "11/03",
@@ -131,7 +131,7 @@ export const products: Product[] = [
     marca: "Centauro",
     tamanho: "G (44/46)",
     estado: "Usado",
-    preco: 40.00,
+    preco: 36.90,
     precoEnjoei: 46.90,
     status: "Ativo",
     dataCadastro: "11/03",
@@ -148,7 +148,7 @@ export const products: Product[] = [
     id: "CAL007",
     nome: "Calça Cargo Preta Streetwear",
     categoria: "Calças",
-    marca: "Shein",
+    marca: "Sem marca",
     tamanho: "M (40/42)",
     estado: "Usado",
     preco: 40.00,
@@ -161,7 +161,7 @@ export const products: Product[] = [
       "https://i.imgur.com/3tdToJ4.jpeg",
       "https://i.imgur.com/z6uZaCd.jpeg"
     ],
-    descricao: "Calça cargo preta estilo skate streetwear retro com elástico, marca Shein. Visual urbano moderno com múltiplos bolsos. Acabamento jogger nas barras. Estado usado, bem mantida. Tamanho M (40/42).",
+    descricao: "Calça cargo preta estilo skate streetwear retro com elástico. Visual urbano moderno com múltiplos bolsos. Acabamento jogger nas barras. Estado usado, bem mantida. Tamanho M (40/42).",
     linkEnjoei: "https://photos.enjoei.com.br/public/300x300/czM6Ly9waG90b3MuZW5qb2VpLmNvbS5ici9wcm9kdWN0cy8zODY0ODU1Mi81OTJjNTliNDA2ZjA4MjhiYWVlNDBhMDM0YWM4YjliNS5qcGc"
   },
   {
@@ -227,7 +227,7 @@ export const products: Product[] = [
     id: "CAM002",
     nome: "Camiseta Roxa Streetwear",
     categoria: "Camisas",
-    marca: "Shein",
+    marca: "Sem marca",
     tamanho: "G",
     estado: "Novo",
     preco: 30.00,
@@ -241,7 +241,7 @@ export const products: Product[] = [
       "https://i.imgur.com/DehCLPD.jpeg",
       "https://i.imgur.com/ARVn2lh.jpeg"
     ],
-    descricao: "Camiseta unissex roxa 100% algodão estilo streetwear, marca Shein. Design moderno e confortável, ideal para looks casuais. Tecido respirável de qualidade. Estado novo. Tamanho G. Tom roxo diferenciado.",
+    descricao: "Camiseta unissex roxa 100% algodão estilo streetwear. Design moderno e confortável, ideal para looks casuais. Tecido respirável de qualidade. Estado novo. Tamanho G. Tom roxo diferenciado.",
     linkEnjoei: "https://www.enjoei.com.br/p/camiseta-roxa-streetwear-138533807?rsid=4a8fe2cc-fe94-4c9c-82bb-0a9fe5123952-1773595256476&rsp=2&rspix=2"
   },
   {
@@ -286,7 +286,7 @@ export const products: Product[] = [
     id: "CAM005",
     nome: "Camiseta Branca Fit Slim",
     categoria: "Camisas",
-    marca: "Shein",
+    marca: "Sem marca",
     tamanho: "M",
     estado: "Seminovo",
     preco: 22.00,
@@ -298,7 +298,7 @@ export const products: Product[] = [
       "https://i.imgur.com/3BOTKFW.jpeg",
       "https://i.imgur.com/1cHXXEG.jpeg"
     ],
-    descricao: "Camiseta branca masculina fit slim, marca Shein. Modelagem ajustada moderna e confortável. Tecido de qualidade que valoriza o shape. Estado seminovo, impecável. Tamanho M. Corte contemporâneo elegante.",
+    descricao: "Camiseta branca masculina fit slim. Modelagem ajustada moderna e confortável. Tecido de qualidade que valoriza o shape. Estado seminovo, impecável. Tamanho M. Corte contemporâneo elegante.",
     linkEnjoei: "https://www.enjoei.com.br/p/camiseta-branca-fit-slim-138534709?rsid=4a8fe2cc-fe94-4c9c-82bb-0a9fe5123952-1773595256476&rsp=1&rspix=29"
   },
   {
@@ -457,7 +457,7 @@ export const products: Product[] = [
     id: "CAM014",
     nome: "Camiseta Cinza Fit Slim",
     categoria: "Camisas",
-    marca: "Shein",
+    marca: "Sem marca",
     tamanho: "M",
     estado: "Seminovo",
     preco: 22.00,
@@ -469,7 +469,7 @@ export const products: Product[] = [
       "https://i.imgur.com/LpkorlE.jpeg",
       "https://i.imgur.com/x9pK7nS.jpeg"
     ],
-    descricao: "Camiseta cinza performance dry-fit fit slim, marca Shein. Tecnologia que afasta umidade, ideal para treinos. Tecido respirável de secagem rápida. Estado seminovo, impecável. Tamanho M. Perfeita para esportes.",
+    descricao: "Camiseta cinza performance dry-fit fit slim. Tecnologia que afasta umidade, ideal para treinos. Tecido respirável de secagem rápida. Estado seminovo, impecável. Tamanho M. Perfeita para esportes.",
     linkEnjoei: "https://www.enjoei.com.br/p/camiseta-cinza-fit-slim-138535205?rsid=4d96bf7e-1f1a-4a86-8349-f43350bab81b-1773595382725&rsp=2&rspix=27"
   },
   {
@@ -479,8 +479,8 @@ export const products: Product[] = [
     marca: "Sem marca",
     tamanho: "M",
     estado: "Seminovo",
-    preco: 30.00,
-    precoEnjoei: 35.90,
+    preco: 37.50,
+    precoEnjoei: 45.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
@@ -591,7 +591,7 @@ export const products: Product[] = [
     id: "CAM021",
     nome: "Polo Preta Manga Longa Zíper",
     categoria: "Camisas",
-    marca: "Shein",
+    marca: "Sem marca",
     tamanho: "M",
     estado: "Usado",
     preco: 60.00,
@@ -605,7 +605,7 @@ export const products: Product[] = [
       "https://i.imgur.com/TIufh85.jpeg",
       "https://i.imgur.com/COn17wl.jpeg"
     ],
-    descricao: "Camiseta polo manga longa preta com gola de zíper retrô, marca Shein. Design vintage diferenciado, elegante casual. Detalhes que destacam. Estado usado, ótima conservação. Tamanho M. Estilo único sofisticado.",
+    descricao: "Camiseta polo manga longa preta com gola de zíper retrô. Design vintage diferenciado, elegante casual. Detalhes que destacam. Estado usado, ótima conservação. Tamanho M. Estilo único sofisticado.",
     linkEnjoei: "https://www.enjoei.com.br/p/polo-preta-manga-longa-ziper-138537997?rsid=4d96bf7e-1f1a-4a86-8349-f43350bab81b-1773595382725&rsp=2&rspix=20"
   },
   {
@@ -756,7 +756,7 @@ export const products: Product[] = [
     marca: "Elite",
     tamanho: "M",
     estado: "Seminovo",
-    preco: 65.00,
+    preco: 64.70,
     precoEnjoei: 76.90,
     status: "Ativo",
     dataCadastro: "11/03",
@@ -813,7 +813,7 @@ export const products: Product[] = [
     marca: "NBA",
     tamanho: "G",
     estado: "Seminovo",
-    preco: 195.00,
+    preco: 185.65,
     precoEnjoei: 228.90,
     status: "Ativo",
     dataCadastro: "11/03",
@@ -855,7 +855,7 @@ export const products: Product[] = [
     marca: "Nike",
     tamanho: "M",
     estado: "Seminovo",
-    preco: 245.00,
+    preco: 243,20.00,
     precoEnjoei: 286.90,
     status: "Ativo",
     dataCadastro: "11/03",
@@ -875,7 +875,7 @@ export const products: Product[] = [
     marca: "Sem marca",
     tamanho: "M",
     estado: "Seminovo",
-    preco: 30.00,
+    preco: 29.00,
     precoEnjoei: 35.90,
     status: "Ativo",
     dataCadastro: "11/03",
@@ -895,7 +895,7 @@ export const products: Product[] = [
     marca: "Sem marca",
     tamanho: "M",
     estado: "Seminovo",
-    preco: 40.00,
+    preco: 35.00,
     precoEnjoei: 46.90,
     status: "Ativo",
     dataCadastro: "11/03",
@@ -915,8 +915,8 @@ export const products: Product[] = [
     marca: "Sem marca",
     tamanho: "M",
     estado: "Seminovo",
-    preco: 30.00,
-    precoEnjoei: 35.90,
+    preco: 40.00,
+    precoEnjoei: 45.90,
     status: "Ativo",
     dataCadastro: "11/03",
     fotosImgur: [
@@ -1312,8 +1312,8 @@ export const products: Product[] = [
     marca: "Sem Marca",
     tamanho: "Ajustável",
     estado: "Usado",
-    preco: 25.00,
-    precoEnjoei: 28.90,
+    preco: 27.00,
+    precoEnjoei: 38.90,
     status: "Ativo",
     dataCadastro: "15/03",
     fotosImgur: [
@@ -1328,7 +1328,7 @@ export const products: Product[] = [
     id: "BONE003",
     nome: "Boné Cinza Casual Ajustável",
     categoria: "Bone",
-    marca: "Shein",
+    marca: "Sem marca",
     tamanho: "Ajustável",
     estado: "Seminovo",
     preco: 25.00,
@@ -1366,7 +1366,7 @@ export const products: Product[] = [
     id: "CAM040",
     nome: "Camiseta Preta Fit Slim",
     categoria: "Camisas",
-    marca: "Shein",
+    marca: "Sem marca",
     tamanho: "M",
     estado: "Novo",
     preco: 22.00,
@@ -1378,7 +1378,7 @@ export const products: Product[] = [
       "https://i.imgur.com/RUAjU8A.jpeg",
       "https://i.imgur.com/cTcahyg.jpeg"
     ],
-    descricao: "Camiseta preta básica com corte Fit Slim, valorizando a silhueta. Tecido leve e moderno da Shein. Ideal para composições casuais ou esportivas.",
+    descricao: "Camiseta preta básica com corte Fit Slim, valorizando a silhueta. Tecido leve. Ideal para composições casuais ou esportivas.",
     linkEnjoei: "https://www.enjoei.com.br/p/camiseta-preta-fit-slim-138539628?rsid=a1305613-6640-4208-83eb-9ecdc2e22cba-1773595610519&rsp=2&rspix=2"
   },
   {
@@ -1485,7 +1485,7 @@ export const products: Product[] = [
     id: "KIT006",
     nome: "KIT 3 Camisetas Fit Slim",
     categoria: "Kits",
-    marca: "Shein",
+    marca: "Sem marca",
     tamanho: "M",
     estado: "Novo",
     preco: 64.50,
