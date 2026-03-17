@@ -855,7 +855,7 @@ export const products: Product[] = [
     marca: "Nike",
     tamanho: "M",
     estado: "Seminovo",
-    preco: 243,20.00,
+    preco: 243.20,
     precoEnjoei: 286.90,
     status: "Ativo",
     dataCadastro: "11/03",
