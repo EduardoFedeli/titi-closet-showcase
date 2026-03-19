@@ -1,8 +1,8 @@
 import { useEffect, useState, useCallback } from "react";
-import { X, ChevronLeft, ChevronRight, ExternalLink } from "lucide-react";
+import { X, ChevronLeft, ChevronRight, ExternalLink, Instagram } from "lucide-react";
 import { Product } from "@/data/products";
 import { Badge } from "@/components/ui/badge";
-import { getWhatsAppLink } from "@/lib/utils";
+// Removi o getWhatsAppLink pois não vamos mais usar
 
 interface ProductModalProps {
   product: Product;
@@ -108,7 +108,7 @@ const ProductModal = ({ product, onClose }: ProductModalProps) => {
           </div>
         )}
 
-        <div className="p-5 sm:p-6 space-y-4 flex-1">
+        <div className="p-5 sm:p-6 space-y-5 flex-1">
           <div>
             <span className="text-xs uppercase tracking-wider text-primary font-semibold">
               {product.categoria} · {product.estado}
@@ -120,53 +120,52 @@ const ProductModal = ({ product, onClose }: ProductModalProps) => {
             </p>
           </div>
 
-          {/* BOTÃO DO ENJOEI: Texto ajustado e cor branca forte */}
-          {product.linkEnjoei && (
-            <div className="p-4 rounded-lg border-2 border-[#5B095F]/20 bg-[#5B095F]/5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div className="space-y-3">
+            {/* BOTÃO DO ENJOEI */}
+            {product.linkEnjoei && (
+              <div className="p-4 rounded-lg border-2 border-[#5B095F]/20 bg-[#5B095F]/5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                <div>
+                  <span className="text-xs font-bold text-muted-foreground uppercase tracking-wider mb-1 block">
+                    Comprar pelo Enjoei (Com taxas)
+                  </span>
+                  <span className="text-2xl font-bold text-[#5B095F]">
+                    R$ {product.precoEnjoei?.toFixed(2).replace('.', ',')}
+                  </span>
+                </div>
+                
+                <a 
+                  href={product.linkEnjoei}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#5B095F] hover:bg-[#4a074d] text-white px-6 py-3 rounded-lg font-bold transition-all shadow-sm"
+                >
+                  Comprar via Enjoei
+                  <ExternalLink className="w-4 h-4" />
+                </a>
+              </div>
+            )}
+
+            {/* BOTÃO DIRETO (INSTAGRAM) */}
+            <div className="p-4 rounded-lg border-2 border-primary/20 bg-primary/5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
               <div>
-                <span className="text-xs font-bold text-muted-foreground uppercase tracking-wider mb-1 block">
-                  Comprar pelo Enjoei (Com taxas)
+                <span className="text-xs font-bold text-primary uppercase tracking-wider mb-1 block">
+                  Comprar direto comigo
                 </span>
-                <span className="text-2xl font-bold text-[#5B095F]">
-                  R$ {product.precoEnjoei?.toFixed(2).replace('.', ',')}
+                <span className="text-3xl font-bold text-primary">
+                  R$ {product.preco.toFixed(2).replace('.', ',')}
                 </span>
               </div>
               
               <a 
-                href={product.linkEnjoei}
+                href={`https://ig.me/m/du.fedeli?text=Oi%20Eduardo!%20Tenho%20interesse%20em%20comprar%20o%20item%20"${encodeURIComponent(product.nome)}"%20por%20R$%20${product.preco.toFixed(2).replace('.', ',')}.`}
                 target="_blank"
                 rel="noopener noreferrer"
-                // A classe text-white garante que o texto fique bem branco e legível
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#5B095F] hover:bg-[#4a074d] text-white px-6 py-3 rounded-lg font-bold transition-all shadow-sm"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-tr from-[#f09433] via-[#e6683c] to-[#bc1888] hover:opacity-90 text-white px-6 py-3 rounded-lg font-bold transition-all shadow-sm hover:scale-105"
               >
-                Comprar via Enjoei
-                <ExternalLink className="w-4 h-4" />
+                <Instagram className="w-5 h-5" />
+                Comprar via Insta
               </a>
             </div>
-          )}
-
-          {/* BOTÃO DIRETO: Agora aponta para o Instagram! */}
-          <div className="p-4 rounded-lg border-2 border-primary/20 bg-primary/5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-            <div>
-              <span className="text-xs font-bold text-primary uppercase tracking-wider mb-1 block">
-                Comprar direto comigo
-              </span>
-              <span className="text-3xl font-bold text-primary">
-                R$ {product.preco.toFixed(2).replace('.', ',')}
-              </span>
-            </div>
-            
-            <a 
-              // Criei uma mensagem automática para você receber no direct
-              href={`https://ig.me/m/du.fedeli?text=Oi%20Eduardo!%20Tenho%20interesse%20em%20comprar%20o%20item%20"${encodeURIComponent(product.nome)}"%20por%20R$%20${product.preco.toFixed(2).replace('.', ',')}.`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-tr from-[#f09433] via-[#e6683c] to-[#bc1888] hover:opacity-90 text-white px-6 py-3 rounded-lg font-bold transition-all shadow-sm hover:scale-105"
-            >
-              📸 Comprar direto comigo
-            </a>
-          </div>
-            
           </div>
         </div>
       </div>
