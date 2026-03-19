@@ -120,43 +120,52 @@ const ProductModal = ({ product, onClose }: ProductModalProps) => {
             </p>
           </div>
 
-          {/* SESSÃO DE OPÇÕES DE COMPRA (INVERTIDA) */}
-          <div className="pt-4 border-t border-border space-y-4">
-            
-            {/* Opção 1: Enjoei (Mais Caro - CORES ENJOEI) */}
-            {product.linkEnjoei && product.precoEnjoei && (
-              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 p-4 rounded-xl border border-border bg-muted/20 shadow-sm">
-                <div>
-                  <span className="text-[10px] uppercase tracking-wider text-muted-foreground font-bold">Comprar pelo Enjoei (com taxas)</span>
-                  <p className="text-xl font-bold text-muted-foreground">R$ {product.precoEnjoei.toFixed(2).replace('.', ',')}</p>
-                </div>
-                <a
-                  href={product.linkEnjoei}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  // Usei cores específicas do Enjoei: Fundo escuro (#60005C) e texto claro (#C5B0FE)
-                  className="flex items-center justify-center gap-2 bg-[#60005C] text-[#C5B0FE] border border-[#C5B0FE]/30 px-5 py-3 rounded-lg font-semibold hover:bg-[#60005C]/80 transition-all w-full sm:w-auto text-sm shadow-md"
-                >
-                  Ir para o Enjoei <ExternalLink className="w-4 h-4" />
-                </a>
-              </div>
-            )}
-
-            {/* Opção 2: WhatsApp (Mais Barato - VERDE) */}
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 bg-secondary/10 p-4 rounded-xl border border-secondary/30">
+          {/* BOTÃO DO ENJOEI: Texto ajustado e cor branca forte */}
+          {product.linkEnjoei && (
+            <div className="p-4 rounded-lg border-2 border-[#5B095F]/20 bg-[#5B095F]/5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
               <div>
-                <span className="text-[10px] uppercase tracking-wider text-muted-foreground font-bold">Comprar direto comigo</span>
-                <p className="text-3xl font-bold text-primary">R$ {product.preco.toFixed(2).replace('.', ',')}</p>
+                <span className="text-xs font-bold text-muted-foreground uppercase tracking-wider mb-1 block">
+                  Comprar pelo Enjoei (Com taxas)
+                </span>
+                <span className="text-2xl font-bold text-[#5B095F]">
+                  R$ {product.precoEnjoei?.toFixed(2).replace('.', ',')}
+                </span>
               </div>
-              <a
-                href={getWhatsAppLink(product.nome)}
+              
+              <a 
+                href={product.linkEnjoei}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 bg-[#25D366] text-white px-5 py-3 rounded-lg font-bold hover:bg-[#20b858] hover:scale-[1.02] transition-all shadow-md w-full sm:w-auto text-sm"
+                // A classe text-white garante que o texto fique bem branco e legível
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#5B095F] hover:bg-[#4a074d] text-white px-6 py-3 rounded-lg font-bold transition-all shadow-sm"
               >
-                💬 Comprar no WhatsApp
+                Comprar via Enjoei
+                <ExternalLink className="w-4 h-4" />
               </a>
             </div>
+          )}
+
+          {/* BOTÃO DIRETO: Agora aponta para o Instagram! */}
+          <div className="p-4 rounded-lg border-2 border-primary/20 bg-primary/5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <div>
+              <span className="text-xs font-bold text-primary uppercase tracking-wider mb-1 block">
+                Comprar direto comigo
+              </span>
+              <span className="text-3xl font-bold text-primary">
+                R$ {product.preco.toFixed(2).replace('.', ',')}
+              </span>
+            </div>
+            
+            <a 
+              // Criei uma mensagem automática para você receber no direct
+              href={`https://ig.me/m/du.fedeli?text=Oi%20Eduardo!%20Tenho%20interesse%20em%20comprar%20o%20item%20"${encodeURIComponent(product.nome)}"%20por%20R$%20${product.preco.toFixed(2).replace('.', ',')}.`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-tr from-[#f09433] via-[#e6683c] to-[#bc1888] hover:opacity-90 text-white px-6 py-3 rounded-lg font-bold transition-all shadow-sm hover:scale-105"
+            >
+              📸 Comprar direto comigo
+            </a>
+          </div>
             
           </div>
         </div>
