@@ -1,4 +1,4 @@
-import { MessageCircle, Instagram } from "lucide-react";
+import { Instagram } from "lucide-react";
 
 export default function About() {
   return (
@@ -59,7 +59,7 @@ export default function About() {
                 você tenha total privacidade enquanto navega.
               </p>
               <p className="mb-4">
-                A negociação real acontece diretamente comigo no WhatsApp. Para garantir a segurança de ambos os lados, 
+                A negociação real acontece diretamente comigo no <strong>Direct do Instagram</strong>. Para garantir a segurança de ambos os lados, 
                 combinamos como a peça vai chegar até você e <strong>o Pix só precisa ser feito 
                 no momento em que você estiver com o produto em mãos!</strong>
               </p>
@@ -80,7 +80,7 @@ export default function About() {
             <section>
                   <h2 className="text-2xl font-bold text-primary mb-4">Negociação e Entregas</h2>
                   <p className="mb-4">
-                    Aqui o papo é reto! Eu <strong>estou super aberto a negociações</strong>. Viu uma peça que amou mas o orçamento apertou? Me chame no WhatsApp e vamos conversar.
+                    Aqui o papo é reto! Eu <strong>estou super aberto a negociações</strong>. Viu uma peça que amou mas o orçamento apertou? Me chame no Instagram e vamos conversar.
                   </p>
                   
                   <div className="space-y-4 bg-muted/20 p-4 rounded-xl border border-border">
@@ -88,7 +88,7 @@ export default function About() {
                       <strong>🚚 Para todo o Brasil:</strong> Compre direto pelo meu link do <strong>Enjoei</strong>. Lá a logística é automática e você recebe em casa com seguro e frete reduzido em qualquer estado.
                     </p>
                     <p className="text-sm">
-                      <strong>🤝 Para São Paulo (Capital):</strong> Se preferir negociar direto pelo <strong>WhatsApp</strong> (com aquele desconto especial), a entrega é feita exclusivamente na região de SP via aplicativos de entrega ou encontros em locais seguros, como estações de metrô.
+                      <strong>🤝 Para São Paulo (Capital):</strong> Se preferir negociar (com aquele desconto especial), a entrega é feita exclusivamente na região de SP via aplicativos de entrega ou encontros em locais seguros, como estações de metrô. Tudo combinado via Direct!
                     </p>
                   </div>
             </section>
@@ -115,30 +115,22 @@ export default function About() {
               </a>
             </section>
 
-            {/* SEÇÃO DE CONTATO ATUALIZADA */}
+            {/* SEÇÃO DE CONTATO ATUALIZADA - FOCADA NO INSTAGRAM */}
             <section className="bg-primary/5 rounded-lg p-6 sm:p-8 border border-primary/20 mt-8 shadow-sm">
               <h2 className="text-xl sm:text-2xl font-bold text-primary mb-4">Entre em Contato</h2>
               <p className="mb-6 text-muted-foreground">
-                Ficou com alguma dúvida? Quer fazer uma oferta ou saber se aquele item que você curtiu ainda está disponível? Me chama em uma das redes abaixo!
+                Ficou com alguma dúvida? Quer fazer uma oferta ou saber se aquele item que você curtiu ainda está disponível? Me chama lá no Direct!
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4">
                 <a 
-                  href="https://wa.me/5511996923876" 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20bd5a] text-white px-6 py-3 rounded-lg font-bold transition-all shadow-sm hover:shadow-md hover:scale-[1.02]"
-                >
-                  💬 WhatsApp
-                </a>
-
-                <a 
                   href="https://instagram.com/du.fedeli" // <--- ATENÇÃO: COLOQUE SEU @ DO INSTAGRAM AQUI!
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 bg-gradient-to-tr from-[#f09433] via-[#e6683c] to-[#bc1888] hover:opacity-90 text-white px-6 py-3 rounded-lg font-bold transition-all shadow-sm hover:shadow-md hover:scale-[1.02]"
+                  className="inline-flex items-center justify-center gap-3 bg-gradient-to-tr from-[#f09433] via-[#e6683c] to-[#bc1888] hover:opacity-90 text-white px-8 py-4 rounded-xl font-bold transition-all shadow-md hover:shadow-lg hover:scale-[1.02] text-lg w-full sm:w-auto"
                 >
-                  📸 Instagram
+                  <Instagram className="w-6 h-6" />
+                  Fale comigo no Instagram
                 </a>
               </div>
             </section>
