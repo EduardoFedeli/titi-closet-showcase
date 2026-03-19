@@ -162,7 +162,7 @@ const ProductModal = ({ product, onClose }: ProductModalProps) => {
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-tr from-[#f09433] via-[#e6683c] to-[#bc1888] hover:opacity-90 text-white px-5 py-2.5 rounded-lg font-semibold transition-all shadow-sm hover:scale-105 whitespace-nowrap text-sm"
               >
                 <Instagram className="w-4 h-4" />
-                Comprar via Insta
+                via Instagram
               </a>
             </div>
           </div>
