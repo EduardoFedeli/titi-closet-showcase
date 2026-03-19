@@ -115,16 +115,16 @@ export default function About() {
               </a>
             </section>
 
-            {/* SEÇÃO DE CONTATO ATUALIZADA - FOCADA NO INSTAGRAM */}
+            {/* SEÇÃO DE CONTATO ATUALIZADA - FOCADA NO INSTAGRAM E REDES PROFISSIONAIS */}
             <section className="bg-primary/5 rounded-lg p-6 sm:p-8 border border-primary/20 mt-8 shadow-sm">
               <h2 className="text-xl sm:text-2xl font-bold text-primary mb-4">Entre em Contato</h2>
               <p className="mb-6 text-muted-foreground">
-                Ficou com alguma dúvida? Quer fazer uma oferta ou saber se aquele item que você curtiu ainda está disponível? Me chama lá no Direct!
+                Ficou com alguma dúvida? Quer fazer uma oferta ou saber se aquele item que você curtiu ainda está disponível? Me chama lá no Direct do Instagram!
               </p>
               
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-4 mb-6">
                 <a 
-                  href="https://www.instagram.com/du.fedeli/" // <--- ATENÇÃO: COLOQUE SEU @ DO INSTAGRAM AQUI!
+                  href="https://www.instagram.com/du.fedeli/" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-3 bg-gradient-to-tr from-[#f09433] via-[#e6683c] to-[#bc1888] hover:opacity-90 text-white px-8 py-4 rounded-xl font-bold transition-all shadow-md hover:shadow-lg hover:scale-[1.02] text-lg w-full sm:w-auto"
@@ -132,6 +132,31 @@ export default function About() {
                   <Instagram className="w-6 h-6" />
                   Fale comigo no Instagram
                 </a>
+              </div>
+
+              {/* Redes Profissionais */}
+              <div className="pt-6 border-t border-primary/10">
+                <p className="mb-4 text-sm font-medium text-muted-foreground">Quer acompanhar meus projetos de perto? Me encontre por aqui:</p>
+                <div className="flex flex-wrap gap-3">
+                  <a 
+                    href="https://www.linkedin.com/in/eduardo-fedeli-69174223b/" // <-- COLOQUE SEU LINKEDIN
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 bg-[#0A66C2] hover:bg-[#004182] text-white px-4 py-2 rounded-lg font-medium transition-colors text-sm"
+                  >
+                    <Linkedin className="w-4 h-4" />
+                    LinkedIn
+                  </a>
+                  <a 
+                    href="https://github.com/EduardoFedeli" // <-- COLOQUE SEU GITHUB
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 bg-[#24292e] hover:bg-[#000000] text-white px-4 py-2 rounded-lg font-medium transition-colors text-sm"
+                  >
+                    <Github className="w-4 h-4" />
+                    GitHub
+                  </a>
+                </div>
               </div>
             </section>
 
