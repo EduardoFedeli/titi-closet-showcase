@@ -119,12 +119,12 @@ export default function About() {
             <section className="bg-primary/5 rounded-lg p-6 sm:p-8 border border-primary/20 mt-8 shadow-sm">
               <h2 className="text-xl sm:text-2xl font-bold text-primary mb-4">Entre em Contato</h2>
               <p className="mb-6 text-muted-foreground">
-                Ficou com alguma ?????? Quer fazer uma oferta ou saber se aquele item que você curtiu ainda está disponível? Me chama lá no Direct!
+                Ficou com alguma dúvida? Quer fazer uma oferta ou saber se aquele item que você curtiu ainda está disponível? Me chama lá no Direct!
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4">
                 <a 
-                  href="https://instagram.com/du.fedeli" // <--- ATENÇÃO: COLOQUE SEU @ DO INSTAGRAM AQUI!
+                  href="https://instagram.com/SEU_USER_AQUI" // <--- ATENÇÃO: COLOQUE SEU @ DO INSTAGRAM AQUI!
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-3 bg-gradient-to-tr from-[#f09433] via-[#e6683c] to-[#bc1888] hover:opacity-90 text-white px-8 py-4 rounded-xl font-bold transition-all shadow-md hover:shadow-lg hover:scale-[1.02] text-lg w-full sm:w-auto"
