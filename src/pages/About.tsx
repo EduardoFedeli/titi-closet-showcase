@@ -1,4 +1,4 @@
-import { Instagram } from "lucide-react";
+import { Instagram, Linkedin, Github } from "lucide-react"; // ✅ CORRETO
 
 export default function About() {
   return (
