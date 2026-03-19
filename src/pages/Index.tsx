@@ -25,6 +25,8 @@ export default function Index() {
 
       const price = product.preco; 
       const matchesPrice = price >= filters.priceRange[0] && price <= filters.priceRange[1];
+
+      
       
       const matchesCategory = filters.categories.length === 0 || filters.categories.some(cat => 
         product.categoria.includes(cat) || (cat === 'Kits' && product.isKit)
