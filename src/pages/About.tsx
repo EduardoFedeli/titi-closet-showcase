@@ -1,3 +1,5 @@
+import { MessageCircle, Instagram } from "lucide-react";
+
 export default function About() {
   return (
     <div className="min-h-screen bg-background">
@@ -13,14 +15,12 @@ export default function About() {
                 className="h-24 w-auto object-contain rounded-xl" 
               />
             </div>
-            {/* NOVO NOME APLICADO */}
             <h1 className="text-4xl font-bold text-primary mb-4">T-Hex Garage</h1>
             <p className="text-xl text-muted-foreground">Desapegos com pegada jurássica 🦖</p>
           </div>
 
           <div className="space-y-8 text-foreground/90 leading-relaxed">
             
-            {/* TEXTO NOVO: CASUAL, DIRETO E SINCERO */}
             <section>
               <h2 className="text-2xl font-bold text-primary mb-4">A Minha História</h2>
               <p className="mb-4">
@@ -41,7 +41,6 @@ export default function About() {
               </p>
             </section>
 
-            {/* TEXTO NOVO SOBRE ECONOMIA CIRCULAR BASEADO NA SUA VISÃO */}
             <section className="bg-primary/5 rounded-lg p-6 border border-primary/20">
               <h2 className="text-2xl font-bold text-primary mb-3">Fazendo a Roda Girar ♻️</h2>
               <p className="mb-4">
@@ -107,7 +106,7 @@ export default function About() {
                 para eu entender se vale a pena tirar esse projeto do papel:
               </p>
               <a 
-                href="https://forms.gle/1jV2PbUa7seKVCR67" // COLOQUE O LINK DO SEU GOOGLE FORMS AQUI
+                href="https://forms.gle/1jV2PbUa7seKVCR67"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 w-full sm:w-auto bg-primary text-primary-foreground px-5 py-2.5 rounded-lg font-semibold hover:bg-primary/90 transition-colors shadow-sm"
@@ -116,21 +115,36 @@ export default function About() {
               </a>
             </section>
 
-            <section className="bg-primary/5 rounded-lg p-6 border border-primary/20 mt-8">
-              <h2 className="text-2xl font-bold text-primary mb-4">Entre em Contato</h2>
-              <p className="mb-4">
-                Ficou com alguma dúvida? Quer fazer uma oferta ou saber se aquele item que você curtiu ainda está disponível?
+            {/* SEÇÃO DE CONTATO ATUALIZADA */}
+            <section className="bg-primary/5 rounded-lg p-6 sm:p-8 border border-primary/20 mt-8 shadow-sm">
+              <h2 className="text-xl sm:text-2xl font-bold text-primary mb-4">Entre em Contato</h2>
+              <p className="mb-6 text-muted-foreground">
+                Ficou com alguma dúvida? Quer fazer uma oferta ou saber se aquele item que você curtiu ainda está disponível? Me chama em uma das redes abaixo!
               </p>
               
-              <a 
-                href="https://wa.me/5511996923876" // NÃO ESQUEÇA DE COLOCAR SEU NÚMERO AQUI
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-[#25D366] text-white px-6 py-3 rounded-lg font-bold hover:bg-[#20b858] transition-colors shadow-md"
-              >
-                💬 Fale comigo no WhatsApp
-              </a>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a 
+                  href="https://wa.me/5511996923876" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20bd5a] text-white px-6 py-3 rounded-lg font-bold transition-all shadow-sm hover:shadow-md hover:scale-[1.02]"
+                >
+                  <MessageCircle className="w-5 h-5" />
+                  WhatsApp
+                </a>
+
+                <a 
+                  href="https://instagram.com/du.fedeli" // <--- ATENÇÃO: COLOQUE SEU @ DO INSTAGRAM AQUI!
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 bg-gradient-to-tr from-[#f09433] via-[#e6683c] to-[#bc1888] hover:opacity-90 text-white px-6 py-3 rounded-lg font-bold transition-all shadow-sm hover:shadow-md hover:scale-[1.02]"
+                >
+                  <Instagram className="w-5 h-5" />
+                  Instagram
+                </a>
+              </div>
             </section>
+
           </div>
         </div>
       </div>
