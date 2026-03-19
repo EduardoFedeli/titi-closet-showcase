@@ -136,7 +136,7 @@ export default function About() {
 
               {/* Redes Profissionais */}
               <div className="pt-6 border-t border-primary/10">
-                <p className="mb-4 text-sm font-medium text-muted-foreground">Quer acompanhar meus projetos de perto? Me encontre por aqui:</p>
+                <p className="mb-4 text-sm font-medium text-muted-foreground">Bora se conectar em outras redes? Me encontre por aqui:</p>
                 <div className="flex flex-wrap gap-3">
                   <a 
                     href="https://www.linkedin.com/in/eduardo-fedeli-69174223b/" // <-- COLOQUE SEU LINKEDIN
