@@ -1,5 +1,6 @@
 import SearchBar from "./SearchBar";
-import { Info, Home } from "lucide-react";
+import { Info, Home, Moon, Sun } from "lucide-react";
+import { useState, useEffect } from "react";
 
 interface HeaderProps {
   searchTerm: string;
@@ -9,17 +10,35 @@ interface HeaderProps {
 }
 
 export default function Header({ searchTerm, onSearchChange, currentPage = 'home', onNavigate }: HeaderProps) {
+  // Estado para controlar se o modo escuro está ativo
+  const [isDark, setIsDark] = useState(false);
+
+  // Efeito que verifica se o site já estava no modo escuro quando a página carrega
+  useEffect(() => {
+    if (document.documentElement.classList.contains("dark")) {
+      setIsDark(true);
+    }
+  }, []);
+
+  // Função do interruptor
+  const toggleTheme = () => {
+    if (isDark) {
+      document.documentElement.classList.remove("dark");
+      setIsDark(false);
+    } else {
+      document.documentElement.classList.add("dark");
+      setIsDark(true);
+    }
+  };
+
   return (
-    <header className="sticky top-0 z-50 bg-card/95 backdrop-blur-sm border-b shadow-sm">
+    <header className="sticky top-0 z-50 bg-card/95 backdrop-blur-sm border-b shadow-sm transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 lg:px-6 py-4">
         
-        {/* Container Principal: Stack no mobile, flex justify-between no desktop */}
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
           
-          {/* NOVO GRUPO DESKTOP (Logo + Nav) */}
+          {/* LADO ESQUERDO: BRANDING E LINKS */}
           <div className="flex items-center gap-4 lg:gap-10">
-            
-            {/* LADO ESQUERDO: BRANDING */}
             <div 
               className="flex items-center gap-3 cursor-pointer transition-transform hover:scale-[1.02]"
               onClick={() => onNavigate?.('home')}
@@ -39,7 +58,6 @@ export default function Header({ searchTerm, onSearchChange, currentPage = 'home
               </div>
             </div>
 
-            {/* Links de Navegação Desktop (Colados no Branding) */}
             <nav className="hidden lg:flex items-center gap-6">
               <button
                 onClick={() => onNavigate?.('home')}
@@ -64,13 +82,34 @@ export default function Header({ searchTerm, onSearchChange, currentPage = 'home
             </nav>
           </div>
 
-          {/* LADO DIREITO DESKTOP: BARRA DE BUSCA (Empurrada totalmente para a direita) */}
-          <div className="flex-1 w-full lg:max-w-md lg:ml-auto">
-            <SearchBar value={searchTerm} onChange={onSearchChange} />
+          {/* LADO DIREITO: BUSCA E DARK MODE (Desktop) */}
+          <div className="flex-1 w-full lg:max-w-md lg:ml-auto flex items-center gap-3">
+            <div className="flex-1">
+              <SearchBar value={searchTerm} onChange={onSearchChange} />
+            </div>
+            
+            {/* BOTÃO DARK MODE - DESKTOP */}
+            <button
+              onClick={toggleTheme}
+              className="hidden lg:flex p-2.5 rounded-full text-muted-foreground hover:bg-muted transition-colors hover:text-foreground border border-transparent hover:border-border"
+              aria-label="Alternar tema"
+              title="Alternar tema"
+            >
+              {isDark ? <Sun className="w-5 h-5 text-yellow-500" /> : <Moon className="w-5 h-5" />}
+            </button>
           </div>
 
-          {/* Ícones de Navegação Mobile (permanecem inalterados e funcionando) */}
+          {/* NAVEGAÇÃO MOBILE (Ícones + Dark Mode) */}
           <nav className="flex items-center gap-2 lg:hidden absolute top-4 right-4">
+            {/* BOTÃO DARK MODE - MOBILE */}
+            <button
+              onClick={toggleTheme}
+              className="p-2 rounded-full text-muted-foreground hover:bg-muted transition-colors"
+              aria-label="Alternar tema"
+            >
+              {isDark ? <Sun className="w-5 h-5 text-yellow-500" /> : <Moon className="w-5 h-5" />}
+            </button>
+
             <button
               onClick={() => onNavigate?.('home')}
               className={`p-2 rounded-full text-sm font-medium transition-colors ${
