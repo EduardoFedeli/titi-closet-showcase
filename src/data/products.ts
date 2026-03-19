@@ -1288,7 +1288,7 @@ export const products: Product[] = [
   {
     id: "BONE001",
     nome: "Boné Branco e Azul Estilo Baseball",
-    categoria: "Boné",
+    categoria: "Bonés",
     marca: "Sem Marca",
     tamanho: "Ajustável",
     estado: "Novo",
@@ -1308,7 +1308,7 @@ export const products: Product[] = [
   {
     id: "BONE002",
     nome: "Boné Camuflado Verde Ajustável",
-    categoria: "Boné",
+    categoria: "Bonés",
     marca: "Sem Marca",
     tamanho: "Ajustável",
     estado: "Usado",
@@ -1327,7 +1327,7 @@ export const products: Product[] = [
   {
     id: "BONE003",
     nome: "Boné Cinza Casual Ajustável",
-    categoria: "Boné",
+    categoria: "Bonés",
     marca: "Sem marca",
     tamanho: "Ajustável",
     estado: "Seminovo",
@@ -1697,7 +1697,7 @@ export const products: Product[] = [
   {
     id: "TOUCA001",
     nome: "Touca Azul Marinho de Inverno",
-    categoria: "Touca",
+    categoria: "Toucas",
     marca: "Sports",
     tamanho: "Adulto",
     estado: "Novo",
@@ -1717,7 +1717,7 @@ export const products: Product[] = [
   {
     id: "TOUCA002",
     nome: "Touca Azul Royal Casual",
-    categoria: "Touca",
+    categoria: "Toucas",
     marca: "Sem Marca",
     tamanho: "Adulto",
     estado: "Usado",
@@ -1737,7 +1737,7 @@ export const products: Product[] = [
   {
     id: "TOUCA003",
     nome: "Touca Bege Tricot",
-    categoria: "Touca",
+    categoria: "Toucas",
     marca: "wed`ze",
     tamanho: "Adulto",
     estado: "Novo",
@@ -1756,7 +1756,7 @@ export const products: Product[] = [
   {
     id: "TOUCA004",
     nome: "Touca Listrada Preto e Cinza",
-    categoria: "Touca",
+    categoria: "Toucas",
     marca: "Sem Marca",
     tamanho: "Adulto",
     estado: "Usado",
