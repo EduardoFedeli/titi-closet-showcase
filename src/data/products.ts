@@ -1288,7 +1288,7 @@ export const products: Product[] = [
   {
     id: "BONE001",
     nome: "Boné Branco e Azul Estilo Baseball",
-    categoria: "Bone",
+    categoria: "Boné",
     marca: "Sem Marca",
     tamanho: "Ajustável",
     estado: "Novo",
@@ -1308,7 +1308,7 @@ export const products: Product[] = [
   {
     id: "BONE002",
     nome: "Boné Camuflado Verde Ajustável",
-    categoria: "Bone",
+    categoria: "Boné",
     marca: "Sem Marca",
     tamanho: "Ajustável",
     estado: "Usado",
@@ -1327,7 +1327,7 @@ export const products: Product[] = [
   {
     id: "BONE003",
     nome: "Boné Cinza Casual Ajustável",
-    categoria: "Bone",
+    categoria: "Boné",
     marca: "Sem marca",
     tamanho: "Ajustável",
     estado: "Seminovo",
