@@ -129,8 +129,7 @@ export default function About() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20bd5a] text-white px-6 py-3 rounded-lg font-bold transition-all shadow-sm hover:shadow-md hover:scale-[1.02]"
                 >
-                  <MessageCircle className="w-5 h-5" />
-                  WhatsApp
+                  💬 WhatsApp
                 </a>
 
                 <a 
@@ -139,8 +138,7 @@ export default function About() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 bg-gradient-to-tr from-[#f09433] via-[#e6683c] to-[#bc1888] hover:opacity-90 text-white px-6 py-3 rounded-lg font-bold transition-all shadow-sm hover:shadow-md hover:scale-[1.02]"
                 >
-                  <Instagram className="w-5 h-5" />
-                  Instagram
+                  📸 Instagram
                 </a>
               </div>
             </section>
