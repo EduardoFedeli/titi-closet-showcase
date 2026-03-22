@@ -1250,6 +1250,7 @@ export const products: Product[] = [
     tamanho: "40-41",
     estado: "Seminovo",
     preco: 295.00,
+    vendido: true,
     precoEnjoei: 345.90,
     status: "Ativo",
     dataCadastro: "11/03",
