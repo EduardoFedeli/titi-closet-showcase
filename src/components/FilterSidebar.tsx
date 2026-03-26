@@ -22,7 +22,8 @@ export default function FilterSidebar({ products, filters, onChange }: FilterSid
   const allCategories = Array.from(
     new Set(
       products.flatMap(p => 
-        p.categoria.split(',').map(cat => cat.trim())
+        // @ts-ignore - Garantindo segurança caso venha array ao invés de string
+        (typeof p.categoria === 'string' ? p.categoria : p.categoria[0] || '').split(',').map((cat: string) => cat.trim())
       )
     )
   ).sort();
@@ -36,7 +37,6 @@ export default function FilterSidebar({ products, filters, onChange }: FilterSid
       return;
     }
 
-    // Comportamento normal para as outras categorias (Sintaxe corrigida)
     const newCategories = filters.categories.includes(category)
       ? filters.categories.filter(c => c !== category)
       : [...filters.categories, category];
@@ -62,7 +62,8 @@ export default function FilterSidebar({ products, filters, onChange }: FilterSid
   const isAllCategoriesSelected = filters.categories.length === 0;
 
   return (
-    <aside className="w-72 bg-card rounded-xl border p-6 sticky top-24 max-h-[calc(100vh-7rem)] overflow-y-auto">
+    // T-HEX FIX: Removido w-72, sticky e top-24 daqui. Agora o <aside> ocupa 100% do pai.
+    <aside className="w-full bg-card rounded-xl border p-6">
       <div className="flex items-center justify-between mb-6">
         <h3 className="font-bold text-lg">Filtros</h3>
         {activeCount > 0 && (
@@ -104,7 +105,7 @@ export default function FilterSidebar({ products, filters, onChange }: FilterSid
             </label>
           </div>
 
-          {/* Renderiza o resto das categorias (agora corretamente separadas) */}
+          {/* Renderiza o resto das categorias */}
           {allCategories.map(category => (
             <div key={category} className="flex items-center space-x-2">
               <Checkbox
