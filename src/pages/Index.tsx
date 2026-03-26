@@ -1,13 +1,107 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useRef, useEffect } from "react";
 import { products } from "@/data/products";
 import ProductCard from "@/components/ProductCard";
 import ProductModal from "@/components/ProductModal";
 import Header from "@/components/Header";
 import FilterSidebar, { Filters } from "@/components/FilterSidebar";
 import About from "./About";
-import { Filter } from "lucide-react";
+import { Filter, ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+
+// Sub-componente responsável por cada linha de categoria (Carrossel + Autoplay)
+const CategoryRow = ({ categoria, itens, setProdutoSelecionado }: { categoria: string, itens: any[], setProdutoSelecionado: any }) => {
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const [isHovered, setIsHovered] = useState(false);
+
+  const scroll = (direction: 'left' | 'right') => {
+    if (scrollRef.current) {
+      const { clientWidth } = scrollRef.current;
+      // Rola cerca de 80% da tela visível para deixar uma "dica" do próximo produto
+      const scrollAmount = clientWidth * 0.8; 
+      scrollRef.current.scrollBy({ 
+        left: direction === 'left' ? -scrollAmount : scrollAmount, 
+        behavior: 'smooth' 
+      });
+    }
+  };
+
+  // Lógica do Autoplay de 10 segundos
+  useEffect(() => {
+    // Se o mouse estiver em cima ou tiver poucos itens, não roda o autoplay
+    if (isHovered || itens.length <= 1) return;
+
+    const interval = setInterval(() => {
+      if (scrollRef.current) {
+        const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
+        
+        // Se chegou no final, volta para o início. Se não, vai para a direita.
+        if (scrollLeft >= scrollWidth - clientWidth - 10) {
+          scrollRef.current.scrollTo({ left: 0, behavior: 'smooth' });
+        } else {
+          scroll('right');
+        }
+      }
+    }, 10000); // 10000ms = 10 segundos
+
+    return () => clearInterval(interval);
+  }, [isHovered, itens.length]);
+
+  return (
+    <section 
+      className="w-full relative" 
+      onMouseEnter={() => setIsHovered(true)} 
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      {/* Cabeçalho da Categoria */}
+      <div className="flex items-center justify-between mb-4 border-b border-border pb-2">
+        <h2 className="text-xl font-bold text-foreground tracking-tight">
+          {categoria}
+        </h2>
+        <span className="text-sm text-muted-foreground bg-muted px-2 py-1 rounded-md">
+          {itens.length} {itens.length === 1 ? 'item' : 'itens'}
+        </span>
+      </div>
+
+      <div className="relative group">
+        {/* Setas de Navegação (Visíveis apenas em telas maiores que mobile se houver scroll) */}
+        {itens.length > 2 && (
+          <>
+            <button 
+              onClick={() => scroll('left')}
+              className="absolute left-[-15px] top-1/2 -translate-y-1/2 z-10 bg-background/90 border border-border shadow-md rounded-full p-2 text-[#50808E] hover:bg-[#50808E] hover:text-white transition-colors opacity-0 group-hover:opacity-100 hidden md:flex"
+              aria-label="Rolar para esquerda"
+            >
+              <ChevronLeft size={24} />
+            </button>
+            <button 
+              onClick={() => scroll('right')}
+              className="absolute right-[-15px] top-1/2 -translate-y-1/2 z-10 bg-background/90 border border-border shadow-md rounded-full p-2 text-[#50808E] hover:bg-[#50808E] hover:text-white transition-colors opacity-0 group-hover:opacity-100 hidden md:flex"
+              aria-label="Rolar para direita"
+            >
+              <ChevronRight size={24} />
+            </button>
+          </>
+        )}
+
+        {/* Container de Rolagem Horizontal */}
+        <div 
+          ref={scrollRef}
+          className="flex overflow-x-auto gap-4 pb-4 snap-x snap-mandatory scroll-smooth hide-scrollbar"
+          style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+        >
+          <style>{`.hide-scrollbar::-webkit-scrollbar { display: none; }`}</style>
+          
+          {itens.map((product, index) => (
+            <div key={product.id} className="w-[200px] sm:w-[220px] lg:w-[240px] snap-start shrink-0">
+              <ProductCard product={product} index={index} onClick={() => setProdutoSelecionado(product)} />
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
 
 export default function Index() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -36,12 +130,10 @@ export default function Index() {
     });
   }, [searchTerm, filters]);
 
-  // NOVO: Lógica para agrupar os produtos filtrados por categoria
   const produtosAgrupados = useMemo(() => {
     const grupos: Record<string, typeof products> = {};
 
     produtosFiltrados.forEach(product => {
-      // Extrai a categoria principal para ser o título da prateleira
       const categoriaStr = typeof product.categoria === 'string' 
         ? product.categoria 
         : (Array.isArray(product.categoria) ? product.categoria[0] : 'Diversos');
@@ -52,7 +144,6 @@ export default function Index() {
       grupos[categoriaStr].push(product);
     });
 
-    // Ordena as categorias em ordem alfabética para melhor apresentação
     return Object.keys(grupos).sort().reduce((acc, key) => {
       acc[key] = grupos[key];
       return acc;
@@ -76,7 +167,7 @@ export default function Index() {
   }
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-background text-foreground overflow-x-hidden"> {/* Previne scroll horizontal acidental na tela inteira */}
       <Header 
         searchTerm={searchTerm} 
         onSearchChange={setSearchTerm}
@@ -92,11 +183,15 @@ export default function Index() {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 lg:px-6 pb-24 lg:pb-16">
-        <div className="flex gap-6">
+        <div className="flex flex-col lg:flex-row gap-8"> {/* Ajuste no gap para não espremer a sidebar */}
           {/* Sidebar visível apenas em Desktop */}
-          <div className="hidden lg:block w-64 shrink-0">{SidebarContent}</div>
+          <div className="hidden lg:block w-64 shrink-0">
+            <div className="sticky top-24"> {/* Deixa a sidebar grudar no topo ao descer a página */}
+              {SidebarContent}
+            </div>
+          </div>
           
-          <div className="flex-1 min-w-0"> {/* min-w-0 evita que o flex-1 "quebre" o layout da rolagem */}
+          <div className="flex-1 min-w-0 w-full"> {/* min-w-0 e w-full essenciais para o carrossel não quebrar a tela */}
             <div className="flex items-center justify-between mb-6">
               <p className="text-sm text-muted-foreground">
                 <span className="font-semibold text-foreground">{produtosFiltrados.length}</span> produtos encontrados
@@ -113,35 +208,14 @@ export default function Index() {
                 </Button>
               </div>
             ) : (
-              // NOVO: Renderização das Prateleiras por Categoria
-              <div className="flex flex-col gap-10">
+              <div className="flex flex-col gap-12"> {/* Aumentado o gap entre as categorias */}
                 {Object.entries(produtosAgrupados).map(([categoria, itens]) => (
-                  <section key={categoria} className="w-full">
-                    {/* Cabeçalho da Categoria */}
-                    <div className="flex items-center justify-between mb-4 border-b border-border pb-2">
-                      <h2 className="text-xl font-bold text-foreground tracking-tight">
-                        {categoria}
-                      </h2>
-                      <span className="text-sm text-muted-foreground bg-muted px-2 py-1 rounded-md">
-                        {itens.length} {itens.length === 1 ? 'item' : 'itens'}
-                      </span>
-                    </div>
-
-                    {/* Container de Rolagem Horizontal */}
-                    <div 
-                      className="flex overflow-x-auto gap-4 pb-4 snap-x snap-mandatory scroll-smooth hide-scrollbar"
-                      style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }} // Oculta a barra de rolagem no Firefox e IE
-                    >
-                      <style>{`.hide-scrollbar::-webkit-scrollbar { display: none; }`}</style>
-                      
-                      {itens.map((product, index) => (
-                        // O 'shrink-0' é essencial aqui para os cards não espremerem
-                        <div key={product.id} className="w-[180px] sm:w-[220px] lg:w-[240px] snap-start shrink-0">
-                          <ProductCard product={product} index={index} onClick={() => setProdutoSelecionado(product)} />
-                        </div>
-                      ))}
-                    </div>
-                  </section>
+                  <CategoryRow 
+                    key={categoria} 
+                    categoria={categoria} 
+                    itens={itens} 
+                    setProdutoSelecionado={setProdutoSelecionado} 
+                  />
                 ))}
               </div>
             )}
