@@ -17,7 +17,8 @@ export default function ProductCard({ product, onClick, index }: ProductCardProp
 
   return (
     <article
-      className={`group bg-card rounded-xl overflow-hidden shadow-sm transition-all duration-300 border flex flex-col h-full ${
+      // T-HEX FIX: Trocado 'group' por 'group/card' para não sofrer zoom acidental do carrossel
+      className={`group/card bg-card rounded-xl overflow-hidden shadow-sm transition-all duration-300 border flex flex-col h-full ${
         isVendido ? 'opacity-75 grayscale-[0.5]' : 'hover:shadow-xl cursor-pointer hover:border-primary animate-fade-in-up'
       }`}
       style={!isVendido ? { animationDelay: `${index * 0.06}s` } : {}}
@@ -25,11 +26,12 @@ export default function ProductCard({ product, onClick, index }: ProductCardProp
         if (!isVendido) onClick(); // Só abre o modal se NÃO estiver vendido
       }}
     >
-      <div className="relative aspect-[3/4] overflow-hidden bg-muted">
+      <div className="relative aspect-[3/4] overflow-hidden bg-white flex items-center justify-center">
         <img
           src={mainImage}
           alt={product.nome}
-          className={`object-cover w-full h-full transition-transform duration-500 ${!isVendido ? 'group-hover:scale-110' : ''}`}
+          // T-HEX FIX: 'object-contain' adicionado para NÃO cortar as imagens, e o zoom agora é isolado no 'group/card'
+          className={`object-contain w-full h-full transition-transform duration-500 ${!isVendido ? 'group-hover/card:scale-110' : ''}`}
           loading="lazy"
           onError={(e) => { (e.currentTarget as HTMLImageElement).src = "/placeholder.svg"; }}
         />
@@ -44,11 +46,11 @@ export default function ProductCard({ product, onClick, index }: ProductCardProp
         )}
 
         {!isVendido && (
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent opacity-0 group-hover/card:opacity-100 transition-opacity pointer-events-none">
             <div className="absolute bottom-3 left-3 flex gap-2">
               {product.fotosImgur.slice(0, 3).map((foto, i) => (
-                <div key={i} className="w-10 h-10 sm:w-14 sm:h-14 rounded border-2 border-white/80 overflow-hidden">
-                  <img src={foto} alt="" className="object-cover w-full h-full" />
+                <div key={i} className="w-10 h-10 sm:w-14 sm:h-14 rounded border-2 border-white/80 overflow-hidden bg-white flex items-center justify-center">
+                  <img src={foto} alt="" className="object-contain w-full h-full" />
                 </div>
               ))}
               {product.fotosImgur.length > 3 && (
@@ -69,7 +71,7 @@ export default function ProductCard({ product, onClick, index }: ProductCardProp
         </div>
       </div>
 
-      <div className="p-3 sm:p-4 space-y-2 sm:space-y-3 flex-1 flex flex-col">
+      <div className="p-3 sm:p-4 space-y-2 sm:space-y-3 flex-1 flex flex-col bg-card">
         <div className="flex flex-col gap-1 sm:gap-1.5">
           <h3 className="font-semibold text-sm sm:text-base leading-tight line-clamp-2" title={product.nome}>
             {product.nome}
@@ -101,7 +103,7 @@ export default function ProductCard({ product, onClick, index }: ProductCardProp
         
         <div className="pt-1.5 sm:pt-2">
           <Button 
-            className="w-full font-semibold shadow-sm h-8 sm:h-9 px-1 sm:px-3 text-[9px] xs:text-[10px] sm:text-sm" 
+            className="w-full font-semibold shadow-sm h-8 sm:h-9 px-1 sm:px-3 text-[9px] xs:text-[10px] sm:text-sm bg-[#50808E] hover:bg-[#69A297] text-white" 
             disabled={isVendido}
             variant={isVendido ? "secondary" : "default"}
             onClick={(e) => { 
@@ -111,7 +113,7 @@ export default function ProductCard({ product, onClick, index }: ProductCardProp
             }}
           >
             <span className="truncate w-full text-center">
-              {isVendido ? "Indisponível" : "Ver detalhes"}
+              {isVendido ? "Indisponível" : "Ver detalhes e comprar"}
             </span>
           </Button>
         </div>
