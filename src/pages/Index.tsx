@@ -9,7 +9,6 @@ import { Filter, ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
-// Sub-componente responsável por cada linha de categoria (Carrossel + Autoplay)
 const CategoryRow = ({ categoria, itens, setProdutoSelecionado }: { categoria: string, itens: any[], setProdutoSelecionado: any }) => {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [isHovered, setIsHovered] = useState(false);
@@ -17,7 +16,6 @@ const CategoryRow = ({ categoria, itens, setProdutoSelecionado }: { categoria: s
   const scroll = (direction: 'left' | 'right') => {
     if (scrollRef.current) {
       const { clientWidth } = scrollRef.current;
-      // Rola cerca de 80% da tela visível para deixar uma "dica" do próximo produto
       const scrollAmount = clientWidth * 0.8; 
       scrollRef.current.scrollBy({ 
         left: direction === 'left' ? -scrollAmount : scrollAmount, 
@@ -26,23 +24,19 @@ const CategoryRow = ({ categoria, itens, setProdutoSelecionado }: { categoria: s
     }
   };
 
-  // Lógica do Autoplay de 10 segundos
   useEffect(() => {
-    // Se o mouse estiver em cima ou tiver poucos itens, não roda o autoplay
     if (isHovered || itens.length <= 1) return;
 
     const interval = setInterval(() => {
       if (scrollRef.current) {
         const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
-        
-        // Se chegou no final, volta para o início. Se não, vai para a direita.
         if (scrollLeft >= scrollWidth - clientWidth - 10) {
           scrollRef.current.scrollTo({ left: 0, behavior: 'smooth' });
         } else {
           scroll('right');
         }
       }
-    }, 10000); // 10000ms = 10 segundos
+    }, 10000);
 
     return () => clearInterval(interval);
   }, [isHovered, itens.length]);
@@ -53,7 +47,6 @@ const CategoryRow = ({ categoria, itens, setProdutoSelecionado }: { categoria: s
       onMouseEnter={() => setIsHovered(true)} 
       onMouseLeave={() => setIsHovered(false)}
     >
-      {/* Cabeçalho da Categoria */}
       <div className="flex items-center justify-between mb-4 border-b border-border pb-2">
         <h2 className="text-xl font-bold text-foreground tracking-tight">
           {categoria}
@@ -64,7 +57,6 @@ const CategoryRow = ({ categoria, itens, setProdutoSelecionado }: { categoria: s
       </div>
 
       <div className="relative group">
-        {/* Setas de Navegação (Visíveis apenas em telas maiores que mobile se houver scroll) */}
         {itens.length > 2 && (
           <>
             <button 
@@ -84,7 +76,6 @@ const CategoryRow = ({ categoria, itens, setProdutoSelecionado }: { categoria: s
           </>
         )}
 
-        {/* Container de Rolagem Horizontal */}
         <div 
           ref={scrollRef}
           className="flex overflow-x-auto gap-4 pb-4 snap-x snap-mandatory scroll-smooth hide-scrollbar"
@@ -134,9 +125,23 @@ export default function Index() {
     const grupos: Record<string, typeof products> = {};
 
     produtosFiltrados.forEach(product => {
-      const categoriaStr = typeof product.categoria === 'string' 
-        ? product.categoria 
-        : (Array.isArray(product.categoria) ? product.categoria[0] : 'Diversos');
+      // T-HEX FIX: Lógica estrita para forçar os Kits numa categoria única
+      const isCategoriaKit = typeof product.categoria === 'string' 
+        ? product.categoria.toLowerCase().includes('kit') 
+        : Array.isArray(product.categoria) && product.categoria.some(c => c.toLowerCase().includes('kit'));
+
+      let categoriaStr = "Diversos";
+
+      if (product.isKit || isCategoriaKit) {
+        categoriaStr = "Kits";
+      } else {
+        // Pega a primeira categoria antes da vírgula para não poluir os títulos
+        const catBase = typeof product.categoria === 'string' 
+          ? product.categoria 
+          : (Array.isArray(product.categoria) ? product.categoria[0] : 'Diversos');
+        
+        categoriaStr = catBase.split(',')[0].trim();
+      }
 
       if (!grupos[categoriaStr]) {
         grupos[categoriaStr] = [];
@@ -167,7 +172,7 @@ export default function Index() {
   }
 
   return (
-    <div className="min-h-screen bg-background text-foreground overflow-x-hidden"> {/* Previne scroll horizontal acidental na tela inteira */}
+    <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
       <Header 
         searchTerm={searchTerm} 
         onSearchChange={setSearchTerm}
@@ -183,15 +188,16 @@ export default function Index() {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 lg:px-6 pb-24 lg:pb-16">
-        <div className="flex flex-col lg:flex-row gap-8"> {/* Ajuste no gap para não espremer a sidebar */}
-          {/* Sidebar visível apenas em Desktop */}
-          <div className="hidden lg:block w-64 shrink-0">
-            <div className="sticky top-24"> {/* Deixa a sidebar grudar no topo ao descer a página */}
-              {SidebarContent}
-            </div>
+        {/* T-HEX FIX: "items-start" é o segredo para o sticky funcionar no flex. */}
+        <div className="flex flex-col lg:flex-row gap-8 items-start">
+          
+          {/* T-HEX FIX: A largura w-72 aqui (288px) agora combina exatamente com o que a Sidebar precisa. Adicionado overflow-y-auto no pai para rolar dentro do sticky */}
+          <div className="hidden lg:block w-72 shrink-0 sticky top-24 h-fit max-h-[calc(100vh-7rem)] overflow-y-auto hide-scrollbar">
+            <style>{`.hide-scrollbar::-webkit-scrollbar { display: none; }`}</style>
+            {SidebarContent}
           </div>
           
-          <div className="flex-1 min-w-0 w-full"> {/* min-w-0 e w-full essenciais para o carrossel não quebrar a tela */}
+          <div className="flex-1 min-w-0 w-full">
             <div className="flex items-center justify-between mb-6">
               <p className="text-sm text-muted-foreground">
                 <span className="font-semibold text-foreground">{produtosFiltrados.length}</span> produtos encontrados
@@ -208,7 +214,7 @@ export default function Index() {
                 </Button>
               </div>
             ) : (
-              <div className="flex flex-col gap-12"> {/* Aumentado o gap entre as categorias */}
+              <div className="flex flex-col gap-12">
                 {Object.entries(produtosAgrupados).map(([categoria, itens]) => (
                   <CategoryRow 
                     key={categoria} 
@@ -223,7 +229,6 @@ export default function Index() {
         </div>
       </div>
 
-      {/* BOTÃO DE FILTRO FLUTUANTE - MOBILE APENAS */}
       <div className="fixed bottom-6 right-6 z-40 lg:hidden">
         <Sheet>
           <SheetTrigger asChild>
