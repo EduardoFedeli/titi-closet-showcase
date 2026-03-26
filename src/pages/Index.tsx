@@ -56,19 +56,20 @@ const CategoryRow = ({ categoria, itens, setProdutoSelecionado }: { categoria: s
         </span>
       </div>
 
-      <div className="relative group">
+      {/* T-HEX FIX: Trocado 'group' por 'group/carousel' */}
+      <div className="relative group/carousel">
         {itens.length > 2 && (
           <>
             <button 
               onClick={() => scroll('left')}
-              className="absolute left-[-15px] top-1/2 -translate-y-1/2 z-10 bg-background/90 border border-border shadow-md rounded-full p-2 text-[#50808E] hover:bg-[#50808E] hover:text-white transition-colors opacity-0 group-hover:opacity-100 hidden md:flex"
+              className="absolute left-[-15px] top-1/2 -translate-y-1/2 z-10 bg-background/90 border border-border shadow-md rounded-full p-2 text-[#50808E] hover:bg-[#50808E] hover:text-white transition-colors opacity-0 group-hover/carousel:opacity-100 hidden md:flex"
               aria-label="Rolar para esquerda"
             >
               <ChevronLeft size={24} />
             </button>
             <button 
               onClick={() => scroll('right')}
-              className="absolute right-[-15px] top-1/2 -translate-y-1/2 z-10 bg-background/90 border border-border shadow-md rounded-full p-2 text-[#50808E] hover:bg-[#50808E] hover:text-white transition-colors opacity-0 group-hover:opacity-100 hidden md:flex"
+              className="absolute right-[-15px] top-1/2 -translate-y-1/2 z-10 bg-background/90 border border-border shadow-md rounded-full p-2 text-[#50808E] hover:bg-[#50808E] hover:text-white transition-colors opacity-0 group-hover/carousel:opacity-100 hidden md:flex"
               aria-label="Rolar para direita"
             >
               <ChevronRight size={24} />
@@ -125,7 +126,6 @@ export default function Index() {
     const grupos: Record<string, typeof products> = {};
 
     produtosFiltrados.forEach(product => {
-      // T-HEX FIX: Lógica estrita para forçar os Kits numa categoria única
       const isCategoriaKit = typeof product.categoria === 'string' 
         ? product.categoria.toLowerCase().includes('kit') 
         : Array.isArray(product.categoria) && product.categoria.some(c => c.toLowerCase().includes('kit'));
@@ -135,7 +135,6 @@ export default function Index() {
       if (product.isKit || isCategoriaKit) {
         categoriaStr = "Kits";
       } else {
-        // Pega a primeira categoria antes da vírgula para não poluir os títulos
         const catBase = typeof product.categoria === 'string' 
           ? product.categoria 
           : (Array.isArray(product.categoria) ? product.categoria[0] : 'Diversos');
@@ -171,8 +170,9 @@ export default function Index() {
     );
   }
 
+  // T-HEX FIX: Removido 'overflow-x-hidden' daqui da div principal. Era ele que quebrava o sticky da Sidebar!
   return (
-    <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
+    <div className="min-h-screen bg-background text-foreground">
       <Header 
         searchTerm={searchTerm} 
         onSearchChange={setSearchTerm}
@@ -188,16 +188,14 @@ export default function Index() {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 lg:px-6 pb-24 lg:pb-16">
-        {/* T-HEX FIX: "items-start" é o segredo para o sticky funcionar no flex. */}
-        <div className="flex flex-col lg:flex-row gap-8 items-start">
+        <div className="flex flex-col lg:flex-row gap-8 items-start relative">
           
-          {/* T-HEX FIX: A largura w-72 aqui (288px) agora combina exatamente com o que a Sidebar precisa. Adicionado overflow-y-auto no pai para rolar dentro do sticky */}
           <div className="hidden lg:block w-72 shrink-0 sticky top-24 h-fit max-h-[calc(100vh-7rem)] overflow-y-auto hide-scrollbar">
             <style>{`.hide-scrollbar::-webkit-scrollbar { display: none; }`}</style>
             {SidebarContent}
           </div>
           
-          <div className="flex-1 min-w-0 w-full">
+          <div className="flex-1 min-w-0 w-full overflow-hidden">
             <div className="flex items-center justify-between mb-6">
               <p className="text-sm text-muted-foreground">
                 <span className="font-semibold text-foreground">{produtosFiltrados.length}</span> produtos encontrados
